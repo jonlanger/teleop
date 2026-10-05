@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" font-family="Helvetica Neue, Arial, sans-serif">
+<rect width="1200" height="780" fill="#EDEDEA"/>
+<circle cx="600.0" cy="410.0" r="239.4" fill="none" stroke="#2B2E32" stroke-width="53.2"/>
+<path d="M411.4,262.6 A239.4,239.4 0 0 0 411.4,557.4" fill="none" stroke="#9C7552" stroke-width="54.1"/>
+<path d="M788.6,557.4 A239.4,239.4 0 0 0 788.6,262.6" fill="none" stroke="#9C7552" stroke-width="54.1"/>
+<path d="M761.7,264.4 A217.5,217.5 0 0 0 438.3,264.4" fill="none" stroke="#3CE6B4" stroke-width="3.0"/>
+<path d="M438.3,555.6 A217.5,217.5 0 0 0 761.7,555.6" fill="none" stroke="#3CE6B4" stroke-width="3.0"/>
+<rect x="379.6" y="315.0" width="440.8" height="190.0" rx="45.6" fill="#2B2E32"/>
+<rect x="391.0" y="326.4" width="418.0" height="167.2" rx="34.2" fill="#3A3E44"/>
+<rect x="398.6" y="334.0" width="53.2" height="152.0" rx="26.6" fill="#26292D"/>
+<path d="M404.3,360.6 A20.9,20.9 0 0 1 446.1,360.6 L446.1,359.6 Q446.1,364.4 441.4,364.4 L409.1,364.4 Q404.3,364.4 404.3,359.6 Z" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<rect x="404.3" y="368.2" width="41.8" height="19.0" rx="4.8" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<rect x="404.3" y="391.0" width="41.8" height="19.0" rx="4.8" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<circle cx="425.2" cy="459.4" r="20.9" fill="#2B2E32" stroke="#1C1E21" stroke-width="1.5"/>
+<path d="M419.2,443.2 h12.0 v10.3 h10.3 v12.0 h-10.3 v10.3 h-12.0 v-10.3 h-10.3 v-12.0 h10.3z" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<rect x="748.2" y="334.0" width="53.2" height="152.0" rx="26.6" fill="#26292D"/>
+<path d="M753.9,360.6 A20.9,20.9 0 0 1 795.7,360.6 L795.7,359.6 Q795.7,364.4 791.0,364.4 L758.6,364.4 Q753.9,364.4 753.9,359.6 Z" fill="#3CE6B4" stroke="#1C1E21" stroke-width="1.5"/>
+<rect x="753.9" y="368.2" width="41.8" height="19.0" rx="4.8" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<rect x="753.9" y="391.0" width="41.8" height="19.0" rx="4.8" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<circle cx="774.8" cy="459.4" r="20.9" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<circle cx="774.8" cy="459.4" r="13.3" fill="#383C42" stroke="#26292D" stroke-width="1.5"/>
+<circle cx="600.0" cy="379.6" r="32.3" fill="#26292D" stroke="#1C1E21" stroke-width="1.5"/>
+<circle cx="600.0" cy="379.6" r="26.6" fill="#E8352B" stroke="#B5241C" stroke-width="1.5"/>
+<circle cx="668.4" cy="353.0" r="10.4" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<path d="M668.4,347.0 l5.5,9 h-11z" fill="#E8352B"/>
+<rect x="484.1" y="461.3" width="19.0" height="19.0" rx="4.8" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<rect x="696.9" y="461.3" width="19.0" height="19.0" rx="4.8" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<text x="600.0" y="452.2" text-anchor="middle" font-size="24" font-style="italic" font-weight="700" fill="#B9BEC4">teleop</text>
+<path d="M425.2,352.1 L314,200 L300,200" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="425.2" cy="352.1" r="2.5" fill="#1D1F21"/>
+<text x="294" y="205" text-anchor="end" font-size="15" fill="#1D1F21">Talk</text>
+<path d="M425.2,377.7 L314,240 L300,240" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="425.2" cy="377.7" r="2.5" fill="#1D1F21"/>
+<text x="294" y="245" text-anchor="end" font-size="15" fill="#1D1F21">Log</text>
+<path d="M425.2,400.5 L314,280 L300,280" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="425.2" cy="400.5" r="2.5" fill="#1D1F21"/>
+<text x="294" y="285" text-anchor="end" font-size="15" fill="#1D1F21">External speaker</text>
+<path d="M425.2,459.4 L314,470 L300,470" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="425.2" cy="459.4" r="2.5" fill="#1D1F21"/>
+<text x="294" y="475" text-anchor="end" font-size="15" fill="#1D1F21">D-pad · alerts, menus, camera</text>
+<path d="M493.6,470.8 L314,540 L300,540" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="493.6" cy="470.8" r="2.5" fill="#1D1F21"/>
+<text x="294" y="545" text-anchor="end" font-size="15" fill="#1D1F21">P1 (programmable)</text>
+<path d="M600.0,347.3 L886,150 L900,150" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="600.0" cy="347.3" r="2.5" fill="#1D1F21"/>
+<text x="906" y="155" text-anchor="start" font-size="15" fill="#1D1F21">Emergency stop</text>
+<path d="M668.4,343.5 L886,185 L900,185" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="668.4" cy="343.5" r="2.5" fill="#1D1F21"/>
+<text x="906" y="190" text-anchor="start" font-size="15" fill="#1D1F21">Hazard</text>
+<path d="M774.8,352.1 L886,230 L900,230" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="774.8" cy="352.1" r="2.5" fill="#1D1F21"/>
+<text x="906" y="235" text-anchor="start" font-size="15" fill="#1D1F21">Claim vehicle</text>
+<path d="M774.8,377.7 L886,270 L900,270" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="774.8" cy="377.7" r="2.5" fill="#1D1F21"/>
+<text x="906" y="275" text-anchor="start" font-size="15" fill="#1D1F21">Release vehicle (hold)</text>
+<path d="M774.8,400.5 L886,310 L900,310" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="774.8" cy="400.5" r="2.5" fill="#1D1F21"/>
+<text x="906" y="315" text-anchor="start" font-size="15" fill="#1D1F21">Horn</text>
+<path d="M774.8,459.4 L886,470 L900,470" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="774.8" cy="459.4" r="2.5" fill="#1D1F21"/>
+<text x="906" y="475" text-anchor="start" font-size="15" fill="#1D1F21">Stick · look, click = acknowledge</text>
+<path d="M706.4,470.8 L886,540 L900,540" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="706.4" cy="470.8" r="2.5" fill="#1D1F21"/>
+<text x="906" y="545" text-anchor="start" font-size="15" fill="#1D1F21">P2 (programmable)</text>
+<text x="40" y="52" font-size="22" font-weight="700" fill="#1D1F21">teleop Wheel · faceplate v5</text>
+<text x="40" y="78" font-size="14" fill="#6B6E70">Concentric offsets: band R24 → faceplate R18 → button column R14 → end buttons, stick and D-pad R11, sharing corner centres, mirrored left and right.</text>
+</svg>

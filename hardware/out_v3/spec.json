@@ -1,0 +1,1513 @@
+{
+  "units": "mm",
+  "parts": [
+    {
+      "part": "Wheel_Front_Shell",
+      "process": "Injection molded, 2-plate tool, side action for the faceplate ledge",
+      "material": "PC/ABS",
+      "cmf": "Plastic #24272B MT-11010",
+      "bbox_mm": [
+        277.6,
+        128.08,
+        255.39
+      ],
+      "volume_cm3": 93.05,
+      "mass_g": 107.0,
+      "manifold": false,
+      "notes": "A-surface. 2.8 mm wall, 1.0\u00b0 + texture draft off the parting plane. Halo groove on the inner front face; TPE grip substrate recessed 1.4 mm.",
+      "wall": {
+        "part": "Wheel_Front_Shell",
+        "nominal_mm": 2.8,
+        "samples": 627,
+        "p10": 1.58,
+        "median": 2.78,
+        "p90": 5.72,
+        "thick_pct": 20.6,
+        "thin_pct": 29.2
+      },
+      "draft": {
+        "part": "Wheel_Front_Shell",
+        "min_draft_deg": 0.5,
+        "side_area_mm2": 47628.2,
+        "under_drafted_pct": 2.7
+      }
+    },
+    {
+      "part": "Wheel_Rear_Shell",
+      "process": "Injection molded",
+      "material": "PC/ABS",
+      "cmf": "Plastic #24272B MT-11010",
+      "bbox_mm": [
+        277.6,
+        130.26,
+        255.39
+      ],
+      "volume_cm3": 186.57,
+      "mass_g": 214.6,
+      "manifold": false,
+      "notes": "Carries the lip (3.2 mm), splined shaft boss, paddle pivots and 6 \u00d7 M2.5 screw towers (not modelled).",
+      "wall": {
+        "part": "Wheel_Rear_Shell",
+        "nominal_mm": 2.8,
+        "samples": 490,
+        "p10": 1.44,
+        "median": 2.78,
+        "p90": 9.11,
+        "thick_pct": 20.2,
+        "thin_pct": 29.4
+      },
+      "draft": {
+        "part": "Wheel_Rear_Shell",
+        "min_draft_deg": 0.5,
+        "side_area_mm2": 84980.8,
+        "under_drafted_pct": 2.1
+      }
+    },
+    {
+      "part": "Grip_L_Front",
+      "process": "2K overmold onto the shell (TPE Shore 60A, PC/ABS-bondable grade)",
+      "material": "TPE",
+      "cmf": "TPE / soft-touch #9C7552",
+      "bbox_mm": [
+        43.89,
+        84.48,
+        158.37
+      ],
+      "volume_cm3": 9.36,
+      "mass_g": 10.3,
+      "manifold": true,
+      "notes": "Xbox-style micro-dot texture (Mold-Tech dot series). Capacitive hands-on electrode is the shell-side copper foil under the TPE."
+    },
+    {
+      "part": "Grip_L_Rear",
+      "process": "2K overmold onto the shell (TPE Shore 60A, PC/ABS-bondable grade)",
+      "material": "TPE",
+      "cmf": "TPE / soft-touch #9C7552",
+      "bbox_mm": [
+        43.89,
+        84.48,
+        158.37
+      ],
+      "volume_cm3": 9.36,
+      "mass_g": 10.3,
+      "manifold": true,
+      "notes": "Xbox-style micro-dot texture (Mold-Tech dot series). Capacitive hands-on electrode is the shell-side copper foil under the TPE."
+    },
+    {
+      "part": "Grip_R_Front",
+      "process": "2K overmold onto the shell (TPE Shore 60A, PC/ABS-bondable grade)",
+      "material": "TPE",
+      "cmf": "TPE / soft-touch #9C7552",
+      "bbox_mm": [
+        43.89,
+        84.48,
+        158.37
+      ],
+      "volume_cm3": 9.36,
+      "mass_g": 10.3,
+      "manifold": true,
+      "notes": "Xbox-style micro-dot texture (Mold-Tech dot series). Capacitive hands-on electrode is the shell-side copper foil under the TPE."
+    },
+    {
+      "part": "Grip_R_Rear",
+      "process": "2K overmold onto the shell (TPE Shore 60A, PC/ABS-bondable grade)",
+      "material": "TPE",
+      "cmf": "TPE / soft-touch #9C7552",
+      "bbox_mm": [
+        43.89,
+        84.48,
+        158.37
+      ],
+      "volume_cm3": 9.36,
+      "mass_g": 10.3,
+      "manifold": true,
+      "notes": "Xbox-style micro-dot texture (Mold-Tech dot series). Capacitive hands-on electrode is the shell-side copper foil under the TPE."
+    },
+    {
+      "part": "Halo_Guide_Upper",
+      "process": "Injection molded light guide, 2K/insert into front shell",
+      "material": "PMMA",
+      "cmf": "PMMA light guide, 2K into the front shell; RGB LEDs on a flex inside the rim. Shown in Autonomy mint.",
+      "bbox_mm": [
+        183.18,
+        22.37,
+        41.49
+      ],
+      "volume_cm3": 2.36,
+      "mass_g": 2.8,
+      "manifold": true,
+      "notes": "SPI-A2 front face, frosted back. 24 RGB LEDs per arc on a flex. Mint = autonomy, amber = operator, white pulse = transitioning."
+    },
+    {
+      "part": "Halo_Guide_Lower",
+      "process": "Injection molded light guide, 2K/insert into front shell",
+      "material": "PMMA",
+      "cmf": "PMMA light guide, 2K into the front shell; RGB LEDs on a flex inside the rim. Shown in Autonomy mint.",
+      "bbox_mm": [
+        183.18,
+        21.64,
+        41.61
+      ],
+      "volume_cm3": 2.36,
+      "mass_g": 2.8,
+      "manifold": true,
+      "notes": "SPI-A2 front face, frosted back. 24 RGB LEDs per arc on a flex. Mint = autonomy, amber = operator, white pulse = transitioning."
+    },
+    {
+      "part": "Hub_Faceplate",
+      "process": "Injection molded, removable (2 hooks + 2 magnets)",
+      "material": "PC/ABS",
+      "cmf": "Plastic #2E3237 VDI-27",
+      "bbox_mm": [
+        220.0,
+        39.06,
+        80.27
+      ],
+      "volume_cm3": 38.56,
+      "mass_g": 44.3,
+      "manifold": true,
+      "notes": "Swappable per fleet like an Xbox faceplate. Legends laser-etched through a dark paint layer.",
+      "wall": {
+        "part": "Hub_Faceplate",
+        "nominal_mm": 2.5,
+        "samples": 563,
+        "p10": 2.8,
+        "median": 2.81,
+        "p90": 3.95,
+        "thick_pct": 40.9,
+        "thin_pct": 0.0
+      },
+      "draft": {
+        "part": "Hub_Faceplate",
+        "min_draft_deg": 0.5,
+        "side_area_mm2": 28565.8,
+        "under_drafted_pct": 2.5
+      }
+    },
+    {
+      "part": "EStop_Cap",
+      "process": "Injection molded + dual-channel NC contact block, twist-to-release",
+      "material": "PC",
+      "cmf": "Plastic #E8352B SPI-A2",
+      "bbox_mm": [
+        28.0,
+        19.92,
+        26.43
+      ],
+      "volume_cm3": 5.47,
+      "mass_g": 6.6,
+      "manifold": true,
+      "notes": "\u00d828 domed mushroom, 4.8 mm proud of the bezel: the tallest and only red object on the hub."
+    },
+    {
+      "part": "EStop_Bezel",
+      "process": "Injection molded",
+      "material": "PC/ABS",
+      "cmf": "Plastic #3A3E44 MT-11000",
+      "bbox_mm": [
+        34.0,
+        18.0,
+        31.02
+      ],
+      "volume_cm3": 0.64,
+      "mass_g": 0.7,
+      "manifold": true,
+      "notes": "Thin \u00d834 bezel; the cap seats in its \u00d828.6 bore."
+    },
+    {
+      "part": "Btn_Hazard",
+      "process": "Injection molded, SPI-B1 gloss key cap",
+      "material": "PC",
+      "cmf": "Plastic #30343A SPI-B1",
+      "bbox_mm": [
+        12.6,
+        8.69,
+        12.24
+      ],
+      "volume_cm3": 0.43,
+      "mass_g": 0.5,
+      "manifold": true,
+      "notes": "Gloss caps on a textured faceplate read as touch points (Xbox ABXY move).",
+      "gap_mm": 0.15
+    },
+    {
+      "part": "Btn_ExtSpeaker",
+      "process": "Injection molded, SPI-B1 gloss key cap",
+      "material": "PC",
+      "cmf": "Plastic #30343A SPI-B1",
+      "bbox_mm": [
+        23.6,
+        8.33,
+        11.4
+      ],
+      "volume_cm3": 0.97,
+      "mass_g": 1.2,
+      "manifold": true,
+      "notes": "Gloss caps on a textured faceplate read as touch points (Xbox ABXY move).",
+      "gap_mm": 0.15
+    },
+    {
+      "part": "Btn_Talk",
+      "process": "Injection molded, SPI-B1 gloss key cap",
+      "material": "PC",
+      "cmf": "Plastic #30343A SPI-B1",
+      "bbox_mm": [
+        23.6,
+        9.87,
+        14.12
+      ],
+      "volume_cm3": 1.11,
+      "mass_g": 1.3,
+      "manifold": true,
+      "notes": "Gloss caps on a textured faceplate read as touch points (Xbox ABXY move).",
+      "gap_mm": 0.15
+    },
+    {
+      "part": "Btn_Log",
+      "process": "Injection molded, SPI-B1 gloss key cap",
+      "material": "PC",
+      "cmf": "Plastic #30343A SPI-B1",
+      "bbox_mm": [
+        23.6,
+        8.33,
+        11.4
+      ],
+      "volume_cm3": 0.97,
+      "mass_g": 1.2,
+      "manifold": true,
+      "notes": "Gloss caps on a textured faceplate read as touch points (Xbox ABXY move).",
+      "gap_mm": 0.15
+    },
+    {
+      "part": "Btn_Horn",
+      "process": "Injection molded, SPI-B1 gloss key cap",
+      "material": "PC",
+      "cmf": "Plastic #30343A SPI-B1",
+      "bbox_mm": [
+        23.6,
+        8.33,
+        11.4
+      ],
+      "volume_cm3": 0.97,
+      "mass_g": 1.2,
+      "manifold": true,
+      "notes": "Gloss caps on a textured faceplate read as touch points (Xbox ABXY move).",
+      "gap_mm": 0.15
+    },
+    {
+      "part": "Btn_Release",
+      "process": "Injection molded, SPI-B1 gloss key cap",
+      "material": "PC",
+      "cmf": "Plastic #30343A SPI-B1",
+      "bbox_mm": [
+        23.6,
+        8.33,
+        11.4
+      ],
+      "volume_cm3": 0.97,
+      "mass_g": 1.2,
+      "manifold": true,
+      "notes": "Gloss caps on a textured faceplate read as touch points (Xbox ABXY move).",
+      "gap_mm": 0.15
+    },
+    {
+      "part": "DPad",
+      "process": "Injection molded, SPI-B1 gloss key cap",
+      "material": "PC",
+      "cmf": "Plastic #30343A SPI-B1",
+      "bbox_mm": [
+        25.0,
+        13.37,
+        23.0
+      ],
+      "volume_cm3": 1.57,
+      "mass_g": 1.9,
+      "manifold": true,
+      "notes": "Gloss caps on a textured faceplate read as touch points (Xbox ABXY move)."
+    },
+    {
+      "part": "Btn_P1",
+      "process": "Injection molded, SPI-B1 gloss key cap",
+      "material": "PC",
+      "cmf": "Plastic #30343A SPI-B1",
+      "bbox_mm": [
+        11.6,
+        8.15,
+        11.32
+      ],
+      "volume_cm3": 0.41,
+      "mass_g": 0.5,
+      "manifold": true,
+      "notes": "Gloss caps on a textured faceplate read as touch points (Xbox ABXY move).",
+      "gap_mm": 0.15
+    },
+    {
+      "part": "Btn_P2",
+      "process": "Injection molded, SPI-B1 gloss key cap",
+      "material": "PC",
+      "cmf": "Plastic #30343A SPI-B1",
+      "bbox_mm": [
+        11.6,
+        8.15,
+        11.32
+      ],
+      "volume_cm3": 0.41,
+      "mass_g": 0.5,
+      "manifold": true,
+      "notes": "Gloss caps on a textured faceplate read as touch points (Xbox ABXY move).",
+      "gap_mm": 0.15
+    },
+    {
+      "part": "Btn_Claim",
+      "process": "Injection molded, SPI-B1",
+      "material": "PC",
+      "cmf": "Plastic #3CE6B4 SPI-B1",
+      "bbox_mm": [
+        23.6,
+        9.87,
+        14.12
+      ],
+      "volume_cm3": 1.11,
+      "mass_g": 1.3,
+      "manifold": true,
+      "notes": "The only mint control. Stands 1.2 mm proud; Release sits 0.4 mm recessed.",
+      "gap_mm": 0.15
+    },
+    {
+      "part": "Stick_Cap",
+      "process": "Injection molded + TPE ring",
+      "material": "PC",
+      "cmf": "Plastic #30343A SPI-B1",
+      "bbox_mm": [
+        16.0,
+        12.52,
+        15.09
+      ],
+      "volume_cm3": 0.78,
+      "mass_g": 0.9,
+      "manifold": true,
+      "notes": "Concave \u00d820 thumb cap. Pan the camera; click to acknowledge."
+    },
+    {
+      "part": "Stick_Gimbal",
+      "process": "Purchased (Hall-effect stick module)",
+      "material": "PA66-GF30",
+      "cmf": "Internal black",
+      "bbox_mm": [
+        21.0,
+        13.77,
+        20.25
+      ],
+      "volume_cm3": 2.38,
+      "mass_g": 3.2,
+      "manifold": true,
+      "notes": "Hall-effect: no drift."
+    },
+    {
+      "part": "Key_Column_L",
+      "process": "Injection molded, snaps into the faceplate",
+      "material": "PC/ABS",
+      "cmf": "Internal black",
+      "bbox_mm": [
+        28.0,
+        35.4,
+        73.04
+      ],
+      "volume_cm3": 2.15,
+      "mass_g": 2.5,
+      "manifold": true,
+      "notes": "Key carrier: R14 ends on the faceplate's R18 corner centres (4 mm inset); sits 0.6 mm below the faceplate as a thumb well."
+    },
+    {
+      "part": "Key_Column_R",
+      "process": "Injection molded, snaps into the faceplate",
+      "material": "PC/ABS",
+      "cmf": "Internal black",
+      "bbox_mm": [
+        28.0,
+        35.4,
+        73.04
+      ],
+      "volume_cm3": 2.15,
+      "mass_g": 2.5,
+      "manifold": true,
+      "notes": "Key carrier: R14 ends on the faceplate's R18 corner centres (4 mm inset); sits 0.6 mm below the faceplate as a thumb well."
+    },
+    {
+      "part": "Hub_Rear_Trim",
+      "process": "Injection molded, snap-fit",
+      "material": "PC/ABS",
+      "cmf": "Plastic #2E3237 VDI-27",
+      "bbox_mm": [
+        100.0,
+        26.0,
+        54.53
+      ],
+      "volume_cm3": 4.16,
+      "mass_g": 4.8,
+      "manifold": true,
+      "notes": "Flush rear trim hiding the six shell screws; R14, concentric with the band."
+    },
+    {
+      "part": "Print_Faceplate_Wordmark",
+      "process": "Pad print, metallic",
+      "material": "PC/ABS",
+      "cmf": "Anodized Al #D3D7DC polished",
+      "bbox_mm": [
+        41.64,
+        6.28,
+        13.3
+      ],
+      "volume_cm3": 0.02,
+      "mass_g": 0.0,
+      "manifold": true,
+      "notes": "Text logo in the centre of the faceplate (replaces the horn pad)."
+    },
+    {
+      "part": "Print_Hazard",
+      "process": "Pad print",
+      "material": "PC",
+      "cmf": "Plastic #E8352B SPI-B1",
+      "bbox_mm": [
+        5.2,
+        2.04,
+        4.14
+      ],
+      "volume_cm3": 0.0,
+      "mass_g": 0.0,
+      "manifold": true,
+      "notes": "Hazard triangle legend."
+    },
+    {
+      "part": "Print_SpeakerDots",
+      "process": "Pad print",
+      "material": "PC",
+      "cmf": "Plastic #E9EAE6 SPI-B1",
+      "bbox_mm": [
+        9.3,
+        0.73,
+        1.26
+      ],
+      "volume_cm3": 0.0,
+      "mass_g": 0.0,
+      "manifold": true,
+      "notes": "Grille-dot legend on the external speaker key."
+    },
+    {
+      "part": "Paddle_Brake_L",
+      "process": "Stamped + CNC edge, brushed clear anodize",
+      "material": "Al6063",
+      "cmf": "Anodized Al #B9BEC4 brushed",
+      "bbox_mm": [
+        88.0,
+        19.99,
+        38.61
+      ],
+      "volume_cm3": 11.79,
+      "mass_g": 31.8,
+      "manifold": true,
+      "notes": "Hall-effect sensed, 18\u00b0 travel, magnetic return."
+    },
+    {
+      "part": "Paddle_Throttle_R",
+      "process": "Stamped + CNC edge, brushed clear anodize",
+      "material": "Al6063",
+      "cmf": "Anodized Al #B9BEC4 brushed",
+      "bbox_mm": [
+        88.0,
+        19.99,
+        38.61
+      ],
+      "volume_cm3": 11.79,
+      "mass_g": 31.8,
+      "manifold": true,
+      "notes": "Hall-effect sensed, 18\u00b0 travel, magnetic return."
+    },
+    {
+      "part": "Hub_PCB",
+      "process": "FR-4 4-layer",
+      "material": "Glass",
+      "cmf": "PCB FR-4",
+      "bbox_mm": [
+        196.0,
+        35.26,
+        73.18
+      ],
+      "volume_cm3": 22.58,
+      "mass_g": 56.4,
+      "manifold": true,
+      "notes": "Hub controller, tact switches, LED driver."
+    },
+    {
+      "part": "EStop_ContactBlock",
+      "process": "Purchased",
+      "material": "PA66-GF30",
+      "cmf": "Internal black",
+      "bbox_mm": [
+        22.0,
+        18.03,
+        23.83
+      ],
+      "volume_cm3": 4.75,
+      "mass_g": 6.5,
+      "manifold": true,
+      "notes": "E-stop contact block, 2 NC channels, wired directly to the base safety relay."
+    },
+    {
+      "part": "Stick_Module",
+      "process": "Purchased",
+      "material": "PA66-GF30",
+      "cmf": "Internal black",
+      "bbox_mm": [
+        22.0,
+        17.12,
+        23.41
+      ],
+      "volume_cm3": 4.32,
+      "mass_g": 5.9,
+      "manifold": true,
+      "notes": "Thumbstick module, 2-axis Hall + click."
+    },
+    {
+      "part": "Clock_Spring",
+      "process": "Purchased",
+      "material": "PA66-GF30",
+      "cmf": "Internal black",
+      "bbox_mm": [
+        40.0,
+        23.25,
+        39.21
+      ],
+      "volume_cm3": 6.56,
+      "mass_g": 8.9,
+      "manifold": true,
+      "notes": "Clock spring: \u00b1540\u00b0 wheel rotation without a twisting harness."
+    },
+    {
+      "part": "Haptic_LRA_L",
+      "process": "Purchased",
+      "material": "SS304",
+      "cmf": "Steel zinc-plated",
+      "bbox_mm": [
+        10.0,
+        7.49,
+        10.58
+      ],
+      "volume_cm3": 0.28,
+      "mass_g": 2.2,
+      "manifold": true,
+      "notes": "Linear resonant actuator: alert pulse and link-degradation pattern."
+    },
+    {
+      "part": "Haptic_LRA_R",
+      "process": "Purchased",
+      "material": "SS304",
+      "cmf": "Steel zinc-plated",
+      "bbox_mm": [
+        10.0,
+        7.49,
+        10.58
+      ],
+      "volume_cm3": 0.28,
+      "mass_g": 2.2,
+      "manifold": true,
+      "notes": "Linear resonant actuator: alert pulse and link-degradation pattern."
+    },
+    {
+      "part": "Steer_Motor",
+      "process": "Purchased",
+      "material": "SS304",
+      "cmf": "Steel zinc-plated",
+      "bbox_mm": [
+        40.0,
+        62.22,
+        57.38
+      ],
+      "volume_cm3": 62.43,
+      "mass_g": 495.1,
+      "manifold": true,
+      "notes": "BLDC return-to-centre motor + 14-bit encoder."
+    },
+    {
+      "part": "Column_Cover_Upper",
+      "process": "Injection molded",
+      "material": "PC/ABS",
+      "cmf": "Plastic #3A3E44 MT-11000",
+      "bbox_mm": [
+        60.0,
+        125.63,
+        67.29
+      ],
+      "volume_cm3": 28.84,
+      "mass_g": 33.2,
+      "manifold": false,
+      "notes": "Upper column cover.",
+      "wall": {
+        "part": "Column_Cover_Upper",
+        "nominal_mm": 2.4,
+        "samples": 678,
+        "p10": 1.16,
+        "median": 2.4,
+        "p90": 2.4,
+        "thick_pct": 3.5,
+        "thin_pct": 14.5
+      },
+      "draft": {
+        "part": "Column_Cover_Upper",
+        "min_draft_deg": 0.5,
+        "side_area_mm2": 10276.6,
+        "under_drafted_pct": 54.3
+      }
+    },
+    {
+      "part": "Column_Cover_Lower",
+      "process": "Injection molded",
+      "material": "PC/ABS",
+      "cmf": "Plastic #3A3E44 MT-11000",
+      "bbox_mm": [
+        60.0,
+        111.08,
+        78.67
+      ],
+      "volume_cm3": 31.38,
+      "mass_g": 36.1,
+      "manifold": false,
+      "notes": "Lower column cover; foot trimmed to the knuckle (0.3 mm gap), cable runs into the knuckle.",
+      "wall": {
+        "part": "Column_Cover_Lower",
+        "nominal_mm": 2.4,
+        "samples": 507,
+        "p10": 1.16,
+        "median": 2.4,
+        "p90": 2.4,
+        "thick_pct": 3.6,
+        "thin_pct": 14.8
+      },
+      "draft": {
+        "part": "Column_Cover_Lower",
+        "min_draft_deg": 0.5,
+        "side_area_mm2": 13228.8,
+        "under_drafted_pct": 51.2
+      }
+    },
+    {
+      "part": "Stalk_TurnSignal",
+      "process": "Injection molded",
+      "material": "PA66-GF30",
+      "cmf": "Plastic #3A3E44 MT-11000",
+      "bbox_mm": [
+        66.95,
+        21.86,
+        19.63
+      ],
+      "volume_cm3": 5.35,
+      "mass_g": 7.3,
+      "manifold": true,
+      "notes": "Turn signals: up = right, down = left, self-cancelling."
+    },
+    {
+      "part": "Base_Shell",
+      "process": "Injection molded, 1 side action for the USB-C slot",
+      "material": "PC/ABS",
+      "cmf": "Plastic #24272B MT-11010",
+      "bbox_mm": [
+        210.0,
+        159.99,
+        106.72
+      ],
+      "volume_cm3": 207.64,
+      "mass_g": 238.8,
+      "manifold": false,
+      "notes": "Satin Carbon. Squircle plan (n=5), R12 top edge, 2.5 mm wall, 1\u00b0 draft; parting line 16 mm off the desk with a 0.8 \u00d7 0.5 shadow reveal. Barrel trough closed by a molded liner.",
+      "wall": {
+        "part": "Base_Shell",
+        "nominal_mm": 2.5,
+        "samples": 475,
+        "p10": 1.97,
+        "median": 2.5,
+        "p90": 4.6,
+        "thick_pct": 21.3,
+        "thin_pct": 8.8
+      },
+      "draft": {
+        "part": "Base_Shell",
+        "min_draft_deg": 0.5,
+        "side_area_mm2": 123574.0,
+        "under_drafted_pct": 4.3
+      },
+      "fasteners": [
+        {
+          "xy": [
+            -86.0,
+            -60.0
+          ],
+          "screw": "M3 thread-forming (PT-style)",
+          "feature": "corner pilot boss \u00d88, 2 ribs",
+          "boss_od": 8.0,
+          "pilot": 2.4
+        },
+        {
+          "xy": [
+            -86.0,
+            60.0
+          ],
+          "screw": "M3 thread-forming (PT-style)",
+          "feature": "corner pilot boss \u00d88, 2 ribs",
+          "boss_od": 8.0,
+          "pilot": 2.4
+        },
+        {
+          "xy": [
+            86.0,
+            -60.0
+          ],
+          "screw": "M3 thread-forming (PT-style)",
+          "feature": "corner pilot boss \u00d88, 2 ribs",
+          "boss_od": 8.0,
+          "pilot": 2.4
+        },
+        {
+          "xy": [
+            86.0,
+            60.0
+          ],
+          "screw": "M3 thread-forming (PT-style)",
+          "feature": "corner pilot boss \u00d88, 2 ribs",
+          "boss_od": 8.0,
+          "pilot": 2.4
+        }
+      ]
+    },
+    {
+      "part": "Base_Bottom",
+      "process": "Injection molded",
+      "material": "PC/ABS",
+      "cmf": "Plastic #24272B MT-11010",
+      "bbox_mm": [
+        210.0,
+        159.99,
+        19.0
+      ],
+      "volume_cm3": 107.02,
+      "mass_g": 123.1,
+      "manifold": false,
+      "notes": "Lip and screw clearance towers.",
+      "wall": {
+        "part": "Base_Bottom",
+        "nominal_mm": 2.5,
+        "samples": 468,
+        "p10": 1.21,
+        "median": 2.5,
+        "p90": 8.45,
+        "thick_pct": 12.0,
+        "thin_pct": 12.6
+      },
+      "draft": {
+        "part": "Base_Bottom",
+        "min_draft_deg": 0.5,
+        "side_area_mm2": 24087.3,
+        "under_drafted_pct": 9.2
+      }
+    },
+    {
+      "part": "Tilt_Knuckle",
+      "process": "Zinc die-cast, satin powder coat",
+      "material": "Zn-Zamak3",
+      "cmf": "Plastic #3A3E44 MT-11000",
+      "bbox_mm": [
+        72.0,
+        60.0,
+        60.0
+      ],
+      "volume_cm3": 202.63,
+      "mass_g": 1337.4,
+      "manifold": true,
+      "notes": "Rotates with the column; friction pack + 5\u00b0 detents inside. Push the wheel to tilt 15\u201335\u00b0."
+    },
+    {
+      "part": "Hinge_Cap_L",
+      "process": "Injection molded, screwed to the hinge brackets from inside",
+      "material": "PC/ABS",
+      "cmf": "Plastic #24272B MT-11010",
+      "bbox_mm": [
+        51.5,
+        60.0,
+        60.0
+      ],
+      "volume_cm3": 144.73,
+      "mass_g": 166.4,
+      "manifold": true,
+      "notes": "Fixed barrel caps; 0.5 mm seam to the knuckle, R3 end edges."
+    },
+    {
+      "part": "Hinge_Cap_R",
+      "process": "Injection molded, screwed to the hinge brackets from inside",
+      "material": "PC/ABS",
+      "cmf": "Plastic #24272B MT-11010",
+      "bbox_mm": [
+        51.5,
+        60.0,
+        60.0
+      ],
+      "volume_cm3": 144.73,
+      "mass_g": 166.4,
+      "manifold": true,
+      "notes": "Fixed barrel caps; 0.5 mm seam to the knuckle, R3 end edges."
+    },
+    {
+      "part": "Print_TiltIndex",
+      "process": "Pad print",
+      "material": "PC/ABS",
+      "cmf": "Plastic #3CE6B4 SPI-B1",
+      "bbox_mm": [
+        0.2,
+        4.47,
+        7.76
+      ],
+      "volume_cm3": 0.0,
+      "mass_g": 0.0,
+      "manifold": true,
+      "notes": "Tilt index line; read against ticks on the right cap."
+    },
+    {
+      "part": "Hinge_Axle",
+      "process": "Ground steel shaft",
+      "material": "SS304",
+      "cmf": "Steel zinc-plated",
+      "bbox_mm": [
+        168.0,
+        12.0,
+        12.0
+      ],
+      "volume_cm3": 18.99,
+      "mass_g": 150.6,
+      "manifold": true,
+      "notes": "Hinge axle through caps and knuckle."
+    },
+    {
+      "part": "USB_C_Receptacle",
+      "process": "Purchased USB-C receptacle (mid-mount)",
+      "material": "SS304",
+      "cmf": "Steel zinc-plated",
+      "bbox_mm": [
+        8.34,
+        7.0,
+        2.56
+      ],
+      "volume_cm3": 0.07,
+      "mass_g": 0.6,
+      "manifold": true,
+      "notes": "Power + data; 0.8 mm behind the outer surface."
+    },
+    {
+      "part": "USB_Board",
+      "process": "FR-4",
+      "material": "Glass",
+      "cmf": "PCB FR-4",
+      "bbox_mm": [
+        22.0,
+        14.0,
+        1.2
+      ],
+      "volume_cm3": 0.37,
+      "mass_g": 0.9,
+      "manifold": true,
+      "notes": "USB-C daughter board, screwed to a boss on the back wall."
+    },
+    {
+      "part": "Foot_1",
+      "process": "Molded TPE, Shore 50A, adhesive-backed",
+      "material": "TPE",
+      "cmf": "TPE / soft-touch #9C7552",
+      "bbox_mm": [
+        16.0,
+        16.0,
+        1.6
+      ],
+      "volume_cm3": 0.32,
+      "mass_g": 0.4,
+      "manifold": true,
+      "notes": "Hides the base screws."
+    },
+    {
+      "part": "Foot_2",
+      "process": "Molded TPE, Shore 50A, adhesive-backed",
+      "material": "TPE",
+      "cmf": "TPE / soft-touch #9C7552",
+      "bbox_mm": [
+        16.0,
+        16.0,
+        1.6
+      ],
+      "volume_cm3": 0.32,
+      "mass_g": 0.4,
+      "manifold": true,
+      "notes": "Hides the base screws."
+    },
+    {
+      "part": "Foot_3",
+      "process": "Molded TPE, Shore 50A, adhesive-backed",
+      "material": "TPE",
+      "cmf": "TPE / soft-touch #9C7552",
+      "bbox_mm": [
+        16.0,
+        16.0,
+        1.6
+      ],
+      "volume_cm3": 0.32,
+      "mass_g": 0.4,
+      "manifold": true,
+      "notes": "Hides the base screws."
+    },
+    {
+      "part": "Foot_4",
+      "process": "Molded TPE, Shore 50A, adhesive-backed",
+      "material": "TPE",
+      "cmf": "TPE / soft-touch #9C7552",
+      "bbox_mm": [
+        16.0,
+        16.0,
+        1.6
+      ],
+      "volume_cm3": 0.32,
+      "mass_g": 0.4,
+      "manifold": true,
+      "notes": "Hides the base screws."
+    },
+    {
+      "part": "Ballast_Plate",
+      "process": "Laser-cut 4 mm steel, zinc-plated",
+      "material": "SS304",
+      "cmf": "Steel zinc-plated",
+      "bbox_mm": [
+        170.0,
+        108.0,
+        4.0
+      ],
+      "volume_cm3": 73.1,
+      "mass_g": 579.7,
+      "manifold": true,
+      "notes": "\u2248640 g low ballast against tipping under steering load."
+    },
+    {
+      "part": "Main_PCB",
+      "process": "FR-4 6-layer",
+      "material": "Glass",
+      "cmf": "PCB FR-4",
+      "bbox_mm": [
+        150.0,
+        96.0,
+        1.6
+      ],
+      "volume_cm3": 22.99,
+      "mass_g": 57.5,
+      "manifold": true,
+      "notes": "Main controller and safety relay."
+    },
+    {
+      "part": "Wordmark_R",
+      "process": "Reflective metallic pad print (or IMD foil)",
+      "material": "PC/ABS",
+      "cmf": "Anodized Al #D3D7DC polished",
+      "bbox_mm": [
+        1.75,
+        88.18,
+        30.96
+      ],
+      "volume_cm3": 0.22,
+      "mass_g": 0.3,
+      "manifold": true,
+      "notes": "Wordmark after the Tarmac downtube logo."
+    },
+    {
+      "part": "Wordmark_L",
+      "process": "Reflective metallic pad print (or IMD foil)",
+      "material": "PC/ABS",
+      "cmf": "Anodized Al #D3D7DC polished",
+      "bbox_mm": [
+        1.75,
+        88.18,
+        30.96
+      ],
+      "volume_cm3": 0.22,
+      "mass_g": 0.3,
+      "manifold": true,
+      "notes": "Wordmark after the Tarmac downtube logo."
+    }
+  ],
+  "dims": [
+    {
+      "label": "Wheel \u00d8",
+      "from": [
+        -140.0,
+        -112.604,
+        212.118
+      ],
+      "to": [
+        140.0,
+        -112.604,
+        212.118
+      ],
+      "view": "front"
+    },
+    {
+      "label": "Rim section",
+      "from": [
+        0.0,
+        -151.353,
+        91.162
+      ],
+      "to": [
+        0.0,
+        -180.355,
+        104.685
+      ],
+      "view": "right"
+    },
+    {
+      "label": "Hub band",
+      "from": [
+        -100.0,
+        -148.236,
+        173.565
+      ],
+      "to": [
+        -100.0,
+        -105.974,
+        264.195
+      ],
+      "view": "front"
+    },
+    {
+      "label": "Key column pitch",
+      "from": [
+        -92.0,
+        -138.365,
+        195.443
+      ],
+      "to": [
+        92.0,
+        -138.365,
+        195.443
+      ],
+      "view": "front"
+    },
+    {
+      "label": "Hinge barrel",
+      "from": [
+        -88.0,
+        46.0,
+        168.16
+      ],
+      "to": [
+        88.0,
+        46.0,
+        168.16
+      ],
+      "view": "top"
+    },
+    {
+      "label": "Base width",
+      "from": [
+        -105.0,
+        -80.0,
+        0
+      ],
+      "to": [
+        105.0,
+        -80.0,
+        0
+      ],
+      "view": "front"
+    },
+    {
+      "label": "Base depth",
+      "from": [
+        105.0,
+        -80.0,
+        0
+      ],
+      "to": [
+        105.0,
+        80.0,
+        0
+      ],
+      "view": "top"
+    },
+    {
+      "label": "Base height, rear",
+      "from": [
+        105.0,
+        80.0,
+        0
+      ],
+      "to": [
+        105.0,
+        80.0,
+        125.6
+      ],
+      "view": "right"
+    },
+    {
+      "label": "Base height, front",
+      "from": [
+        105.0,
+        -80.0,
+        0
+      ],
+      "to": [
+        105.0,
+        -80.0,
+        100.0
+      ],
+      "view": "right"
+    },
+    {
+      "label": "Parting line",
+      "from": [
+        -105.0,
+        -80.0,
+        0
+      ],
+      "to": [
+        -105.0,
+        -80.0,
+        16.0
+      ],
+      "view": "front"
+    },
+    {
+      "label": "Wheel centre height",
+      "from": [
+        0,
+        -112.604,
+        0
+      ],
+      "to": [
+        0.0,
+        -112.604,
+        212.118
+      ],
+      "view": "right"
+    }
+  ],
+  "explode": {
+    "Hub_Faceplate": [
+      0.0,
+      -63.44154739379883,
+      89.58328247070312
+    ],
+    "Print_Faceplate_Wordmark": [
+      0.0,
+      -67.97308349609375,
+      91.69637298583984
+    ],
+    "Hub_Rear_Trim": [
+      0.0,
+      27.189233779907227,
+      47.32145309448242
+    ],
+    "Print_Hazard": [
+      0.0,
+      -108.7569351196289,
+      110.71418762207031
+    ],
+    "Print_SpeakerDots": [
+      0.0,
+      -108.7569351196289,
+      110.71418762207031
+    ],
+    "Wheel_Front_Shell": [
+      0.0,
+      -27.189233779907227,
+      72.67855072021484
+    ],
+    "Halo_Guide_Upper": [
+      0.0,
+      -40.783851623535156,
+      79.017822265625
+    ],
+    "Halo_Guide_Lower": [
+      0.0,
+      -40.783851623535156,
+      79.017822265625
+    ],
+    "Grip_L_Front": [
+      0.0,
+      -36.25231170654297,
+      76.90473175048828
+    ],
+    "Grip_R_Front": [
+      0.0,
+      -36.25231170654297,
+      76.90473175048828
+    ],
+    "Hub_PCB": [
+      0.0,
+      -13.594616889953613,
+      66.33927154541016
+    ],
+    "EStop_ContactBlock": [
+      0.0,
+      -4.531538963317871,
+      62.11309051513672
+    ],
+    "Stick_Module": [
+      0.0,
+      -9.063077926635742,
+      64.22618103027344
+    ],
+    "Clock_Spring": [
+      0.0,
+      9.063077926635742,
+      55.77381896972656
+    ],
+    "Wheel_Rear_Shell": [
+      0.0,
+      13.594616889953613,
+      53.66072463989258
+    ],
+    "Grip_L_Rear": [
+      0.0,
+      27.189233779907227,
+      47.32145309448242
+    ],
+    "Grip_R_Rear": [
+      0.0,
+      27.189233779907227,
+      47.32145309448242
+    ],
+    "Paddle_Brake_L": [
+      0.0,
+      40.783851623535156,
+      40.982177734375
+    ],
+    "Paddle_Throttle_R": [
+      0.0,
+      40.783851623535156,
+      40.982177734375
+    ],
+    "Haptic_LRA_L": [
+      0.0,
+      0.0,
+      60.0
+    ],
+    "Haptic_LRA_R": [
+      0.0,
+      0.0,
+      60.0
+    ],
+    "Column_Cover_Upper": [
+      0.0,
+      54.37846755981445,
+      99.64290618896484
+    ],
+    "Column_Cover_Lower": [
+      0.0,
+      54.37846755981445,
+      74.64290618896484
+    ],
+    "Steer_Motor": [
+      0.0,
+      54.37846755981445,
+      74.64290618896484
+    ],
+    "Stalk_TurnSignal": [
+      0.0,
+      54.37846755981445,
+      74.64290618896484
+    ],
+    "EStop_Bezel": [
+      0.0,
+      -104.22539520263672,
+      108.60110473632812
+    ],
+    "EStop_Cap": [
+      0.0,
+      -104.22539520263672,
+      108.60110473632812
+    ],
+    "Btn_Hazard": [
+      0.0,
+      -104.22539520263672,
+      108.60110473632812
+    ],
+    "Btn_P1": [
+      0.0,
+      -104.22539520263672,
+      108.60110473632812
+    ],
+    "Btn_P2": [
+      0.0,
+      -104.22539520263672,
+      108.60110473632812
+    ],
+    "Key_Column_L": [
+      0.0,
+      -90.63078308105469,
+      142.26182556152344
+    ],
+    "Btn_Talk": [
+      0.0,
+      -104.22539520263672,
+      108.60110473632812
+    ],
+    "Btn_Log": [
+      0.0,
+      -104.22539520263672,
+      108.60110473632812
+    ],
+    "Btn_ExtSpeaker": [
+      0.0,
+      -104.22539520263672,
+      108.60110473632812
+    ],
+    "DPad": [
+      0.0,
+      -104.22539520263672,
+      108.60110473632812
+    ],
+    "Key_Column_R": [
+      0.0,
+      -90.63078308105469,
+      142.26182556152344
+    ],
+    "Btn_Claim": [
+      0.0,
+      -104.22539520263672,
+      108.60110473632812
+    ],
+    "Btn_Release": [
+      0.0,
+      -104.22539520263672,
+      108.60110473632812
+    ],
+    "Btn_Horn": [
+      0.0,
+      -104.22539520263672,
+      108.60110473632812
+    ],
+    "Stick_Gimbal": [
+      0.0,
+      -90.63078308105469,
+      102.26182556152344
+    ],
+    "Stick_Cap": [
+      0.0,
+      -104.22539520263672,
+      108.60110473632812
+    ],
+    "Base_Bottom": [
+      0.0,
+      0.0,
+      -70.0
+    ],
+    "Ballast_Plate": [
+      0.0,
+      0.0,
+      -40.0
+    ],
+    "Main_PCB": [
+      0.0,
+      0.0,
+      -15.0
+    ],
+    "Hinge_Cap_L": [
+      -45.0,
+      0.0,
+      25.0
+    ],
+    "Hinge_Cap_R": [
+      45.0,
+      0.0,
+      25.0
+    ],
+    "Tilt_Knuckle": [
+      0.0,
+      0.0,
+      25.0
+    ],
+    "Print_TiltIndex": [
+      0.0,
+      0.0,
+      25.0
+    ],
+    "Hinge_Axle": [
+      0.0,
+      0.0,
+      25.0
+    ],
+    "USB_C_Receptacle": [
+      0.0,
+      45.0,
+      0.0
+    ],
+    "USB_Board": [
+      0.0,
+      30.0,
+      0.0
+    ],
+    "Wordmark_R": [
+      25.0,
+      0.0,
+      0.0
+    ],
+    "Wordmark_L": [
+      -25.0,
+      0.0,
+      0.0
+    ],
+    "Foot_1": [
+      0.0,
+      0.0,
+      -95.0
+    ],
+    "Foot_2": [
+      0.0,
+      0.0,
+      -95.0
+    ],
+    "Foot_3": [
+      0.0,
+      0.0,
+      -95.0
+    ],
+    "Foot_4": [
+      0.0,
+      0.0,
+      -95.0
+    ],
+    "Base_Shell": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "product": "teleop Wheel",
+  "assembly": [
+    "Base: ballast plate and main PCB (on standoffs) into Base_Bottom",
+    "Base_Shell over Base_Bottom (lip engages), 4 \u00d7 M3 from below, feet cover screws",
+    "Hinge brackets bolt to the ballast plate through slots in the trough liner; axle, knuckle and caps drop in from above",
+    "Column: motor + cable into lower cover, upper cover closes (2 screws), foot screws to the knuckle; cable passes through the knuckle bore",
+    "Wheel: halo guides + grips are 2K in the shells; hub PCB, clock spring, LRAs into rear shell",
+    "Front shell onto rear shell (lip), 6 \u00d7 M2.5 from behind; paddles pinned to pivots",
+    "Rear trim snaps over the shell screws",
+    "Keys into the two key-column carriers; carriers, E-stop and caps into the faceplate; faceplate clips on (2 hooks + magnets)"
+  ],
+  "drivers": {
+    "wheel_d": 280.0,
+    "tilt_deg": 25.0,
+    "wheel_centre_mm": [
+      0.0,
+      -112.6,
+      212.1
+    ],
+    "base": [
+      210.0,
+      160.0,
+      100.0,
+      125.6
+    ],
+    "top_slope_deg": 9.1
+  }
+}

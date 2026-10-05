@@ -1,0 +1,300 @@
+/* Operator console. Three columns; the centre gets at least 60% of the width. */
+.console { display: grid; grid-template-columns: minmax(240px, 270px) minmax(0, 1fr) minmax(280px, 320px); gap: var(--space-4); padding: var(--space-4); min-height: 0; height: 100%; }
+/* Columns scroll on their own. 3px padding keeps focus and selection rings inside the scroller's clip. */
+.col { min-height: 0; overflow: auto; display: grid; gap: var(--space-3); align-content: start; padding: 3px; margin: -3px; }
+.col-center { display: flex; flex-direction: column; gap: var(--space-4); }
+.col-center > * { flex: none; }
+.tiles, .alerts { display: grid; gap: var(--space-2); }
+.tile-wrap { position: relative; }
+.held-by { display: block; margin: 4px 4px 0; font: 600 11px/16px var(--font-sans); color: var(--amber); letter-spacing: .04em; }
+.alert-wrap { border-radius: var(--radius-md); cursor: pointer; }
+.alert-wrap.sel { box-shadow: 0 0 0 2px var(--ink); }
+/* In the narrow rail, the AlertRow's action drops under its text instead of taking a third column. */
+.alerts .tp-alert { grid-template-columns: auto minmax(0, 1fr); }
+.alerts .tp-alert > :last-child { grid-column: 2; justify-self: start; }
+.alerts .tp-alert-title { font-size: 15px; line-height: 20px; }
+.myshift { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); flex-wrap: wrap; padding: var(--space-3) var(--space-4); border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--surface-1); font-size: 13px; }
+
+/* Vehicle bar */
+.vbar { display: flex; align-items: center; flex-wrap: wrap; gap: var(--space-3) var(--space-4); }
+.vbar-meta { display: flex; align-items: center; gap: var(--space-4); flex-wrap: wrap; }
+.vbar-actions { margin-left: auto; display: grid; justify-items: end; gap: 4px; max-width: 360px; }
+.vbar-actions .rb { white-space: normal; text-align: right; }
+.vbar-actions .tp-hold { min-width: 240px; }
+
+/* Banners: amber only when this operator holds the vehicle, red only for a stop */
+.banner { display: flex; align-items: baseline; flex-wrap: wrap; gap: var(--space-2) var(--space-4); padding: var(--space-3) var(--space-6); border-radius: var(--radius-md); }
+.banner .display-lg { font-size: 24px; line-height: 28px; }
+.banner.op { background: var(--amber-fill); color: var(--on-amber); }
+.banner.stop { background: var(--stop-fill); color: var(--on-stop); }
+.banner.trans { background: var(--surface-2); color: var(--ink); box-shadow: inset 0 0 0 1px var(--line-strong); }
+.banner.trans .display-lg { animation: tp-pulse 900ms ease-in-out infinite; }
+.banner.neutral { background: var(--surface-1); border: 1px solid var(--line); }
+@media (prefers-reduced-motion: reduce) { .banner.trans .display-lg { animation: none; } }
+
+.viewport { position: relative; aspect-ratio: 16 / 9; width: 100%; border-radius: var(--radius-lg); overflow: hidden; background: #1A1F24; border: 2px solid var(--line); }
+.viewport.held { border-color: var(--amber); }
+.viewport.stopped { border-color: var(--stop); }
+.cam-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.hud { position: absolute; display: flex; align-items: center; gap: var(--space-2); }
+.hud-tl { top: 14px; left: 18px; } .hud-tl .label { color: #EEF0EE; text-shadow: 0 1px 2px rgb(0 0 0 / .6); }
+.hud-tr { top: 10px; right: 12px; }
+.hud-bl { left: 18px; bottom: 14px; color: #EEF0EE; flex-wrap: wrap; }
+.hud-bl .readout small { color: #9AA2A9; }
+.hud-br { right: 16px; bottom: 16px; background: rgb(16 18 20 / .78); padding: 4px 10px; border-radius: var(--radius-pill); color: #EEF0EE; }
+.lost { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: var(--space-2); background: rgb(16 18 20 / .55); color: #EEF0EE; font-weight: 600; text-align: center; padding: var(--space-4); }
+
+/* Route map */
+.nav { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; min-height: 0; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface-1); overflow: hidden; }
+.nav-head { display: grid; gap: 2px; padding: var(--space-3) var(--space-4); border-bottom: 1px solid var(--line); min-height: 76px; align-content: center; }
+.nav-head .heading { line-height: 20px; }
+.nav-warn { color: var(--amber); }
+.nav-map { width: 100%; height: 100%; min-height: 180px; display: block; background: var(--surface-2); }
+.nav-foot { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--space-2); padding: var(--space-3) var(--space-4); border-top: 1px solid var(--line); flex-wrap: wrap; }
+.nav-foot .seg button { height: 24px; min-width: 0; padding: 0 9px; font-size: 12px; }
+.nav-street { fill: var(--ink-muted); font-family: var(--font-sans); font-weight: 600; paint-order: stroke; stroke: var(--surface-2); stroke-width: 3px; }
+.nav-street.art { fill: var(--ink); }
+.nav-stop { fill: var(--ink); font-family: var(--font-sans); font-weight: 700; paint-order: stroke; stroke: var(--surface-2); stroke-width: 3px; }
+
+/* Deck */
+.deck-legend { font-size: 12px; margin-bottom: calc(var(--space-2) * -1); }
+.deck { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-3); }
+.deck-panel { background: var(--surface-1); border: 1px solid var(--line); border-radius: var(--radius-md); padding: var(--space-4); display: grid; gap: var(--space-4); align-content: start; min-width: 0; }
+.deck-panel h3 { font: 700 16px/22px var(--font-sans); }
+.ctl { display: grid; gap: 6px; justify-items: start; min-width: 0; }
+.ctl > .seg { max-width: 100%; flex-wrap: wrap; }
+.deck-panel .rb { white-space: normal; }
+.ctl .row { flex-wrap: wrap; }
+.readout.big { font-size: 40px; line-height: 44px; }
+.tp-btn.sq { width: 36px; padding: 0; font-size: 18px; }
+.momentary.down { background: var(--surface-3); box-shadow: inset 0 0 0 2px var(--ink); }
+.estop-btn { width: 100%; height: 56px; font-size: 18px; }
+
+/* Drive panel: wheel, pedals, speed, gear. Cells wrap instead of overlapping. */
+.drive .spread { flex-wrap: wrap; }
+.drive-src { font-size: 12px; color: var(--ink-muted); }
+.drive-src b { color: var(--ink); font-weight: 600; }
+.drive-grid { display: flex; flex-wrap: wrap; gap: var(--space-6); align-items: flex-start; }
+.drive-cell { min-width: 0; }
+.drive-cell:nth-child(3) { flex: 1 1 220px; }
+.drive-cell:nth-child(4) { flex: 0 1 auto; }
+.steer-wheel { width: 188px; height: 188px; display: block; touch-action: none; user-select: none; opacity: .55; }
+.steer-wheel.live { opacity: 1; cursor: grab; }
+.steer-wheel.live:active { cursor: grabbing; }
+.steer-read { display: flex; justify-content: space-between; gap: var(--space-3); width: 188px; margin-top: 4px; font-size: 13px; }
+.pedals { display: flex; gap: var(--space-3); }
+.pedal-col { display: grid; justify-items: center; gap: 6px; }
+.pedal-v { position: relative; width: 56px; height: 164px; border-radius: 14px; background: var(--surface-2); border: 1px solid var(--line-strong); overflow: hidden; touch-action: none; user-select: none; opacity: .55; }
+.pedal-v.live { opacity: 1; cursor: ns-resize; }
+.pedal-v.down { box-shadow: inset 0 0 0 2px var(--ink); }
+.pedal-fill-v { position: absolute; left: 0; right: 0; bottom: 0; background: var(--ink); }
+.pedal-cmd-v { position: absolute; left: 6px; right: 6px; height: 0; border-top: 2px dashed var(--ink-muted); }
+.pedal-v.down .pedal-cmd-v { border-top-color: var(--surface-0); }
+
+/* Wheel panel */
+.wheel-panel .glyph-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; }
+.gl { display: grid; place-items: center; height: 34px; border-radius: var(--radius-sm); border: 1px solid var(--line); background: var(--surface-1); }
+.gl.on { background: var(--surface-3); box-shadow: inset 0 0 0 2px var(--ink); }
+.mini-bars { display: grid; gap: 6px; }
+.mini-bar { display: grid; grid-template-columns: 72px 1fr; align-items: center; gap: var(--space-2); }
+.mini-bar .track { position: relative; height: 6px; border-radius: 3px; background: var(--surface-2); }
+.mini-bar .fill { position: absolute; left: 0; top: 0; bottom: 0; background: var(--ink); border-radius: 3px; }
+.mini-bar .fill.c { min-width: 2px; }
+.hold-hw { position: relative; height: 28px; border-radius: var(--radius-pill); border: 1px solid var(--line-strong); overflow: hidden; display: grid; place-items: center; font: 600 12px/16px var(--font-sans); }
+.hold-hw div { position: absolute; left: 0; top: 0; bottom: 0; background: var(--amber-wash); }
+.hold-hw span { position: relative; }
+.halo-pulse { animation: tp-pulse 900ms ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .halo-pulse { animation: none; } }
+.keys { display: grid; gap: 2px; margin: 0; font-size: 12px; }
+.keys div { display: grid; grid-template-columns: 96px 1fr; }
+.keys dd { margin: 0; color: var(--ink-muted); }
+
+/* Closable side panels. Vehicles collapse to a rail of unit numbers; alerts collapse to toasts. */
+.console.no-left { grid-template-columns: 64px minmax(0, 1fr) minmax(280px, 320px); }
+.console.no-right { grid-template-columns: minmax(240px, 270px) minmax(0, 1fr); }
+.console.no-left.no-right { grid-template-columns: 64px minmax(0, 1fr); }
+.panel-bar { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); min-height: 36px; }
+.panel-bar .tp-btn { height: 30px; }
+.rail { gap: var(--space-2); justify-items: stretch; }
+.rail-toggle { height: 32px; border-radius: var(--radius-sm); border: 1px solid var(--line-strong); background: var(--surface-2); color: var(--ink); font: 650 12px/16px var(--font-sans); cursor: pointer; }
+.rail-toggle:hover { background: var(--surface-3); }
+.rail-unit { position: relative; height: 44px; border-radius: var(--radius-sm); border: 1px solid var(--line); background: var(--surface-1); color: var(--ink); cursor: pointer; font-size: 15px; font-weight: 700; padding-left: 6px; }
+.rail-unit::before { content: ""; position: absolute; left: 4px; top: 8px; bottom: 8px; width: 4px; border-radius: 2px; background: var(--st); }
+.rail-unit:hover { border-color: var(--line-strong); }
+.rail-unit.held { border-color: var(--amber); }
+.rail-unit.stopped { border-color: var(--stop); }
+.rail-unit.sel { box-shadow: inset 0 0 0 2px var(--ink); }
+.rail-assist { position: absolute; right: 4px; top: 4px; width: 8px; height: 8px; border-radius: 50%; border: 2px solid var(--amber); }
+.rail-unit:focus-visible, .rail-toggle:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.alerts-closed { display: flex; justify-content: flex-end; margin-bottom: calc(var(--space-2) * -1); }
+
+/* Toasts: newest on top, three at most, no shadow; a strong outline lifts them off the camera and deck. */
+/* Toasts sit in the camera's upper left, over sky and buildings: never over the road ahead, the map or Stop. */
+.toasts { position: absolute; left: 12px; top: 48px; width: min(340px, calc(100% - 24px)); display: grid; gap: var(--space-2); z-index: 4; }
+.toast { position: relative; border-radius: var(--radius-md); box-shadow: 0 0 0 1px var(--line-strong); }
+.toast .tp-alert { background: var(--surface-2); }
+.toast .tp-alert-critical { background: var(--stop-wash); }
+.toast.sel { box-shadow: 0 0 0 2px var(--ink); }
+.toast-x { position: absolute; right: var(--space-4); bottom: var(--space-3); height: 32px; padding: 0 10px; border: 0; border-radius: var(--radius-sm); background: transparent; color: var(--ink-muted); font: 600 13px/16px var(--font-sans); cursor: pointer; }
+.toast-x:hover { color: var(--ink); background: var(--surface-3); }
+.toast-all { height: 36px; border-radius: var(--radius-sm); border: 1px solid var(--line-strong); background: var(--surface-1); color: var(--ink); font: 650 13px/16px var(--font-sans); cursor: pointer; }
+.toast-all:hover { background: var(--surface-2); }
+@media (prefers-reduced-motion: no-preference) { .toast { animation: toast-in 160ms ease-out; } }
+@keyframes toast-in { from { opacity: 0; transform: translateY(8px); } }
+
+/* Narrower screens: the console scrolls as one page and columns take their content height. */
+@media (max-width: 1280px) {
+  .console { grid-template-columns: minmax(240px, 280px) minmax(0, 1fr); height: 100%; overflow: auto; align-content: start; }
+  .col { min-height: auto; overflow: visible; }
+  .col-right { grid-column: 1 / -1; }
+  .console.no-left, .console.no-left.no-right { grid-template-columns: 64px minmax(0, 1fr); }
+  .console.no-right { grid-template-columns: minmax(240px, 280px) minmax(0, 1fr); }
+}
+@media (max-width: 860px) {
+  .console { grid-template-columns: minmax(0, 1fr); padding: var(--space-3); }
+  .col-left { order: 2; } .col-center { order: 1; } .col-right { order: 3; }
+  .tiles { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  .console.no-left, .console.no-right, .console.no-left.no-right { grid-template-columns: minmax(0, 1fr); }
+  .rail { display: flex; flex-wrap: nowrap; overflow-x: auto; }
+  .col-left.rail { order: 0; min-height: 56px; overflow-y: hidden; }
+  .rail-unit, .rail-toggle { flex: 0 0 56px; }
+  .vbar-actions { margin-left: 0; justify-items: start; max-width: none; }
+  .vbar-actions .rb { text-align: left; }
+  .banner { padding: var(--space-3) var(--space-4); }
+  .banner .display-lg { font-size: 20px; }
+}
+
+.toast .tp-alert { padding: var(--space-2) var(--space-3); gap: var(--space-2); }
+.toast .tp-alert-detail { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+.toast .tp-alert-title { font-size: 14px; line-height: 18px; }
+.toast .tp-alert-ack { height: 28px; }
+.toast-x { bottom: var(--space-2); height: 28px; }
+
+/* ── Cockpit: status, camera and map, safety, and driving always fit the window ───────────────── */
+/* status / camera + map / drive + safety. The map and safety share the right-hand column. */
+.col-center { container-type: inline-size; }
+.cockpit { height: calc(100dvh - 56px - 2 * var(--space-4)); min-height: 520px; display: grid; gap: var(--space-3);
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 27%); grid-template-rows: auto minmax(200px, 1fr) auto; grid-template-areas: "status status" "camera map" "drive safety"; }
+.cockpit > .statusbar { grid-area: status; } .cockpit > .viewport { grid-area: camera; } .cockpit > .nav { grid-area: map; } .cockpit > .drive-wrap { grid-area: drive; } .cockpit > .safety { grid-area: safety; align-self: stretch; }
+.drive-wrap { container-type: inline-size; min-width: 0; display: grid; }
+
+.statusbar { display: flex; align-items: center; flex-wrap: wrap; gap: var(--space-2) var(--space-3); min-height: 52px; padding: 6px 8px 6px 6px; border-radius: var(--radius-md); border: 1px solid var(--line); background: var(--surface-1); }
+.statusbar.sb-op { background: var(--amber-wash); border-color: var(--amber); }
+.statusbar.sb-stop { background: var(--stop-fill); color: var(--on-stop); border-color: var(--stop-fill); }
+.statusbar.sb-stop .unit, .statusbar.sb-stop .rb, .statusbar.sb-stop .tp-link { color: var(--on-stop); }
+.statusbar.sb-trans .sb-msg { animation: tp-pulse 900ms ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .statusbar.sb-trans .sb-msg { animation: none; } }
+.sb-msg { flex: 1 1 160px; min-width: 0; font: 650 15px/20px var(--font-sans); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sb-meta { display: flex; align-items: center; gap: var(--space-3); }
+.sb-action { display: flex; align-items: center; gap: var(--space-2); margin-left: auto; min-width: 0; flex: 0 1 auto; }
+.sb-action .rb { order: -1; flex: 0 1 220px; min-width: 0; text-align: right; }
+@media (min-width: 861px) { .statusbar { flex-wrap: nowrap; } .sb-meta, .statusbar .sb-alerts, .statusbar .tp-state, .statusbar .tp-hold, .statusbar .tp-btn-primary { flex: none; } }
+.statusbar .tp-hold { height: 38px; min-width: 190px; font-size: 14px; }
+.statusbar .sb-alerts { height: 34px; }
+
+.cockpit .viewport { aspect-ratio: auto; height: 100%; min-height: 0; container-type: size; }
+.cockpit .nav { min-height: 0; }
+.cockpit .nav-map { min-height: 0; }
+.cockpit .nav-head { min-height: 0; padding: var(--space-2) var(--space-3); }
+.cockpit .nav-foot { padding: var(--space-2) var(--space-3); }
+.nav-next { flex: 1 1 100%; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 13px; }
+.nav-tools { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+.safety { display: grid; gap: var(--space-2); align-content: start; padding: var(--space-3); border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--surface-1); }
+.safety .estop-btn { height: 48px; width: 100%; }
+.safety .tp-hold { width: 100%; min-width: 0; height: 40px; }
+.safety-row .tp-btn { height: 32px; }
+.safety-row { display: flex; gap: var(--space-2); }
+.safety-row .tp-btn { flex: 1; }
+
+.drive-strip { display: grid; grid-template-columns: auto auto auto auto minmax(0, 1fr); grid-template-areas: "wheel pedals speed gear signals"; align-items: start; gap: var(--space-2) var(--space-4); padding: var(--space-3) var(--space-4); border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--surface-1); }
+.ds-cell { min-width: 0; }
+.ds-wheel { grid-area: wheel; } .drive-strip .pedals { grid-area: pedals; } .ds-speed { grid-area: speed; } .ds-gear { grid-area: gear; } .ds-signals { grid-area: signals; }
+/* Medium cockpits: signals tuck under speed and gear, beside the wheel. Confirmed readbacks give way;
+   refusals and failures (.warn) always stay visible. */
+@container (max-width: 1000px) {
+  .drive-strip .rb:not(.warn) { display: none; }
+  .drive-strip { grid-template-columns: auto auto minmax(170px, 1fr) auto; grid-template-areas: "wheel pedals speed gear" "wheel pedals signals signals"; }
+}
+/* Narrow cockpits: two rows of controls under the wheel row. */
+@container (max-width: 640px) {
+  .drive-strip { grid-template-columns: auto auto minmax(0, 1fr); grid-template-areas: "wheel pedals speed" "gear gear gear" "signals signals signals"; }
+  .ds-gear { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); }
+  .ds-wheel .steer-wheel { width: 108px; height: 108px; } .ds-wheel .steer-read { width: 108px; }
+  .drive-strip .pedal-v { height: 100px; }
+}
+@container (max-width: 1000px) {
+  .sb-action .rb { display: none; }
+  .sb-msg { flex-basis: 90px; }
+  .sb-meta .tp-link { display: none; }
+}
+.ds-wheel .steer-wheel { width: 128px; height: 128px; }
+.ds-wheel .steer-read { width: 128px; font-size: 11px; margin-top: 2px; }
+.drive-strip .pedals { gap: var(--space-2); }
+.drive-strip .pedal-v { width: 42px; height: 118px; border-radius: 12px; }
+.ds-speed, .ds-gear { display: grid; gap: var(--space-2); }
+.ds-signals { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-3); }
+.drive-strip .ctl { gap: 3px; }
+.drive-strip .seg { padding: 2px; flex-wrap: nowrap; }
+.drive-strip .seg button { height: 26px; padding: 0 10px; min-width: 34px; font-size: 12px; }
+.drive-strip .seg.lg button { height: 32px; min-width: 40px; font-size: 16px; }
+/* Readbacks fill their column but never widen it: long confirmations truncate, the full text is in the tooltip. */
+.drive-strip .rb { width: 0; min-width: 100%; max-width: none; white-space: nowrap; }
+.drive-strip .pedal-col .label { font-size: 10px; letter-spacing: .04em; }
+.drive-strip .pedal-col { width: 54px; }
+.drive-strip .seg.lg button { min-width: 36px; padding: 0 8px; }
+.drive-strip .seg button { min-width: 30px; padding: 0 8px; }
+.drive-strip .momentary { height: 32px; }
+.tp-btn.sq.sm { width: 26px; height: 26px; font-size: 15px; }
+.below { display: grid; gap: var(--space-3); }
+
+
+/* Narrow cockpits: safety becomes one row above a full-width drive strip, so the map keeps its height. */
+@container (max-width: 900px) {
+  .cockpit { grid-template-rows: auto minmax(180px, 1fr) auto auto; grid-template-areas: "status status" "camera map" "safety safety" "drive drive"; }
+  .safety { display: flex; align-items: center; flex-wrap: wrap; padding: var(--space-2) var(--space-3); }
+  .safety .estop-btn { width: auto; flex: 0 0 170px; height: 44px; }
+  .safety .tp-hold { width: auto; flex: 0 0 210px; }
+  .safety-row { flex: 0 0 auto; }
+  .safety > .rb { flex: 1 1 120px; }
+}
+@media (max-width: 860px) {
+  .cockpit { height: auto; min-height: 0; grid-template-columns: minmax(0, 1fr); grid-template-rows: none; grid-template-areas: "status" "camera" "safety" "drive" "map"; }
+  .cockpit-view { grid-template-columns: minmax(0, 1fr); }
+  .cockpit .viewport { aspect-ratio: 16 / 9; height: auto; }
+  .cockpit .nav { height: 340px; }
+  .sb-action { margin-left: 0; }
+  .sb-action .rb { display: none; }
+}
+@container (max-width: 640px) { .hud-tl { display: none; } .hud-tr { left: 10px; right: 10px; justify-content: center; } .hud-tr .tp-cam { padding: 0 10px; } }
+.drive-strip .pedal-col .label svg { display: none; }
+.drive-strip .pedal-col { width: 58px; }
+/* Phone-width strip: wheel and pedals side by side, then speed, gear and signals each on their own row. */
+@container (max-width: 480px) {
+  .drive-strip { grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "wheel pedals" "speed speed" "gear gear" "signals signals"; }
+  .drive-strip .pedals { justify-content: center; }
+}
+
+/* ── Perception and guidance on the camera ─────────────────────────────────────────────────── */
+.cam-canvas { cursor: crosshair; touch-action: none; }
+.hud-tr { gap: var(--space-2); }
+.hud-toggle { height: 32px; padding: 0 12px; border-radius: var(--radius-pill); border: 1px solid var(--line); background: rgb(16 18 20 / .78); color: var(--ink-muted); font: 600 12px/16px var(--font-sans); cursor: pointer; }
+.hud-toggle.on { background: var(--ink); color: var(--surface-0); border-color: var(--ink); }
+.hud-toggle:focus-visible, .guide-btn:focus-visible, .label-menu button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.guide-bar { position: absolute; left: 12px; right: 12px; bottom: 12px; display: grid; justify-items: center; gap: 6px; pointer-events: none; }
+.guide-btns { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; pointer-events: auto; }
+.guide-btn { height: 34px; padding: 0 14px; border-radius: var(--radius-pill); border: 1px solid var(--line-strong); background: rgb(16 18 20 / .82); color: #EEF0EE; font: 650 13px/16px var(--font-sans); cursor: pointer; user-select: none; touch-action: none; }
+.guide-btn:hover { background: rgb(44 49 54 / .92); }
+.guide-btn.down { background: var(--amber-fill); color: var(--on-amber); border-color: var(--amber-fill); }
+.guide-btn.brake.down { background: #EEF0EE; color: #101214; border-color: #EEF0EE; }
+.guide-status { padding: 3px 10px; border-radius: var(--radius-pill); background: rgb(16 18 20 / .78); color: #EEF0EE; font: 500 12px/16px var(--font-mono); text-align: center; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.guide-status .rb { color: inherit; }
+.viewport:has(.guide-bar) .hud-bl, .viewport:has(.guide-bar) .hud-br { bottom: 84px; }
+.label-menu { position: absolute; z-index: 5; width: 210px; padding: var(--space-2); border-radius: var(--radius-md); background: var(--surface-1); border: 1px solid var(--line-strong); display: grid; gap: var(--space-2); }
+.label-menu-head { display: grid; gap: 2px; padding: 2px 4px; }
+.label-menu-head .mono { font-size: 11px; }
+.label-menu-opts { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+.label-menu-opts button { height: 30px; padding: 0 6px; border-radius: var(--radius-sm); border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); font: 600 12px/14px var(--font-sans); cursor: pointer; text-align: left; }
+.label-menu-opts button:hover { background: var(--surface-3); }
+.label-menu .linkbtn { justify-self: start; padding: 2px 4px; }
+@container (max-width: 560px) { .guide-btn { padding: 0 10px; font-size: 12px; } .guide-status { display: none; } .viewport:has(.guide-bar) .hud-bl, .viewport:has(.guide-bar) .hud-br { bottom: 56px; } }
+.cam-canvas:not(.cam-overlay) { pointer-events: none; }

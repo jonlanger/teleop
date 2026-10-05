@@ -1,0 +1,40 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hardware-viewer",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8765",
+        "--directory",
+        "hardware"
+      ],
+      "port": 8765
+    },
+    {
+      "name": "teleop",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "software",
+        "run",
+        "dev"
+      ],
+      "port": 5180
+    },
+    {
+      "name": "design-system",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8766",
+        "--directory",
+        "design-system/project"
+      ],
+      "port": 8766
+    }
+  ]
+}

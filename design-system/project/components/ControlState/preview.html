@@ -1,0 +1,13 @@
+<!-- @dsCard group="Status" height=72 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>ControlState</title>
+<style>body{margin:0;padding:16px;background:var(--surface-0);color:var(--ink);font-family:var(--font-sans)}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.teleop, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'tp-row'},h(T.ControlState,{state:'autonomy',vehicle:'UNIT-14'}),h(T.ControlState,{state:'operator',vehicle:'UNIT-14'}),h(T.ControlState,{state:'transitioning'}),h(T.ControlState,{state:'stopped'}),h(T.ControlState,{state:'operator',size:'lg',vehicle:'UNIT-14'})));
+</script>
+</body>
+</html>

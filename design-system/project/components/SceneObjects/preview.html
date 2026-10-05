@@ -1,0 +1,96 @@
+<!-- @dsCard group="Scene" height=640 -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scene objects</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400..700&display=swap" rel="stylesheet">
+<style>
+  :root { --surface-0: #101214; --surface-1: #181B1E; --line: #363C42; --ink: #EEF0EE; --ink-muted: #9AA2A9; }
+  body { margin: 0; padding: 16px; background: var(--surface-0); color: var(--ink); font-family: Archivo, sans-serif; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 12px; }
+  .cell { background: var(--surface-1); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  .view { width: 100%; height: 170px; }
+  #c { position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
+  .grid { position: relative; }
+  .cap { padding: 8px 12px 10px; display: flex; justify-content: space-between; gap: 8px; }
+  .cap b { font-size: 13px; font-weight: 650; }
+  .cap span { font: 500 11px/16px "JetBrains Mono", monospace; color: var(--ink-muted); }
+  p { color: var(--ink-muted); font-size: 13px; margin: 0 0 12px; }
+</style>
+<script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/" } }</script>
+<script src="scene-kit.js"></script>
+</head>
+<body>
+<p>Standard scene objects. Facing +X, origin on the ground, metres. Shuttles show each control state on the halo strip.</p>
+<div class="grid" id="grid"></div>
+<canvas id="c"></canvas>
+<script type="module">
+  import * as THREE from "three";
+  import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+  const kit = window.teleop.createSceneKit(THREE);
+  const items = [
+    ["car", "Car", { paint: 0 }], ["car", "Car", { paint: 3 }], ["bus", "Bus"], ["truck", "Truck", { hazard: true }],
+    ["shuttle", "Shuttle · Autonomy", { halo: "autonomy" }], ["shuttle", "Shuttle · Operator", { halo: "operator" }],
+    ["pedestrian", "Pedestrian", { shirt: 0, pants: 0, skin: 0, walk: true }], ["cyclist", "Cyclist", { shirt: 1, pants: 0, skin: 1, ride: true }],
+    ["cone", "Cone"], ["barrier", "Construction barrier", { hazard: true }], ["tree", "Tree"], ["streetLight", "Street light"], ["stopShelter", "Stop shelter"],
+  ];
+  const canvas = document.getElementById("c");
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.outputColorSpace = THREE.SRGBColorSpace;
+  const env = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture;
+  const cells = items.map(([kind, label, opt = {}]) => {
+    const el = document.createElement("div"); el.className = "cell";
+    const cv = document.createElement("div"); cv.className = "view"; el.appendChild(cv);
+    const d = kit.dims[kind];
+    el.insertAdjacentHTML("beforeend", `<div class="cap"><b>${label}</b><span>${d[0]} × ${d[1]} × ${d[2]} m</span></div>`);
+    document.getElementById("grid").appendChild(el);
+    const scene = new THREE.Scene(); scene.environment = env;
+    scene.add(new THREE.HemisphereLight(0xc8d2da, 0x2a2e33, 1.1));
+    const sun = new THREE.DirectionalLight(0xfff1e0, 1.5); sun.position.set(4, 8, 3); scene.add(sun);
+    const ground = new THREE.Mesh(new THREE.CircleGeometry(Math.max(d[0], d[1]) * 0.9, 48), new THREE.MeshStandardMaterial({ color: "#2A2D30", roughness: 0.9 }));
+    ground.rotation.x = -Math.PI / 2; scene.add(ground);
+    const g = kit.templates[kind]();
+    g.traverse((m) => {
+      if (!m.isMesh || !m.userData.colorKey) return;
+      m.material = m.material.clone();
+      const k = m.userData.colorKey, P = kit.palette;
+      const c = k === "paint" ? P.paint[opt.paint ?? 0] : k === "shirt" ? P.shirt[opt.shirt ?? 0] : k === "pants" ? P.pants[opt.pants ?? 0] : k === "skin" ? P.skin[opt.skin ?? 0]
+        : k === "halo" ? P.halo[opt.halo ?? "autonomy"] : k === "hazard" ? P.amber : "#FFFFFF";
+      m.material.color.set(c); m.userData.hazard = k === "hazard";
+    });
+    scene.add(g);
+    const size = Math.max(d[0], d[1], d[2]);
+    const cam = new THREE.PerspectiveCamera(32, 1.2, 0.1, 200);
+    return { cv, scene, cam, g, kind, opt, size, d };
+  });
+  // One renderer for every tile: a page-sized canvas, drawn tile by tile through scissor viewports.
+  const t0 = performance.now();
+  function frame() {
+    requestAnimationFrame(frame);
+    const t = (performance.now() - t0) / 1000;
+    const W = document.documentElement.clientWidth, H = document.documentElement.scrollHeight;
+    canvas.style.height = H + "px";
+    renderer.setPixelRatio(Math.min(2, devicePixelRatio)); renderer.setSize(W, H, false);
+    renderer.setScissorTest(false); renderer.clear(); renderer.setScissorTest(true);
+    for (const c of cells) {
+      const r = c.cv.getBoundingClientRect(), top = r.top + window.scrollY;
+      if (r.bottom < 0 || r.top > innerHeight) continue;
+      const y = H - (top + r.height);
+      renderer.setViewport(r.left, y, r.width, r.height); renderer.setScissor(r.left, y, r.width, r.height);
+      c.cam.aspect = r.width / r.height; c.cam.updateProjectionMatrix();
+      // Frame the whole object: fit its bounding sphere to the narrower field of view.
+      const radius = Math.hypot(c.d[0], c.d[1], c.d[2]) / 2, fov = THREE.MathUtils.degToRad(c.cam.fov) / 2;
+      const rad = (radius / Math.sin(Math.min(fov, Math.atan(Math.tan(fov) * c.cam.aspect)))) * 1.05, a = t * 0.35 + 0.8;
+      c.cam.position.set(Math.cos(a) * rad * 0.9, c.d[2] * 0.5 + rad * 0.35, Math.sin(a) * rad * 0.9); c.cam.lookAt(0, c.d[2] * 0.5, 0);
+      if (c.opt.walk) kit.pose.pedestrian(c.g, t * 6);
+      if (c.opt.ride) kit.pose.cyclist(c.g, t * 4);
+      c.g.traverse((m) => { if (m.userData && m.userData.hazard) m.material.color.set(Math.floor(t * 1.6) % 2 ? kit.palette.amber : "#3A3530"); });
+      renderer.render(c.scene, c.cam);
+    }
+  }
+  frame();
+</script>
+</body>
+</html>

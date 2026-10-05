@@ -1,0 +1,46 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Cover</title>
+<style>
+  html, body { margin: 0; height: 100%; background: var(--surface-0); }
+  .cv { position: relative; width: 960px; height: 288px; overflow: hidden; }
+  svg { position: absolute; inset: 0; }
+  .slab { fill: var(--graphite); }
+  .mint { fill: var(--mint-fill); }
+  .amber { fill: var(--amber-fill); }
+  .stop { fill: var(--stop-fill); }
+  .white { fill: var(--robot-white); }
+  .ring { fill: none; stroke: var(--mint-fill); stroke-width: 24px; }
+  .spoke { stroke: var(--robot-white); stroke-width: 16px; stroke-linecap: round; }
+  .hub { fill: var(--robot-white); }
+  .r-lg { rx: var(--radius-lg); }
+  .r-md { rx: var(--radius-md); }
+  .name { position: absolute; left: 48px; bottom: 48px; width: 440px; }
+  .name h1 { margin: 0; font: italic 800 88px/0.92 var(--font-display); font-stretch: 125%; letter-spacing: -0.02em; color: var(--ink); }
+  .name p { margin: 12px 0 0; font: 400 14px/20px var(--font-sans); color: var(--ink-muted); }
+</style></head>
+<body>
+<div class="cv">
+  <!--
+    blocks: graphite slab 320×288 (body), mint-fill 160×176 (brand + autonomy), amber-fill 160×96 (operator), stop-fill 48×48 (the one stop), robot-white 96×48 (the original station's shell)
+    arrangement: one tall slab with satellites stacked flush on its right edge, bleeding off the top, right and bottom
+    pattern: literal motif, the halo: a mint ring with three robot-white spokes at 120° on the slab, because the wheel's LED ring, the mark and the state glyph are all this shape
+    scales: gaps 0 (flush, like a part break), satellites cut with radius-md, slab corner radius-lg, ring stroke = space-6, spokes = space-4
+  -->
+  <svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+    <rect class="slab r-lg" x="496" y="-24" width="320" height="336"/>
+    <rect class="mint r-md" x="816" y="-12" width="160" height="188"/>
+    <rect class="amber r-md" x="816" y="176" width="160" height="96"/>
+    <rect class="white r-md" x="720" y="272" width="96" height="48"/>
+    <rect class="stop r-md" x="816" y="272" width="48" height="48"/>
+    <circle class="ring" cx="656" cy="144" r="92"/>
+    <line class="spoke" x1="656" y1="144" x2="656" y2="64"/>
+    <line class="spoke" x1="656" y1="144" x2="586.7" y2="184"/>
+    <line class="spoke" x1="656" y1="144" x2="725.3" y2="184"/>
+    <circle class="hub" cx="656" cy="144" r="18"/>
+  </svg>
+  <div class="name"><h1>teleop</h1><p>One system for the wheel an operator holds and the console they watch.</p></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" font-family="Helvetica Neue, Arial, sans-serif">
+<rect width="1200" height="780" fill="#EDEDEA"/>
+<circle cx="600.0" cy="410.0" r="239.4" fill="none" stroke="#2B2E32" stroke-width="53.2"/>
+<path d="M411.4,262.6 A239.4,239.4 0 0 0 411.4,557.4" fill="none" stroke="#9C7552" stroke-width="54.1"/>
+<path d="M788.6,557.4 A239.4,239.4 0 0 0 788.6,262.6" fill="none" stroke="#9C7552" stroke-width="54.1"/>
+<path d="M761.7,264.4 A217.5,217.5 0 0 0 438.3,264.4" fill="none" stroke="#3CE6B4" stroke-width="3.0"/>
+<path d="M438.3,555.6 A217.5,217.5 0 0 0 761.7,555.6" fill="none" stroke="#3CE6B4" stroke-width="3.0"/>
+<rect x="379.6" y="315.0" width="440.8" height="190.0" rx="45.6" fill="#2B2E32"/>
+<rect x="394.8" y="326.4" width="410.4" height="167.2" rx="49.4" fill="#3A3E44" stroke="#22252A" stroke-width="1.5"/>
+<rect x="404.3" y="337.8" width="57.0" height="148.2" rx="28.5" fill="#26292D"/>
+<rect x="411.0" y="344.9" width="43.7" height="19.9" rx="9.9" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<rect x="411.0" y="368.7" width="43.7" height="19.9" rx="9.9" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<rect x="411.0" y="392.4" width="43.7" height="19.9" rx="9.9" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<path d="M424.2,433.8 h17.1 v13.3 h13.3 v17.1 h-13.3 v13.3 h-17.1 v-13.3 h-13.3 v-17.1 h13.3z" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<rect x="738.7" y="337.8" width="57.0" height="148.2" rx="28.5" fill="#26292D"/>
+<rect x="745.4" y="344.9" width="43.7" height="19.9" rx="9.9" fill="#3CE6B4" stroke="#1C1E21" stroke-width="1.5"/>
+<rect x="745.4" y="368.7" width="43.7" height="19.9" rx="9.9" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<rect x="745.4" y="392.4" width="43.7" height="19.9" rx="9.9" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<circle cx="767.2" cy="455.6" r="19.0" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<circle cx="767.2" cy="455.6" r="11.4" fill="#383C42" stroke="#26292D" stroke-width="1.5"/>
+<circle cx="600.0" cy="379.6" r="32.3" fill="#26292D" stroke="#1C1E21" stroke-width="1.5"/>
+<circle cx="600.0" cy="379.6" r="26.6" fill="#E8352B" stroke="#B5241C" stroke-width="1.5"/>
+<circle cx="668.4" cy="353.0" r="10.4" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<path d="M668.4,347.0 l5.5,9 h-11z" fill="#E8352B"/>
+<rect x="484.1" y="461.3" width="19.0" height="19.0" rx="4.8" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<rect x="696.9" y="461.3" width="19.0" height="19.0" rx="4.8" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<text x="600.0" y="452.2" text-anchor="middle" font-size="24" font-style="italic" font-weight="700" fill="#B9BEC4">teleop</text>
+<path d="M432.8,354.9 L314,200 L300,200" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="432.8" cy="354.9" r="2.5" fill="#1D1F21"/>
+<text x="294" y="205" text-anchor="end" font-size="15" fill="#1D1F21">Talk</text>
+<path d="M432.8,378.6 L314,240 L300,240" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="432.8" cy="378.6" r="2.5" fill="#1D1F21"/>
+<text x="294" y="245" text-anchor="end" font-size="15" fill="#1D1F21">Log</text>
+<path d="M432.8,402.4 L314,280 L300,280" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="432.8" cy="402.4" r="2.5" fill="#1D1F21"/>
+<text x="294" y="285" text-anchor="end" font-size="15" fill="#1D1F21">External speaker</text>
+<path d="M432.8,455.6 L314,470 L300,470" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="432.8" cy="455.6" r="2.5" fill="#1D1F21"/>
+<text x="294" y="475" text-anchor="end" font-size="15" fill="#1D1F21">D-pad · alerts, menus, camera</text>
+<path d="M493.6,470.8 L314,540 L300,540" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="493.6" cy="470.8" r="2.5" fill="#1D1F21"/>
+<text x="294" y="545" text-anchor="end" font-size="15" fill="#1D1F21">P1 (programmable)</text>
+<path d="M600.0,347.3 L886,150 L900,150" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="600.0" cy="347.3" r="2.5" fill="#1D1F21"/>
+<text x="906" y="155" text-anchor="start" font-size="15" fill="#1D1F21">Emergency stop</text>
+<path d="M668.4,343.5 L886,185 L900,185" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="668.4" cy="343.5" r="2.5" fill="#1D1F21"/>
+<text x="906" y="190" text-anchor="start" font-size="15" fill="#1D1F21">Hazard</text>
+<path d="M767.2,354.9 L886,230 L900,230" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="767.2" cy="354.9" r="2.5" fill="#1D1F21"/>
+<text x="906" y="235" text-anchor="start" font-size="15" fill="#1D1F21">Claim vehicle</text>
+<path d="M767.2,378.6 L886,270 L900,270" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="767.2" cy="378.6" r="2.5" fill="#1D1F21"/>
+<text x="906" y="275" text-anchor="start" font-size="15" fill="#1D1F21">Release vehicle (hold)</text>
+<path d="M767.2,402.4 L886,310 L900,310" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="767.2" cy="402.4" r="2.5" fill="#1D1F21"/>
+<text x="906" y="315" text-anchor="start" font-size="15" fill="#1D1F21">Horn</text>
+<path d="M767.2,455.6 L886,470 L900,470" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="767.2" cy="455.6" r="2.5" fill="#1D1F21"/>
+<text x="906" y="475" text-anchor="start" font-size="15" fill="#1D1F21">Stick · look, click = acknowledge</text>
+<path d="M706.4,470.8 L886,540 L900,540" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="706.4" cy="470.8" r="2.5" fill="#1D1F21"/>
+<text x="906" y="545" text-anchor="start" font-size="15" fill="#1D1F21">P2 (programmable)</text>
+<text x="40" y="52" font-size="22" font-weight="700" fill="#1D1F21">teleop Wheel · faceplate v4</text>
+<text x="40" y="78" font-size="14" fill="#6B6E70">One button column per thumb, stick or D-pad at the base of each. No spoke web: the hub band joins the rim. Paddles stay behind.</text>
+</svg>

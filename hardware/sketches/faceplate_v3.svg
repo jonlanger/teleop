@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" font-family="Helvetica Neue, Arial, sans-serif">
+<rect width="1200" height="780" fill="#EDEDEA"/>
+<circle cx="600.0" cy="410.0" r="239.4" fill="none" stroke="#2B2E32" stroke-width="53.2"/>
+<path d="M411.4,262.6 A239.4,239.4 0 0 0 411.4,557.4" fill="none" stroke="#9C7552" stroke-width="54.1"/>
+<path d="M788.6,557.4 A239.4,239.4 0 0 0 788.6,262.6" fill="none" stroke="#9C7552" stroke-width="54.1"/>
+<circle cx="600.0" cy="410.0" r="212.8" fill="#33373C"/>
+<path d="M761.7,264.4 A217.5,217.5 0 0 0 438.3,264.4" fill="none" stroke="#3CE6B4" stroke-width="3.0"/>
+<path d="M438.3,555.6 A217.5,217.5 0 0 0 761.7,555.6" fill="none" stroke="#3CE6B4" stroke-width="3.0"/>
+<rect x="482.2" y="216.2" width="235.6" height="83.6" rx="38.0" fill="#EDEDEA"/>
+<rect x="482.2" y="520.2" width="235.6" height="83.6" rx="38.0" fill="#EDEDEA"/>
+<rect x="379.6" y="315.0" width="440.8" height="190.0" rx="45.6" fill="#2B2E32"/>
+<rect x="394.8" y="326.4" width="410.4" height="167.2" rx="49.4" fill="#3A3E44" stroke="#22252A" stroke-width="1.5"/>
+<circle cx="600.0" cy="375.8" r="34.2" fill="#26292D" stroke="#1C1E21" stroke-width="1.5"/>
+<circle cx="600.0" cy="375.8" r="28.5" fill="#E8352B" stroke="#B5241C" stroke-width="1.5"/>
+<circle cx="672.2" cy="353.0" r="11.4" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<path d="M672.2,346.5 l6,10 h-12z" fill="#E8352B"/>
+<rect x="479.4" y="353.9" width="20.9" height="20.9" rx="4.8" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<rect x="479.4" y="388.1" width="20.9" height="20.9" rx="4.8" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<rect x="699.8" y="353.9" width="20.9" height="20.9" rx="4.8" fill="#3CE6B4" stroke="#1C1E21" stroke-width="1.5"/>
+<rect x="699.8" y="388.1" width="20.9" height="20.9" rx="4.8" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<circle cx="482.2" cy="474.6" r="10.4" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<circle cx="717.8" cy="474.6" r="10.4" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<circle cx="436.6" cy="436.6" r="28.5" fill="#26292D" stroke="#1C1E21" stroke-width="1.5"/>
+<path d="M428.1,413.8 h17.1 v14.2 h14.2 v17.1 h-14.2 v14.2 h-17.1 v-14.2 h-14.2 v-17.1 h14.2z" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<circle cx="763.4" cy="436.6" r="28.5" fill="#26292D" stroke="#1C1E21" stroke-width="1.5"/>
+<circle cx="763.4" cy="436.6" r="19.0" fill="#2E3237" stroke="#1C1E21" stroke-width="1.5"/>
+<circle cx="763.4" cy="436.6" r="11.4" fill="#383C42" stroke="#26292D" stroke-width="1.5"/>
+<text x="600.0" y="444.6" text-anchor="middle" font-size="24" font-style="italic" font-weight="700" fill="#B9BEC4">teleop</text>
+<path d="M489.8,364.4 L314,230 L300,230" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="489.8" cy="364.4" r="2.5" fill="#1D1F21"/>
+<text x="294" y="235" text-anchor="end" font-size="15" fill="#1D1F21">Talk</text>
+<path d="M489.8,398.6 L314,270 L300,270" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="489.8" cy="398.6" r="2.5" fill="#1D1F21"/>
+<text x="294" y="275" text-anchor="end" font-size="15" fill="#1D1F21">Log</text>
+<path d="M482.2,474.6 L314,470 L300,470" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="482.2" cy="474.6" r="2.5" fill="#1D1F21"/>
+<text x="294" y="475" text-anchor="end" font-size="15" fill="#1D1F21">External speaker</text>
+<path d="M436.6,465.1 L314,520 L300,520" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="436.6" cy="465.1" r="2.5" fill="#1D1F21"/>
+<text x="294" y="525" text-anchor="end" font-size="15" fill="#1D1F21">D-pad · alerts and menus, ◀ ▶ camera</text>
+<path d="M600.0,341.6 L886,150 L900,150" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="600.0" cy="341.6" r="2.5" fill="#1D1F21"/>
+<text x="906" y="155" text-anchor="start" font-size="15" fill="#1D1F21">Emergency stop · plain mushroom, thin bezel</text>
+<path d="M672.2,341.6 L886,190 L900,190" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="672.2" cy="341.6" r="2.5" fill="#1D1F21"/>
+<text x="906" y="195" text-anchor="start" font-size="15" fill="#1D1F21">Hazard</text>
+<path d="M710.2,364.4 L886,300 L900,300" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="710.2" cy="364.4" r="2.5" fill="#1D1F21"/>
+<text x="906" y="305" text-anchor="start" font-size="15" fill="#1D1F21">Claim vehicle (mint)</text>
+<path d="M710.2,398.6 L886,270 L900,270" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="710.2" cy="398.6" r="2.5" fill="#1D1F21"/>
+<text x="906" y="275" text-anchor="start" font-size="15" fill="#1D1F21">Release vehicle (hold)</text>
+<path d="M717.8,474.6 L886,470 L900,470" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="717.8" cy="474.6" r="2.5" fill="#1D1F21"/>
+<text x="906" y="475" text-anchor="start" font-size="15" fill="#1D1F21">Horn</text>
+<path d="M763.4,465.1 L886,520 L900,520" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="763.4" cy="465.1" r="2.5" fill="#1D1F21"/>
+<text x="906" y="525" text-anchor="start" font-size="15" fill="#1D1F21">Stick · look around, click = acknowledge</text>
+<path d="M600.0,451.8 L886,610 L900,610" fill="none" stroke="#7A7D80" stroke-width="1"/>
+<circle cx="600.0" cy="451.8" r="2.5" fill="#1D1F21"/>
+<text x="906" y="615" text-anchor="start" font-size="15" fill="#1D1F21">Printed wordmark (horn pad and display removed)</text>
+<text x="40" y="52" font-size="22" font-weight="700" fill="#1D1F21">teleop Wheel · faceplate v3</text>
+<text x="40" y="78" font-size="14" fill="#6B6E70">Upper outer corners stay empty as thumb rests. P1/P2 and paddles stay on the back. Link status moves to the halo and the console.</text>
+</svg>

@@ -1,0 +1,1141 @@
+Blender 4.1.1 (hash e1743a0317bc built 2024-04-16 00:06:22)
+Read prefs: "/Users/jonlanger/Library/Application Support/Blender/4.1/config/userpref.blend"
+Info: Registering operator class: 'OBJECT_OT_AlignOperator', bl_idname 'object.align' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'OBJECT_OT_AlignOperator', bl_idname 'object.align' has been registered before, unregistering previous
+hub junction: ext 9 inner 17
+clamshell Column_Cover_Upper variant {'rp': 16, 're': 12} open edges 0
+clamshell Base_Shell variant {'cs': {'lip_h': 3.0, 'clearance': 0.08}} open edges 0
+NONMANIFOLD Wheel_Front_Shell: 2 edges
+NONMANIFOLD Wheel_Rear_Shell: 8 edges
+NONMANIFOLD Column_Cover_Upper: 1 edges
+NONMANIFOLD Base_Shell: 25 edges
+NONMANIFOLD Base_Bottom: 11 edges
+Info: Total files 1 | Changed 1 | Failed 0
+Info: Saved "model.blend"
+exporting
+00:53:38 | INFO: Draco mesh compression is available, use library at /Applications/Blender.app/Contents/Resources/4.1/python/lib/python3.11/site-packages/libextern_draco.dylib
+00:53:38 | INFO: Starting glTF 2.0 export
+00:53:38 | INFO: Extracting primitive: wheel_ext.023
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: wheel_ext.022
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: grip.003
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: grip.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: grip.006
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: grip.004
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Halo_Guide_Upper
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Halo_Guide_Lower
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hub_Faceplate.006
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: EStop_Bezel.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: EStop_Cap.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_Hazard.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Print_Hazard
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_P1.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_P2.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Key_Column_L.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_Talk.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_Log.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_ExtSpeaker.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: DPad.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Key_Column_R.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_Claim.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_Release.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_Horn.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Stick_Gimbal
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Stick_Cap.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Print_Faceplate_Wordmark_txt
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Print_SpeakerDots
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hub_Rear_Cover.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Hub_1
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Hub_2
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Hub_3
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Hub_4
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Magnet_1
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Strike_1
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Magnet_2
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Strike_2
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Magnet_3
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Strike_3
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Magnet_4
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Strike_4
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Paddle_Brake_L.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Paddle_Throttle_R.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hub_PCB.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: EStop_ContactBlock
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Stick_Module
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Clock_Spring.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Haptic_LRA_L
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Haptic_LRA_R
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: col_ext.018
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: col_ext.020
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Steer_Motor.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: base_ext.061
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: base_ext.059
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Cap_L.003
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Cap_R.003
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Tilt_Knuckle.003
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Print_TiltIndex
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Axle
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Friction_Pack_L
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Detent_Ring_L
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Friction_Pack_R
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Detent_Ring_R
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Stop_Pin
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Cap_La
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Cap_Lb
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Cap_Ra
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Cap_Rb
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Foot_1
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Base_1
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Foot_2
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Base_2
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Foot_3
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Base_3
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Foot_4
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Base_4
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: USB_C_Receptacle.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: USB_Board
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Ballast_Plate
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Main_PCB
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Wordmark_R_txt
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Wordmark_L_txt
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Finished glTF 2.0 export in 0.2163410186767578 s
+
+00:53:38 | INFO: Draco mesh compression is available, use library at /Applications/Blender.app/Contents/Resources/4.1/python/lib/python3.11/site-packages/libextern_draco.dylib
+00:53:38 | INFO: Starting glTF 2.0 export
+00:53:38 | INFO: Extracting primitive: Ballast_Plate
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: base_ext.059
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: base_ext.061
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Foot_1
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Foot_2
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Foot_3
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Foot_4
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Axle
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Cap_L.003
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Cap_R.003
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Friction_Pack_L
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Friction_Pack_R
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Main_PCB
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Base_1
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Base_2
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Base_3
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Base_4
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Cap_La
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Cap_Lb
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Cap_Ra
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Cap_Rb
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: USB_Board
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: USB_C_Receptacle.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Wordmark_L_txt
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Wordmark_R_txt
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: col_ext.020
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: col_ext.018
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Detent_Ring_L
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Detent_Ring_R
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hinge_Stop_Pin
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Print_TiltIndex
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Clock_Spring.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: EStop_Bezel.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: EStop_ContactBlock
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: grip.003
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: grip.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: grip.006
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: grip.004
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Halo_Guide_Lower
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Halo_Guide_Upper
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Haptic_LRA_L
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Haptic_LRA_R
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hub_Faceplate.006
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hub_PCB.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Hub_Rear_Cover.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_Claim.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Key_Column_L.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Key_Column_R.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: DPad.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: EStop_Cap.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_ExtSpeaker.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Print_SpeakerDots
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_Hazard.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Print_Hazard
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_Horn.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_Log.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_P1.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_P2.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_Release.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Stick_Cap.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Stick_Gimbal
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Btn_Talk.002
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Magnet_1
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Magnet_2
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Magnet_3
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Magnet_4
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Paddle_Brake_L.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Paddle_Throttle_R.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Print_Faceplate_Wordmark_txt
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Hub_1
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Hub_2
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Hub_3
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Screw_Hub_4
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Stick_Module
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Strike_1
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Strike_2
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Strike_3
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Strike_4
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: wheel_ext.023
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: wheel_ext.022
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Steer_Motor.001
+00:53:38 | INFO: Primitives created: 1
+00:53:38 | INFO: Extracting primitive: Tilt_Knuckle.003
+00:53:38 | INFO: Primitives created: 1
+00:53:39 | INFO: Finished glTF 2.0 export in 0.5442078113555908 s
+
+RIG OK 19 empties, 7 clips
+Info: Saved "model.blend"
+BUILD OK 82 parts
+Fra:0 Mem:86.55M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Sweep
+Fra:0 Mem:86.55M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Key
+Fra:0 Mem:86.55M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Top
+Fra:0 Mem:86.55M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Grip_R_Rear
+Fra:0 Mem:86.55M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Halo_Guide_Lower
+Fra:0 Mem:86.56M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_Faceplate
+Fra:0 Mem:86.64M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_Bezel
+Fra:0 Mem:88.66M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wordmark_L
+Fra:0 Mem:91.54M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Hazard
+Fra:0 Mem:92.01M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_Hazard
+Fra:0 Mem:91.80M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_P1
+Fra:0 Mem:91.85M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Key_Column_L
+Fra:0 Mem:94.54M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Talk
+Fra:0 Mem:94.83M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Log
+Fra:0 Mem:94.89M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_ExtSpeaker
+Fra:0 Mem:94.59M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | DPad
+Fra:0 Mem:95.16M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Key_Column_R
+Fra:0 Mem:96.05M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Claim
+Fra:0 Mem:96.52M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Release
+Fra:0 Mem:95.78M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Horn
+Fra:0 Mem:96.58M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Gimbal
+Fra:0 Mem:97.09M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Cap
+Fra:0 Mem:97.17M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_Faceplate_Wordmark
+Fra:0 Mem:98.18M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_SpeakerDots
+Fra:0 Mem:98.48M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_Rear_Cover
+Fra:0 Mem:98.16M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_1
+Fra:0 Mem:98.70M (Peak 99.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_2
+Fra:0 Mem:99.01M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_3
+Fra:0 Mem:99.52M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wordmark_R
+Fra:0 Mem:99.11M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_4
+Fra:0 Mem:99.12M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_1
+Fra:0 Mem:99.21M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_1
+Fra:0 Mem:98.81M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_2
+Fra:0 Mem:98.83M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_2
+Fra:0 Mem:98.85M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_3
+Fra:0 Mem:98.77M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_3
+Fra:0 Mem:98.59M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Paddle_Brake_L
+Fra:0 Mem:98.60M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Paddle_Throttle_R
+Fra:0 Mem:98.64M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_ContactBlock
+Fra:0 Mem:98.87M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Clock_Spring
+Fra:0 Mem:98.97M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Haptic_LRA_L
+Fra:0 Mem:99.11M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Haptic_LRA_R
+Fra:0 Mem:99.39M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Column_Cover_Upper
+Fra:0 Mem:99.48M (Peak 99.90M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Column_Cover_Lower
+Fra:0 Mem:100.01M (Peak 100.01M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Steer_Motor
+Fra:0 Mem:100.04M (Peak 100.04M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Base_Shell
+Fra:0 Mem:100.40M (Peak 100.40M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Base_Bottom
+Fra:0 Mem:100.62M (Peak 100.62M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Cap_R
+Fra:0 Mem:100.63M (Peak 100.63M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Main_PCB
+Fra:0 Mem:101.24M (Peak 101.24M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Ballast_Plate
+Fra:0 Mem:101.86M (Peak 101.86M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | USB_Board
+Fra:0 Mem:102.07M (Peak 102.07M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | USB_C_Receptacle
+Fra:0 Mem:102.04M (Peak 102.07M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tilt_Knuckle
+Fra:0 Mem:102.17M (Peak 102.17M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_TiltIndex
+Fra:0 Mem:102.29M (Peak 102.29M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Axle
+Fra:0 Mem:102.55M (Peak 102.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Friction_Pack_L
+Fra:0 Mem:102.57M (Peak 102.57M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_4
+Fra:0 Mem:102.64M (Peak 102.64M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Detent_Ring_L
+Fra:0 Mem:103.05M (Peak 103.05M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Friction_Pack_R
+Fra:0 Mem:102.85M (Peak 103.05M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Detent_Ring_R
+Fra:0 Mem:102.94M (Peak 103.05M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Stop_Pin
+Fra:0 Mem:103.97M (Peak 103.97M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_La
+Fra:0 Mem:104.10M (Peak 104.10M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Lb
+Fra:0 Mem:104.14M (Peak 104.14M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Ra
+Fra:0 Mem:104.59M (Peak 104.59M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Rb
+Fra:0 Mem:104.58M (Peak 104.59M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_4
+Fra:0 Mem:104.65M (Peak 104.65M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_3
+Fra:0 Mem:105.41M (Peak 105.41M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_1
+Fra:0 Mem:105.30M (Peak 105.41M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_3
+Fra:0 Mem:105.46M (Peak 105.46M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_2
+Fra:0 Mem:105.46M (Peak 105.46M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_1
+Fra:0 Mem:105.40M (Peak 105.46M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_2
+Fra:0 Mem:99.69M (Peak 105.46M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:0 Mem:93.64M (Peak 105.46M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:0 Mem:93.64M (Peak 105.46M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:0 Mem:93.64M (Peak 105.46M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:0 Mem:93.64M (Peak 105.46M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:0 Mem:93.74M (Peak 105.46M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Procedurals
+Fra:0 Mem:93.74M (Peak 105.46M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Background
+Fra:0 Mem:93.74M (Peak 105.46M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Camera
+Fra:0 Mem:93.74M (Peak 105.46M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Meshes Flags
+Fra:0 Mem:93.74M (Peak 105.46M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects
+Fra:0 Mem:93.74M (Peak 105.46M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:0 Mem:93.76M (Peak 105.46M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:0 Mem:93.76M (Peak 105.46M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems
+Fra:0 Mem:93.76M (Peak 105.46M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:0 Mem:93.76M (Peak 105.46M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Meshes
+Fra:0 Mem:96.80M (Peak 105.46M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:0 Mem:98.34M (Peak 105.46M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:0 Mem:98.33M (Peak 105.46M) | Time:00:00.02 | Mem:1.56M, Peak:1.56M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:0 Mem:98.33M (Peak 105.46M) | Time:00:00.02 | Mem:1.56M, Peak:1.56M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:0 Mem:98.33M (Peak 105.46M) | Time:00:00.03 | Mem:7.65M, Peak:7.65M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:0 Mem:98.33M (Peak 105.46M) | Time:00:00.03 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:0 Mem:98.33M (Peak 105.46M) | Time:00:00.03 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Objects Flags
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Images
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Camera Volume
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:0 Mem:106.31M (Peak 106.31M) | Time:00:00.03 | Mem:22.33M, Peak:22.33M | Scene, ViewLayer | Updating Integrator
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.04 | Mem:23.33M, Peak:23.33M | Scene, ViewLayer | Updating Film
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.04 | Mem:23.25M, Peak:23.33M | Scene, ViewLayer | Updating Lookup Tables
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.04 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Updating Baking
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.04 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.04 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Sample 0/48
+Fra:0 Mem:246.53M (Peak 246.53M) | Time:00:00.78 | Remaining:00:35.14 | Mem:162.50M, Peak:162.50M | Scene, ViewLayer | Sample 1/48
+Fra:0 Mem:246.53M (Peak 246.53M) | Time:00:23.90 | Remaining:00:10.84 | Mem:162.50M, Peak:162.50M | Scene, ViewLayer | Sample 33/48
+Fra:0 Mem:305.12M (Peak 393.02M) | Time:00:36.01 | Mem:162.50M, Peak:162.50M | Scene, ViewLayer | Sample 48/48
+Fra:0 Mem:305.12M (Peak 393.02M) | Time:00:36.01 | Mem:162.50M, Peak:162.50M | Scene, ViewLayer | Finished
+Saved: '/Users/jonlanger/Documents/Projects/teleop/hardware/out_v5/hero.png'
+Time: 00:36.22 (Saving: 00:00.20)
+
+Fra:0 Mem:90.19M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Sweep
+Fra:0 Mem:90.19M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Grip_L_Front
+Fra:0 Mem:90.20M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Grip_R_Front
+Fra:0 Mem:90.25M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Grip_R_Rear
+Fra:0 Mem:90.29M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Halo_Guide_Upper
+Fra:0 Mem:90.37M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Halo_Guide_Lower
+Fra:0 Mem:90.36M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_Faceplate
+Fra:0 Mem:90.52M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_Bezel
+Fra:0 Mem:91.50M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wordmark_L
+Fra:0 Mem:92.75M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_Cap
+Fra:0 Mem:94.75M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Hazard
+Fra:0 Mem:96.25M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_Hazard
+Fra:0 Mem:96.09M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_P1
+Fra:0 Mem:96.08M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_P2
+Fra:0 Mem:96.03M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Key_Column_L
+Fra:0 Mem:95.65M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Claim
+Fra:0 Mem:95.86M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Release
+Fra:0 Mem:96.97M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wordmark_R
+Fra:0 Mem:97.65M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Horn
+Fra:0 Mem:98.06M (Peak 99.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Gimbal
+Fra:0 Mem:99.77M (Peak 99.76M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Cap
+Fra:0 Mem:99.97M (Peak 99.97M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_Faceplate_Wordmark
+Fra:0 Mem:100.52M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Main_PCB
+Fra:0 Mem:99.54M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_SpeakerDots
+Fra:0 Mem:99.75M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Ballast_Plate
+Fra:0 Mem:99.61M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_1
+Fra:0 Mem:99.79M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_2
+Fra:0 Mem:100.03M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_3
+Fra:0 Mem:100.80M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_4
+Fra:0 Mem:100.84M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_1
+Fra:0 Mem:100.45M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | USB_Board
+Fra:0 Mem:100.54M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_1
+Fra:0 Mem:100.05M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_2
+Fra:0 Mem:99.78M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_3
+Fra:0 Mem:99.94M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_4
+Fra:0 Mem:100.04M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_4
+Fra:0 Mem:100.22M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Paddle_Brake_L
+Fra:0 Mem:100.64M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Paddle_Throttle_R
+Fra:0 Mem:100.13M (Peak 100.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_PCB
+Fra:0 Mem:101.67M (Peak 101.67M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_ContactBlock
+Fra:0 Mem:101.47M (Peak 101.67M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Module
+Fra:0 Mem:101.49M (Peak 101.67M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_4
+Fra:0 Mem:101.41M (Peak 101.67M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Clock_Spring
+Fra:0 Mem:101.66M (Peak 101.67M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Haptic_LRA_L
+Fra:0 Mem:101.75M (Peak 101.75M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Haptic_LRA_R
+Fra:0 Mem:102.13M (Peak 102.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Column_Cover_Upper
+Fra:0 Mem:102.34M (Peak 102.34M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Column_Cover_Lower
+Fra:0 Mem:102.96M (Peak 102.96M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Steer_Motor
+Fra:0 Mem:103.25M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Base_Shell
+Fra:0 Mem:101.16M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Base_Bottom
+Fra:0 Mem:101.29M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Cap_L
+Fra:0 Mem:101.89M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Cap_R
+Fra:0 Mem:101.44M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_4
+Fra:0 Mem:101.92M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_3
+Fra:0 Mem:101.80M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tilt_Knuckle
+Fra:0 Mem:101.98M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_TiltIndex
+Fra:0 Mem:102.28M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Axle
+Fra:0 Mem:102.47M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Friction_Pack_L
+Fra:0 Mem:100.70M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Detent_Ring_L
+Fra:0 Mem:100.84M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Friction_Pack_R
+Fra:0 Mem:101.02M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Detent_Ring_R
+Fra:0 Mem:101.34M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Stop_Pin
+Fra:0 Mem:101.67M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_La
+Fra:0 Mem:101.74M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Lb
+Fra:0 Mem:101.91M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Ra
+Fra:0 Mem:102.00M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Rb
+Fra:0 Mem:101.33M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_1
+Fra:0 Mem:101.00M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_2
+Fra:0 Mem:100.77M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_3
+Fra:0 Mem:100.87M (Peak 103.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_2
+Fra:0 Mem:99.69M (Peak 103.25M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:0 Mem:93.64M (Peak 103.25M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:0 Mem:93.64M (Peak 103.25M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:0 Mem:93.64M (Peak 103.25M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:0 Mem:93.64M (Peak 103.25M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:0 Mem:93.74M (Peak 103.25M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Procedurals
+Fra:0 Mem:93.74M (Peak 103.25M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Background
+Fra:0 Mem:93.74M (Peak 103.25M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Camera
+Fra:0 Mem:93.74M (Peak 103.25M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Meshes Flags
+Fra:0 Mem:93.74M (Peak 103.25M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects
+Fra:0 Mem:93.74M (Peak 103.25M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:0 Mem:93.76M (Peak 103.25M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:0 Mem:93.76M (Peak 103.25M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems
+Fra:0 Mem:93.76M (Peak 103.25M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:0 Mem:93.76M (Peak 103.25M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Meshes
+Fra:0 Mem:96.80M (Peak 103.25M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:0 Mem:98.34M (Peak 103.25M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:0 Mem:98.33M (Peak 103.25M) | Time:00:00.02 | Mem:1.56M, Peak:1.56M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:0 Mem:98.33M (Peak 103.25M) | Time:00:00.02 | Mem:1.56M, Peak:1.56M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:0 Mem:98.33M (Peak 103.25M) | Time:00:00.02 | Mem:7.65M, Peak:7.65M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:0 Mem:98.33M (Peak 103.25M) | Time:00:00.03 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:0 Mem:98.33M (Peak 103.25M) | Time:00:00.03 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Objects Flags
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Images
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Camera Volume
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:0 Mem:106.31M (Peak 106.31M) | Time:00:00.03 | Mem:22.33M, Peak:22.33M | Scene, ViewLayer | Updating Integrator
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.33M, Peak:23.33M | Scene, ViewLayer | Updating Film
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.25M, Peak:23.33M | Scene, ViewLayer | Updating Lookup Tables
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Updating Baking
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Sample 0/48
+Fra:0 Mem:223.33M (Peak 223.33M) | Time:00:00.82 | Remaining:00:37.14 | Mem:139.30M, Peak:139.30M | Scene, ViewLayer | Sample 1/48
+Fra:0 Mem:223.33M (Peak 223.33M) | Time:00:26.09 | Remaining:00:11.84 | Mem:139.30M, Peak:139.30M | Scene, ViewLayer | Sample 33/48
+Fra:0 Mem:272.17M (Peak 345.41M) | Time:00:40.24 | Mem:139.30M, Peak:139.30M | Scene, ViewLayer | Sample 48/48
+Fra:0 Mem:272.17M (Peak 345.41M) | Time:00:40.24 | Mem:139.30M, Peak:139.30M | Scene, ViewLayer | Finished
+Saved: '/Users/jonlanger/Documents/Projects/teleop/hardware/out_v5/hub.png'
+Time: 00:40.38 (Saving: 00:00.12)
+
+Fra:0 Mem:90.19M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Sweep
+Fra:0 Mem:90.20M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wheel_Front_Shell
+Fra:0 Mem:90.20M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Grip_L_Rear
+Fra:0 Mem:90.22M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Grip_R_Front
+Fra:0 Mem:90.29M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Grip_R_Rear
+Fra:0 Mem:90.42M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_Faceplate
+Fra:0 Mem:90.53M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_Cap
+Fra:0 Mem:90.76M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Hazard
+Fra:0 Mem:91.22M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_Hazard
+Fra:0 Mem:91.35M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wordmark_L
+Fra:0 Mem:94.05M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_P1
+Fra:0 Mem:94.23M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_P2
+Fra:0 Mem:94.49M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Talk
+Fra:0 Mem:94.95M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Log
+Fra:0 Mem:96.10M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_ExtSpeaker
+Fra:0 Mem:97.12M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | DPad
+Fra:0 Mem:96.64M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wordmark_R
+Fra:0 Mem:97.25M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Key_Column_R
+Fra:0 Mem:97.87M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Claim
+Fra:0 Mem:98.31M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Release
+Fra:0 Mem:97.88M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Horn
+Fra:0 Mem:98.43M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Gimbal
+Fra:0 Mem:99.30M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Cap
+Fra:0 Mem:99.02M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_Faceplate_Wordmark
+Fra:0 Mem:99.02M (Peak 99.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_SpeakerDots
+Fra:0 Mem:100.37M (Peak 100.37M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Main_PCB
+Fra:0 Mem:100.74M (Peak 100.74M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_Rear_Cover
+Fra:0 Mem:100.74M (Peak 100.74M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Ballast_Plate
+Fra:0 Mem:100.17M (Peak 100.74M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | USB_Board
+Fra:0 Mem:100.26M (Peak 100.74M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | USB_C_Receptacle
+Fra:0 Mem:100.32M (Peak 100.74M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_1
+Fra:0 Mem:101.03M (Peak 101.03M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_2
+Fra:0 Mem:100.82M (Peak 101.03M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_4
+Fra:0 Mem:101.44M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_3
+Fra:0 Mem:101.07M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_4
+Fra:0 Mem:101.23M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_3
+Fra:0 Mem:101.05M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_4
+Fra:0 Mem:100.72M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_1
+Fra:0 Mem:100.97M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_1
+Fra:0 Mem:99.15M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_2
+Fra:0 Mem:98.76M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_2
+Fra:0 Mem:98.87M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_3
+Fra:0 Mem:98.93M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_4
+Fra:0 Mem:98.78M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_3
+Fra:0 Mem:98.80M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_4
+Fra:0 Mem:98.58M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_2
+Fra:0 Mem:98.71M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Paddle_Brake_L
+Fra:0 Mem:98.84M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Paddle_Throttle_R
+Fra:0 Mem:98.86M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_ContactBlock
+Fra:0 Mem:99.40M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Module
+Fra:0 Mem:99.49M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Haptic_LRA_L
+Fra:0 Mem:100.01M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Haptic_LRA_R
+Fra:0 Mem:100.16M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_2
+Fra:0 Mem:100.26M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Column_Cover_Upper
+Fra:0 Mem:100.22M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_1
+Fra:0 Mem:100.39M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Column_Cover_Lower
+Fra:0 Mem:100.87M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Steer_Motor
+Fra:0 Mem:100.74M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Base_Shell
+Fra:0 Mem:100.82M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Base_Bottom
+Fra:0 Mem:100.92M (Peak 101.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_1
+Fra:0 Mem:101.97M (Peak 101.97M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tilt_Knuckle
+Fra:0 Mem:102.13M (Peak 102.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Rb
+Fra:0 Mem:101.97M (Peak 102.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_TiltIndex
+Fra:0 Mem:102.51M (Peak 102.51M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Axle
+Fra:0 Mem:102.73M (Peak 102.73M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Detent_Ring_L
+Fra:0 Mem:102.14M (Peak 102.73M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Detent_Ring_R
+Fra:0 Mem:102.26M (Peak 102.73M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Stop_Pin
+Fra:0 Mem:100.87M (Peak 102.73M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Lb
+Fra:0 Mem:100.40M (Peak 102.73M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Ra
+Fra:0 Mem:99.69M (Peak 102.73M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:0 Mem:93.64M (Peak 102.73M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:0 Mem:93.64M (Peak 102.73M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:0 Mem:93.64M (Peak 102.73M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:0 Mem:93.64M (Peak 102.73M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:0 Mem:93.74M (Peak 102.73M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Procedurals
+Fra:0 Mem:93.74M (Peak 102.73M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Background
+Fra:0 Mem:93.74M (Peak 102.73M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Camera
+Fra:0 Mem:93.74M (Peak 102.73M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Meshes Flags
+Fra:0 Mem:93.74M (Peak 102.73M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects
+Fra:0 Mem:93.74M (Peak 102.73M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:0 Mem:93.76M (Peak 102.73M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:0 Mem:93.76M (Peak 102.73M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems
+Fra:0 Mem:93.76M (Peak 102.73M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:0 Mem:93.76M (Peak 102.73M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Meshes
+Fra:0 Mem:96.80M (Peak 102.73M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:0 Mem:98.34M (Peak 102.73M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:0 Mem:98.33M (Peak 102.73M) | Time:00:00.02 | Mem:1.56M, Peak:1.56M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:0 Mem:98.33M (Peak 102.73M) | Time:00:00.02 | Mem:1.56M, Peak:1.56M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:0 Mem:98.33M (Peak 102.73M) | Time:00:00.02 | Mem:7.65M, Peak:7.65M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:0 Mem:98.33M (Peak 102.73M) | Time:00:00.03 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:0 Mem:98.33M (Peak 102.73M) | Time:00:00.03 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Objects Flags
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Images
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Camera Volume
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:0 Mem:106.31M (Peak 106.31M) | Time:00:00.03 | Mem:22.33M, Peak:22.33M | Scene, ViewLayer | Updating Integrator
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.33M, Peak:23.33M | Scene, ViewLayer | Updating Film
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.25M, Peak:23.33M | Scene, ViewLayer | Updating Lookup Tables
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Updating Baking
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Sample 0/32
+Fra:0 Mem:213.91M (Peak 213.91M) | Time:00:00.66 | Remaining:00:19.35 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Sample 1/32
+Fra:0 Mem:258.78M (Peak 326.07M) | Time:00:19.32 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Sample 32/32
+Fra:0 Mem:258.78M (Peak 326.07M) | Time:00:19.32 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Finished
+Saved: '/Users/jonlanger/Documents/Projects/teleop/hardware/out_v5/rear.png'
+Time: 00:19.45 (Saving: 00:00.11)
+
+Fra:0 Mem:90.19M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Sweep
+Fra:0 Mem:90.20M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Grip_L_Front
+Fra:0 Mem:90.20M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Grip_R_Rear
+Fra:0 Mem:90.24M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Halo_Guide_Upper
+Fra:0 Mem:90.24M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_Bezel
+Fra:0 Mem:90.30M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_Cap
+Fra:0 Mem:91.20M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wordmark_L
+Fra:0 Mem:92.94M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Hazard
+Fra:0 Mem:94.96M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_Hazard
+Fra:0 Mem:95.39M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_P1
+Fra:0 Mem:96.34M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_P2
+Fra:0 Mem:96.13M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Key_Column_L
+Fra:0 Mem:95.99M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Talk
+Fra:0 Mem:95.69M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Claim
+Fra:0 Mem:98.25M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wordmark_R
+Fra:0 Mem:98.99M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Release
+Fra:0 Mem:98.20M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Horn
+Fra:0 Mem:98.54M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Gimbal
+Fra:0 Mem:98.44M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Cap
+Fra:0 Mem:99.07M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_Faceplate_Wordmark
+Fra:0 Mem:99.25M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_SpeakerDots
+Fra:0 Mem:100.31M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_Rear_Cover
+Fra:0 Mem:99.73M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_1
+Fra:0 Mem:99.84M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Main_PCB
+Fra:0 Mem:99.81M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Ballast_Plate
+Fra:0 Mem:100.07M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | USB_Board
+Fra:0 Mem:100.07M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | USB_C_Receptacle
+Fra:0 Mem:100.84M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_2
+Fra:0 Mem:100.39M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_3
+Fra:0 Mem:100.74M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_4
+Fra:0 Mem:97.98M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_1
+Fra:0 Mem:97.45M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_1
+Fra:0 Mem:98.37M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_2
+Fra:0 Mem:98.34M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_2
+Fra:0 Mem:98.53M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_3
+Fra:0 Mem:98.63M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_3
+Fra:0 Mem:98.70M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_4
+Fra:0 Mem:98.56M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_4
+Fra:0 Mem:98.65M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_3
+Fra:0 Mem:98.90M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_4
+Fra:0 Mem:99.32M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Paddle_Brake_L
+Fra:0 Mem:99.16M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Paddle_Throttle_R
+Fra:0 Mem:99.35M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_PCB
+Fra:0 Mem:99.36M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_ContactBlock
+Fra:0 Mem:99.54M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Module
+Fra:0 Mem:99.50M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Clock_Spring
+Fra:0 Mem:99.71M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Haptic_LRA_L
+Fra:0 Mem:99.54M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_3
+Fra:0 Mem:99.56M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Haptic_LRA_R
+Fra:0 Mem:99.77M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_2
+Fra:0 Mem:99.78M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Column_Cover_Upper
+Fra:0 Mem:99.84M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Column_Cover_Lower
+Fra:0 Mem:100.38M (Peak 101.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Base_Shell
+Fra:0 Mem:101.23M (Peak 101.23M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Base_Bottom
+Fra:0 Mem:101.43M (Peak 101.43M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Cap_L
+Fra:0 Mem:101.49M (Peak 101.49M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Cap_R
+Fra:0 Mem:102.75M (Peak 102.75M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_2
+Fra:0 Mem:103.04M (Peak 103.04M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_1
+Fra:0 Mem:102.59M (Peak 103.04M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tilt_Knuckle
+Fra:0 Mem:102.76M (Peak 103.04M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_TiltIndex
+Fra:0 Mem:102.88M (Peak 103.04M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Axle
+Fra:0 Mem:103.12M (Peak 103.12M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Detent_Ring_L
+Fra:0 Mem:100.89M (Peak 103.12M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Friction_Pack_R
+Fra:0 Mem:101.02M (Peak 103.12M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Detent_Ring_R
+Fra:0 Mem:100.73M (Peak 103.12M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Stop_Pin
+Fra:0 Mem:100.46M (Peak 103.12M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_1
+Fra:0 Mem:100.56M (Peak 103.12M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_La
+Fra:0 Mem:100.54M (Peak 103.12M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Rb
+Fra:0 Mem:100.19M (Peak 103.12M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Lb
+Fra:0 Mem:100.27M (Peak 103.12M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Ra
+Fra:0 Mem:99.69M (Peak 103.12M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:0 Mem:93.64M (Peak 103.12M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:0 Mem:93.64M (Peak 103.12M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:0 Mem:93.64M (Peak 103.12M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:0 Mem:93.64M (Peak 103.12M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:0 Mem:93.74M (Peak 103.12M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Procedurals
+Fra:0 Mem:93.74M (Peak 103.12M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Background
+Fra:0 Mem:93.74M (Peak 103.12M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Camera
+Fra:0 Mem:93.74M (Peak 103.12M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Meshes Flags
+Fra:0 Mem:93.74M (Peak 103.12M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects
+Fra:0 Mem:93.74M (Peak 103.12M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:0 Mem:93.76M (Peak 103.12M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:0 Mem:93.76M (Peak 103.12M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems
+Fra:0 Mem:93.76M (Peak 103.12M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:0 Mem:93.76M (Peak 103.12M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Meshes
+Fra:0 Mem:96.80M (Peak 103.12M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:0 Mem:98.34M (Peak 103.12M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:0 Mem:98.33M (Peak 103.12M) | Time:00:00.02 | Mem:1.56M, Peak:1.56M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:0 Mem:98.33M (Peak 103.12M) | Time:00:00.02 | Mem:1.56M, Peak:1.56M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:0 Mem:98.33M (Peak 103.12M) | Time:00:00.02 | Mem:7.65M, Peak:7.65M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:0 Mem:98.33M (Peak 103.12M) | Time:00:00.03 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:0 Mem:98.33M (Peak 103.12M) | Time:00:00.03 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Objects Flags
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Images
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Camera Volume
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:0 Mem:106.31M (Peak 106.31M) | Time:00:00.03 | Mem:22.33M, Peak:22.33M | Scene, ViewLayer | Updating Integrator
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.33M, Peak:23.33M | Scene, ViewLayer | Updating Film
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.25M, Peak:23.33M | Scene, ViewLayer | Updating Lookup Tables
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Updating Baking
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Sample 0/40
+Fra:0 Mem:213.91M (Peak 213.91M) | Time:00:00.86 | Remaining:00:32.14 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Sample 1/40
+Fra:0 Mem:213.91M (Peak 213.91M) | Time:00:25.40 | Remaining:00:05.38 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Sample 33/40
+Fra:0 Mem:258.78M (Peak 326.07M) | Time:00:31.33 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Sample 40/40
+Fra:0 Mem:258.78M (Peak 326.07M) | Time:00:31.33 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Finished
+Saved: '/Users/jonlanger/Documents/Projects/teleop/hardware/out_v5/junction.png'
+Time: 00:31.45 (Saving: 00:00.10)
+
+Fra:0 Mem:90.19M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Sweep
+Fra:0 Mem:90.20M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Grip_R_Front
+Fra:0 Mem:90.20M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Grip_R_Rear
+Fra:0 Mem:90.20M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Halo_Guide_Upper
+Fra:0 Mem:90.20M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Halo_Guide_Lower
+Fra:0 Mem:90.20M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_Faceplate
+Fra:0 Mem:90.21M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_Bezel
+Fra:0 Mem:90.56M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wordmark_L
+Fra:0 Mem:94.58M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_Cap
+Fra:0 Mem:94.45M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_Hazard
+Fra:0 Mem:94.54M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_P1
+Fra:0 Mem:95.17M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Talk
+Fra:0 Mem:94.97M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Log
+Fra:0 Mem:96.25M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wordmark_R
+Fra:0 Mem:96.45M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_ExtSpeaker
+Fra:0 Mem:96.25M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | DPad
+Fra:0 Mem:96.67M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Key_Column_R
+Fra:0 Mem:97.24M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Claim
+Fra:0 Mem:99.15M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Release
+Fra:0 Mem:99.53M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Horn
+Fra:0 Mem:98.41M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Main_PCB
+Fra:0 Mem:98.48M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Gimbal
+Fra:0 Mem:98.27M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Ballast_Plate
+Fra:0 Mem:98.28M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Cap
+Fra:0 Mem:98.10M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | USB_Board
+Fra:0 Mem:98.24M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_Faceplate_Wordmark
+Fra:0 Mem:98.29M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_SpeakerDots
+Fra:0 Mem:98.48M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_Rear_Cover
+Fra:0 Mem:98.57M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_2
+Fra:0 Mem:98.77M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_3
+Fra:0 Mem:99.07M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_4
+Fra:0 Mem:99.71M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_4
+Fra:0 Mem:101.15M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_1
+Fra:0 Mem:100.90M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_4
+Fra:0 Mem:100.87M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_3
+Fra:0 Mem:100.47M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_1
+Fra:0 Mem:100.40M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_2
+Fra:0 Mem:100.13M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_2
+Fra:0 Mem:100.07M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_3
+Fra:0 Mem:100.08M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_3
+Fra:0 Mem:99.87M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_3
+Fra:0 Mem:99.47M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_4
+Fra:0 Mem:99.52M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Paddle_Brake_L
+Fra:0 Mem:99.86M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_2
+Fra:0 Mem:99.45M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_PCB
+Fra:0 Mem:98.46M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_ContactBlock
+Fra:0 Mem:97.72M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Haptic_LRA_R
+Fra:0 Mem:97.81M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Column_Cover_Upper
+Fra:0 Mem:98.14M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Column_Cover_Lower
+Fra:0 Mem:98.25M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Steer_Motor
+Fra:0 Mem:98.25M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Base_Bottom
+Fra:0 Mem:98.57M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Cap_R
+Fra:0 Mem:98.66M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tilt_Knuckle
+Fra:0 Mem:99.14M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_2
+Fra:0 Mem:99.63M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_1
+Fra:0 Mem:100.66M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_TiltIndex
+Fra:0 Mem:101.60M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_1
+Fra:0 Mem:101.62M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Rb
+Fra:0 Mem:101.28M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Axle
+Fra:0 Mem:101.59M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Friction_Pack_L
+Fra:0 Mem:101.90M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Detent_Ring_L
+Fra:0 Mem:102.35M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Ra
+Fra:0 Mem:102.80M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Friction_Pack_R
+Fra:0 Mem:102.67M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Detent_Ring_R
+Fra:0 Mem:102.10M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_La
+Fra:0 Mem:101.39M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Lb
+Fra:0 Mem:99.69M (Peak 103.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:0 Mem:93.64M (Peak 103.11M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:0 Mem:93.64M (Peak 103.11M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:0 Mem:93.64M (Peak 103.11M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:0 Mem:93.64M (Peak 103.11M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:0 Mem:93.74M (Peak 103.11M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Procedurals
+Fra:0 Mem:93.74M (Peak 103.11M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Background
+Fra:0 Mem:93.74M (Peak 103.11M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Camera
+Fra:0 Mem:93.74M (Peak 103.11M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Meshes Flags
+Fra:0 Mem:93.74M (Peak 103.11M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects
+Fra:0 Mem:93.74M (Peak 103.11M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:0 Mem:93.76M (Peak 103.11M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:0 Mem:93.76M (Peak 103.11M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems
+Fra:0 Mem:93.76M (Peak 103.11M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:0 Mem:93.76M (Peak 103.11M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Meshes
+Fra:0 Mem:96.80M (Peak 103.11M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:0 Mem:98.34M (Peak 103.11M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:0 Mem:98.33M (Peak 103.11M) | Time:00:00.02 | Mem:1.56M, Peak:1.56M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:0 Mem:98.33M (Peak 103.11M) | Time:00:00.02 | Mem:1.56M, Peak:1.56M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:0 Mem:98.33M (Peak 103.11M) | Time:00:00.02 | Mem:7.65M, Peak:7.65M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:0 Mem:98.33M (Peak 103.11M) | Time:00:00.02 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:0 Mem:98.33M (Peak 103.11M) | Time:00:00.02 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Objects Flags
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Images
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Camera Volume
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:0 Mem:106.31M (Peak 106.31M) | Time:00:00.03 | Mem:22.33M, Peak:22.33M | Scene, ViewLayer | Updating Integrator
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.33M, Peak:23.33M | Scene, ViewLayer | Updating Film
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.25M, Peak:23.33M | Scene, ViewLayer | Updating Lookup Tables
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Updating Baking
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Sample 0/40
+Fra:0 Mem:213.91M (Peak 213.91M) | Time:00:00.73 | Remaining:00:27.41 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Sample 1/40
+Fra:0 Mem:213.91M (Peak 213.91M) | Time:00:22.07 | Remaining:00:04.67 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Sample 33/40
+Fra:0 Mem:258.78M (Peak 326.07M) | Time:00:27.66 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Sample 40/40
+Fra:0 Mem:258.78M (Peak 326.07M) | Time:00:27.66 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Finished
+Saved: '/Users/jonlanger/Documents/Projects/teleop/hardware/out_v5/hinge.png'
+Time: 00:27.77 (Saving: 00:00.10)
+
+Fra:0 Mem:90.19M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Sweep
+Fra:0 Mem:90.20M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wheel_Rear_Shell
+Fra:0 Mem:90.20M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Grip_R_Rear
+Fra:0 Mem:90.25M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Halo_Guide_Upper
+Fra:0 Mem:90.44M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Halo_Guide_Lower
+Fra:0 Mem:91.18M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wordmark_L
+Fra:0 Mem:92.42M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_Faceplate
+Fra:0 Mem:93.35M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_Bezel
+Fra:0 Mem:93.65M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_Cap
+Fra:0 Mem:93.73M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Hazard
+Fra:0 Mem:94.39M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_P2
+Fra:0 Mem:94.90M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Key_Column_L
+Fra:0 Mem:96.28M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Talk
+Fra:0 Mem:96.47M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Log
+Fra:0 Mem:96.53M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wordmark_R
+Fra:0 Mem:98.00M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_ExtSpeaker
+Fra:0 Mem:98.21M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | DPad
+Fra:0 Mem:97.39M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Key_Column_R
+Fra:0 Mem:97.43M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Claim
+Fra:0 Mem:97.71M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Release
+Fra:0 Mem:98.41M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Horn
+Fra:0 Mem:99.07M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Gimbal
+Fra:0 Mem:99.26M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Main_PCB
+Fra:0 Mem:99.05M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Cap
+Fra:0 Mem:98.86M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Ballast_Plate
+Fra:0 Mem:98.75M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_Faceplate_Wordmark
+Fra:0 Mem:98.88M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | USB_Board
+Fra:0 Mem:98.72M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_SpeakerDots
+Fra:0 Mem:98.87M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | USB_C_Receptacle
+Fra:0 Mem:99.10M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_Rear_Cover
+Fra:0 Mem:99.42M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_1
+Fra:0 Mem:99.28M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_4
+Fra:0 Mem:99.56M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_2
+Fra:0 Mem:99.30M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_1
+Fra:0 Mem:98.96M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_1
+Fra:0 Mem:99.20M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_2
+Fra:0 Mem:99.56M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_2
+Fra:0 Mem:99.23M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_4
+Fra:0 Mem:99.98M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_3
+Fra:0 Mem:100.04M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_3
+Fra:0 Mem:100.26M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_3
+Fra:0 Mem:100.38M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_4
+Fra:0 Mem:100.29M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_4
+Fra:0 Mem:100.08M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Paddle_Brake_L
+Fra:0 Mem:100.21M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_PCB
+Fra:0 Mem:100.59M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_3
+Fra:0 Mem:100.49M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_ContactBlock
+Fra:0 Mem:100.49M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_2
+Fra:0 Mem:101.40M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Haptic_LRA_R
+Fra:0 Mem:101.81M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Column_Cover_Upper
+Fra:0 Mem:102.11M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Column_Cover_Lower
+Fra:0 Mem:102.59M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Steer_Motor
+Fra:0 Mem:102.47M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_2
+Fra:0 Mem:102.74M (Peak 103.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_1
+Fra:0 Mem:103.27M (Peak 103.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Base_Shell
+Fra:0 Mem:102.86M (Peak 103.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Base_Bottom
+Fra:0 Mem:103.81M (Peak 103.81M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Cap_L
+Fra:0 Mem:103.61M (Peak 103.81M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_1
+Fra:0 Mem:103.75M (Peak 103.81M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Cap_R
+Fra:0 Mem:101.73M (Peak 103.81M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tilt_Knuckle
+Fra:0 Mem:101.94M (Peak 103.81M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Axle
+Fra:0 Mem:103.75M (Peak 103.81M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Friction_Pack_L
+Fra:0 Mem:103.84M (Peak 103.84M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Detent_Ring_L
+Fra:0 Mem:104.27M (Peak 104.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Friction_Pack_R
+Fra:0 Mem:103.16M (Peak 104.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Detent_Ring_R
+Fra:0 Mem:103.27M (Peak 104.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Stop_Pin
+Fra:0 Mem:103.20M (Peak 104.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_La
+Fra:0 Mem:103.21M (Peak 104.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Lb
+Fra:0 Mem:103.25M (Peak 104.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Ra
+Fra:0 Mem:99.69M (Peak 104.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:0 Mem:93.64M (Peak 104.27M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:0 Mem:93.64M (Peak 104.27M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:0 Mem:93.64M (Peak 104.27M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:0 Mem:93.64M (Peak 104.27M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:0 Mem:93.74M (Peak 104.27M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Procedurals
+Fra:0 Mem:93.74M (Peak 104.27M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Background
+Fra:0 Mem:93.74M (Peak 104.27M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Camera
+Fra:0 Mem:93.74M (Peak 104.27M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Meshes Flags
+Fra:0 Mem:93.74M (Peak 104.27M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects
+Fra:0 Mem:93.74M (Peak 104.27M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:0 Mem:93.76M (Peak 104.27M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:0 Mem:93.76M (Peak 104.27M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems
+Fra:0 Mem:93.76M (Peak 104.27M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:0 Mem:93.76M (Peak 104.27M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Meshes
+Fra:0 Mem:96.80M (Peak 104.27M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:0 Mem:98.34M (Peak 104.27M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:0 Mem:98.33M (Peak 104.27M) | Time:00:00.02 | Mem:1.56M, Peak:1.56M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:0 Mem:98.33M (Peak 104.27M) | Time:00:00.02 | Mem:1.56M, Peak:1.56M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:0 Mem:98.33M (Peak 104.27M) | Time:00:00.02 | Mem:7.65M, Peak:7.65M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:0 Mem:98.33M (Peak 104.27M) | Time:00:00.02 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:0 Mem:98.33M (Peak 104.27M) | Time:00:00.02 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Objects Flags
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Images
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Camera Volume
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:0 Mem:106.31M (Peak 106.31M) | Time:00:00.03 | Mem:22.33M, Peak:22.33M | Scene, ViewLayer | Updating Integrator
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.33M, Peak:23.33M | Scene, ViewLayer | Updating Film
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.25M, Peak:23.33M | Scene, ViewLayer | Updating Lookup Tables
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Updating Baking
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Sample 0/32
+Fra:0 Mem:213.91M (Peak 213.91M) | Time:00:00.45 | Remaining:00:13.22 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Sample 1/32
+Fra:0 Mem:258.78M (Peak 326.07M) | Time:00:14.09 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Sample 32/32
+Fra:0 Mem:258.78M (Peak 326.07M) | Time:00:14.09 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Finished
+Saved: '/Users/jonlanger/Documents/Projects/teleop/hardware/out_v5/side.png'
+Time: 00:14.20 (Saving: 00:00.10)
+
+Fra:0 Mem:90.19M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Sweep
+Fra:0 Mem:90.19M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wheel_Rear_Shell
+Fra:0 Mem:90.20M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Grip_R_Front
+Fra:0 Mem:90.23M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Grip_R_Rear
+Fra:0 Mem:90.68M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Halo_Guide_Upper
+Fra:0 Mem:90.69M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_Faceplate
+Fra:0 Mem:90.83M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_Bezel
+Fra:0 Mem:91.27M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wordmark_L
+Fra:0 Mem:91.66M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_Cap
+Fra:0 Mem:93.16M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Hazard
+Fra:0 Mem:93.22M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Print_Hazard
+Fra:0 Mem:94.06M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_P1
+Fra:0 Mem:94.23M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Log
+Fra:0 Mem:94.93M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_ExtSpeaker
+Fra:0 Mem:95.14M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | DPad
+Fra:0 Mem:95.25M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Key_Column_R
+Fra:0 Mem:96.15M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Claim
+Fra:0 Mem:97.03M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Wordmark_R
+Fra:0 Mem:97.88M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Release
+Fra:0 Mem:99.67M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Btn_Horn
+Fra:0 Mem:99.34M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_Rear_Cover
+Fra:0 Mem:99.53M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Main_PCB
+Fra:0 Mem:100.64M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Ballast_Plate
+Fra:0 Mem:100.17M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_1
+Fra:0 Mem:100.17M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_2
+Fra:0 Mem:100.58M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | USB_C_Receptacle
+Fra:0 Mem:100.53M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_3
+Fra:0 Mem:100.74M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Hub_4
+Fra:0 Mem:100.33M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_1
+Fra:0 Mem:100.93M (Peak 101.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_1
+Fra:0 Mem:101.61M (Peak 101.61M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_4
+Fra:0 Mem:101.76M (Peak 101.76M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_2
+Fra:0 Mem:101.78M (Peak 101.78M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_2
+Fra:0 Mem:101.80M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_3
+Fra:0 Mem:101.75M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_3
+Fra:0 Mem:101.76M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Magnet_4
+Fra:0 Mem:101.79M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Strike_4
+Fra:0 Mem:99.45M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hub_PCB
+Fra:0 Mem:98.78M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | EStop_ContactBlock
+Fra:0 Mem:98.73M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_4
+Fra:0 Mem:98.71M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Stick_Module
+Fra:0 Mem:99.20M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Clock_Spring
+Fra:0 Mem:99.77M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Haptic_LRA_L
+Fra:0 Mem:99.99M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Haptic_LRA_R
+Fra:0 Mem:100.02M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Column_Cover_Upper
+Fra:0 Mem:100.23M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Column_Cover_Lower
+Fra:0 Mem:100.58M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Steer_Motor
+Fra:0 Mem:101.22M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Base_Shell
+Fra:0 Mem:100.89M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Base_Bottom
+Fra:0 Mem:100.48M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Cap_L
+Fra:0 Mem:100.74M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Cap_R
+Fra:0 Mem:100.68M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tilt_Knuckle
+Fra:0 Mem:100.87M (Peak 101.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Axle
+Fra:0 Mem:101.99M (Peak 101.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Friction_Pack_L
+Fra:0 Mem:102.24M (Peak 102.24M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Detent_Ring_L
+Fra:0 Mem:102.11M (Peak 102.24M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_3
+Fra:0 Mem:101.91M (Peak 102.24M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_2
+Fra:0 Mem:102.26M (Peak 102.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hinge_Friction_Pack_R
+Fra:0 Mem:102.27M (Peak 102.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_La
+Fra:0 Mem:101.75M (Peak 102.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Lb
+Fra:0 Mem:103.01M (Peak 103.01M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Ra
+Fra:0 Mem:101.25M (Peak 103.01M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Cap_Rb
+Fra:0 Mem:101.10M (Peak 103.01M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foot_2
+Fra:0 Mem:100.96M (Peak 103.01M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Screw_Base_1
+Fra:0 Mem:99.69M (Peak 103.01M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:0 Mem:93.64M (Peak 103.01M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:0 Mem:93.64M (Peak 103.01M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:0 Mem:93.64M (Peak 103.01M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:0 Mem:93.64M (Peak 103.01M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:0 Mem:93.74M (Peak 103.01M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Procedurals
+Fra:0 Mem:93.74M (Peak 103.01M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Background
+Fra:0 Mem:93.74M (Peak 103.01M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Camera
+Fra:0 Mem:93.74M (Peak 103.01M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Meshes Flags
+Fra:0 Mem:93.74M (Peak 103.01M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects
+Fra:0 Mem:93.74M (Peak 103.01M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:0 Mem:93.76M (Peak 103.01M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:0 Mem:93.76M (Peak 103.01M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems
+Fra:0 Mem:93.76M (Peak 103.01M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:0 Mem:93.76M (Peak 103.01M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Meshes
+Fra:0 Mem:96.80M (Peak 103.01M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:0 Mem:98.34M (Peak 103.01M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:0 Mem:98.33M (Peak 103.01M) | Time:00:00.02 | Mem:1.56M, Peak:1.56M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:0 Mem:98.33M (Peak 103.01M) | Time:00:00.02 | Mem:1.56M, Peak:1.56M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:0 Mem:98.33M (Peak 103.01M) | Time:00:00.02 | Mem:7.65M, Peak:7.65M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:0 Mem:98.33M (Peak 103.01M) | Time:00:00.02 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:0 Mem:98.33M (Peak 103.01M) | Time:00:00.02 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:14.27M, Peak:20.35M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Objects Flags
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Images
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Camera Volume
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.13M, Peak:22.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:0 Mem:106.18M (Peak 106.18M) | Time:00:00.03 | Mem:22.21M, Peak:22.21M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:0 Mem:106.31M (Peak 106.31M) | Time:00:00.03 | Mem:22.33M, Peak:22.33M | Scene, ViewLayer | Updating Integrator
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.33M, Peak:23.33M | Scene, ViewLayer | Updating Film
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.25M, Peak:23.33M | Scene, ViewLayer | Updating Lookup Tables
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Updating Baking
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:0 Mem:107.31M (Peak 107.31M) | Time:00:00.03 | Mem:23.34M, Peak:23.34M | Scene, ViewLayer | Sample 0/32
+Fra:0 Mem:213.91M (Peak 213.91M) | Time:00:00.57 | Remaining:00:16.94 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Sample 1/32
+Fra:0 Mem:258.78M (Peak 326.07M) | Time:00:17.96 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Sample 32/32
+Fra:0 Mem:258.78M (Peak 326.07M) | Time:00:17.96 | Mem:129.88M, Peak:129.88M | Scene, ViewLayer | Finished
+Saved: '/Users/jonlanger/Documents/Projects/teleop/hardware/out_v5/exploded.png'
+Time: 00:18.06 (Saving: 00:00.10)
+
+EXIT 0

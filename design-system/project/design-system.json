@@ -1,0 +1,117 @@
+{
+ "v": 3,
+ "layout": "files",
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-04T21:02:15Z"
+ },
+ "title": "teleop",
+ "namespace": "teleop",
+ "libraries": [
+  {
+   "name": "react",
+   "version": "18"
+  },
+  {
+   "name": "react-dom",
+   "version": "18"
+  }
+ ],
+ "sections": {},
+ "groups": [
+  "Logos",
+  "Hardware"
+ ],
+ "assetGroups": {
+  "Logos": {
+   "name": "Logos",
+   "tile": "l",
+   "order": [
+    "teleop-wordmark-carbon.svg",
+    "teleop-wordmark-white.svg"
+   ],
+   "files": {
+    "teleop-wordmark-carbon.svg": {
+     "name": "teleop-wordmark-carbon.svg",
+     "blob": "ec9bc4d04f12b2d4aad76b6456ee95ce",
+     "size": 4010,
+     "type": "image/svg+xml"
+    },
+    "teleop-wordmark-white.svg": {
+     "name": "teleop-wordmark-white.svg",
+     "blob": "717deffa9f1707c651f41aa49116faac",
+     "size": 4010,
+     "type": "image/svg+xml"
+    }
+   }
+  },
+  "Hardware": {
+   "name": "Hardware",
+   "tile": "l",
+   "order": [
+    "wheel-v5-hero.png",
+    "wheel-v5-hub.png",
+    "wheel-v5-junction.png",
+    "wheel-v5-hinge.png",
+    "wheel-v5-side.png",
+    "wheel-v5-rear.png",
+    "wheel-v5-exploded.png"
+   ],
+   "files": {
+    "wheel-v5-hero.png": {
+     "name": "wheel-v5-hero.png",
+     "blob": "e6c8ca9ed79cc4931527630ea11d0903",
+     "size": 1980592,
+     "type": "image/png"
+    },
+    "wheel-v5-hub.png": {
+     "name": "wheel-v5-hub.png",
+     "blob": "5e43f7d4a7e0b6e7c4209abf37d4a2d9",
+     "size": 1813649,
+     "type": "image/png"
+    },
+    "wheel-v5-junction.png": {
+     "name": "wheel-v5-junction.png",
+     "blob": "b085d089cefa32b8c2e1424c1ce4c63c",
+     "size": 1679437,
+     "type": "image/png"
+    },
+    "wheel-v5-hinge.png": {
+     "name": "wheel-v5-hinge.png",
+     "blob": "9271a58a1ac4b83a17e48f9463637c07",
+     "size": 1432403,
+     "type": "image/png"
+    },
+    "wheel-v5-side.png": {
+     "name": "wheel-v5-side.png",
+     "blob": "3bf9525bdb9c6dbf608bcb7dd6353ece",
+     "size": 1365372,
+     "type": "image/png"
+    },
+    "wheel-v5-rear.png": {
+     "name": "wheel-v5-rear.png",
+     "blob": "e02e6738058db4e3b13593bdfe502468",
+     "size": 1456780,
+     "type": "image/png"
+    },
+    "wheel-v5-exploded.png": {
+     "name": "wheel-v5-exploded.png",
+     "blob": "7fa6adb966d4def55d1915b7c91a0b5c",
+     "size": 1547420,
+     "type": "image/png"
+    }
+   }
+  }
+ },
+ "blobs": {},
+ "docs": {
+  "readme": "project/README.md",
+  "sections": []
+ },
+ "lastChange": {
+  "by": "Jon Langer",
+  "at": "2026-10-05T14:32:11Z",
+  "via": "Claude Code",
+  "note": "Scene objects: three.js kit (car, bus, truck, shuttle, pedestrian, cyclist, cone, barrier, tree, street light, stop shelter, facade) with scene palette"
+ }
+}

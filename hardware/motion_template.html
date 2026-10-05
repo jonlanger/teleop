@@ -1,0 +1,218 @@
+<title>teleop Wheel Motion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400..700&display=swap">
+<style>
+/* Layout: full-bleed stage; a clip rail on the left, the timeline with the halo cue track along the bottom.
+   One deliberate look (the ops-console dark theme from the teleop design system). */
+:root{
+  --surface-0:#101214; --surface-1:#181B1E; --surface-2:#22262A; --surface-3:#2C3136;
+  --line:#363C42; --line-strong:#6E777F; --ink:#EEF0EE; --ink-muted:#9AA2A9;
+  --mint:#3CE6B4; --on-mint:#06291F; --amber:#FFB020; --stop:#FF5A47; --focus:#EEF0EE;
+  --font-display:"Archivo","Helvetica Neue",Arial,sans-serif; --font-mono:"JetBrains Mono","SF Mono",Menlo,monospace;
+  color-scheme:dark;
+}
+html,body{height:100%}
+body{margin:0;background:var(--surface-0);color:var(--ink);font:400 14px/20px var(--font-display);overflow:hidden}
+.app{display:grid;grid-template-columns:272px minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto;height:100%}
+.rail{grid-row:1/3;background:var(--surface-1);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+.brand{padding:20px 20px 12px}
+.brand b{display:block;font:italic 800 30px/1 var(--font-display);font-stretch:125%;letter-spacing:-.02em}
+.brand span{display:block;margin-top:6px;color:var(--ink-muted);font-size:13px}
+.label{font:600 12px/16px var(--font-display);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-muted);padding:14px 20px 6px}
+.clips{display:grid;gap:4px;padding:0 12px;overflow:auto}
+.clip{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px;text-align:left;padding:10px 12px;border-radius:6px;
+  border:1px solid transparent;background:transparent;color:var(--ink);font:600 14px/18px var(--font-display);cursor:pointer}
+.clip small{font:500 12px/16px var(--font-mono);color:var(--ink-muted)}
+.clip:hover{background:var(--surface-2)}
+.clip.on{background:var(--surface-2);border-color:var(--line-strong)}
+.clip p{grid-column:1/3;margin:2px 0 0;font:400 12px/16px var(--font-display);color:var(--ink-muted)}
+.states{display:flex;flex-wrap:wrap;gap:6px;padding:0 20px}
+.chip{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 10px 0 8px;border-radius:999px;border:1px solid var(--line);
+  background:var(--surface-2);color:var(--ink);font:600 11px/16px var(--font-display);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.chip i{width:10px;height:10px;border-radius:50%}
+.chip.on{border-color:var(--ink)}
+.cams{display:flex;gap:4px;padding:0 20px 20px;margin-top:auto}
+.cams button{flex:1;height:32px;border-radius:6px;border:1px solid var(--line-strong);background:var(--surface-2);color:var(--ink);font:600 13px var(--font-display);cursor:pointer}
+.cams button:hover{background:var(--surface-3)}
+.stage{position:relative;min-height:0}
+canvas{display:block;width:100%;height:100%}
+.state{position:absolute;top:16px;left:16px;display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 10px;border-radius:999px;
+  font:750 14px/18px var(--font-display);font-stretch:125%;letter-spacing:.06em;text-transform:uppercase}
+.state svg{flex:none}
+.hint{position:absolute;right:16px;top:16px;font:500 12px/16px var(--font-mono);color:var(--ink-muted)}
+.bar{grid-column:2;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 16px;border-top:1px solid var(--line);background:var(--surface-1)}
+.play{width:40px;height:40px;border-radius:50%;border:0;background:var(--mint);color:var(--on-mint);cursor:pointer;display:grid;place-items:center}
+.track{position:relative;height:40px}
+.cues{position:absolute;left:0;right:0;top:4px;height:8px;border-radius:4px;overflow:hidden;display:flex}
+.cues span{height:100%}
+input[type=range]{position:absolute;left:0;right:0;top:16px;width:100%;margin:0;accent-color:var(--ink)}
+.time{font:500 13px/18px var(--font-mono);color:var(--ink-muted);font-variant-numeric:tabular-nums;min-width:96px;text-align:right}
+.loop{display:flex;align-items:center;gap:6px;color:var(--ink-muted);font-size:13px}
+:where(button,input):focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+@media (max-width:760px){
+  body{overflow:auto}
+  .app{grid-template-columns:1fr;grid-template-rows:56vh auto auto;height:auto}
+  .rail{grid-row:3;border-right:0;border-top:1px solid var(--line)}
+  .stage{grid-row:1}
+  .bar{grid-column:1;grid-row:2}
+  .clips{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hint{display:none}
+}
+@media (prefers-reduced-motion:reduce){.state svg{animation:none}}
+</style>
+
+<div class="app">
+  <aside class="rail">
+    <div class="brand"><b>teleop</b><span>Wheel motion · clips for the app and homepage</span></div>
+    <div class="label">Clips</div>
+    <div class="clips" id="clips"></div>
+    <div class="label">Halo state</div>
+    <div class="states" id="states"></div>
+    <div class="label">Camera</div>
+    <div class="cams"><button data-cam="hero">Hero</button><button data-cam="hub">Hub</button><button data-cam="side">Side</button><button data-cam="rear">Rear</button></div>
+  </aside>
+  <main class="stage" id="stage">
+    <div class="state" id="state"></div>
+    <div class="hint">drag to orbit · scroll to zoom</div>
+  </main>
+  <div class="bar">
+    <button class="play" id="play" aria-label="Play"><svg width="16" height="16" viewBox="0 0 16 16"><path id="playIcon" d="M4 2l10 6-10 6z" fill="currentColor"/></svg></button>
+    <div class="track"><div class="cues" id="cuebar"></div><input type="range" id="scrub" min="0" max="1000" value="0" aria-label="Timeline"></div>
+    <div style="display:flex;gap:12px;align-items:center"><label class="loop"><input type="checkbox" id="loop" checked> Loop</label><span class="time" id="time">0.00 / 0.00 s</span></div>
+  </div>
+</div>
+
+<script type="importmap">{"imports":{
+  "three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+const DATA = /*__DATA__*/;
+const CUES = DATA.cues, COLORS = CUES.halo_colors;
+const STATE_LABEL = {autonomy:'Autonomy', operator:'Operator', transitioning:'Transitioning', stopped:'Stopped'};
+const CLIP_INFO = {
+  turntable:'Full turn for hero loops.', steer:'Lock to lock, ±90°.', tilt:'Push to tilt: 35°, 15°, back to 25°.',
+  claim_handoff:'Claim, operator drives, hold Release to hand back.', controls_tour:'Every key, D-pad, stick and click.',
+  paddles:'Throttle, then brake.', estop:'Press, latch red, twist to release.'};
+const ORDER = ['turntable','claim_handoff','controls_tour','steer','tilt','paddles','estop'];
+
+const stage = document.getElementById('stage');
+const renderer = new THREE.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+stage.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color('#101214');
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new RoomEnvironment(renderer), 0.04).texture;
+const key = new THREE.DirectionalLight(0xffffff, 1.4); key.position.set(-0.6, 1.2, 0.9); scene.add(key);
+const camera = new THREE.PerspectiveCamera(30, 1, 0.01, 50);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+
+const floor = new THREE.Mesh(new THREE.CircleGeometry(1.2, 64), new THREE.MeshStandardMaterial({color:'#15181B', roughness:.95}));
+floor.rotation.x = -Math.PI/2; scene.add(floor);
+
+let mixer, actions = {}, current = null, haloMats = [], model, bounds;
+function b64ToBuf(b64){const s=atob(b64),u=new Uint8Array(s.length);for(let i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return u.buffer;}
+
+new GLTFLoader().parse(b64ToBuf(DATA.glb), '', g => {
+  model = g.scene;
+  model.scale.setScalar(0.001);                 // mm → m
+  scene.add(model);
+  model.traverse(o => {
+    if (o.isMesh && o.material && /^Halo/.test(o.material.name)) { o.material = o.material.clone(); haloMats.push(o.material); }
+  });
+  bounds = new THREE.Box3().setFromObject(model);
+  floor.position.y = bounds.min.y - 0.0005;
+  mixer = new THREE.AnimationMixer(model);
+  g.animations.forEach(a => { actions[a.name] = mixer.clipAction(a); });
+  buildUI(); setCam('hero'); select('claim_handoff'); play(true);
+}, e => { document.querySelector('.hint').textContent = 'Could not read the model: ' + e.message; });
+
+function setCam(name){
+  const c = bounds.getCenter(new THREE.Vector3()), s = bounds.getSize(new THREE.Vector3()).length();
+  const dirs = {hero:[-0.55,0.32,0.78], hub:[0.0,0.42,0.9], side:[-1,0.12,0.02], rear:[0.5,0.35,-0.8]};
+  const d = new THREE.Vector3(...dirs[name]).normalize();
+  const target = name === 'hub' ? c.clone().add(new THREE.Vector3(0, s*0.12, s*0.05)) : c;
+  camera.position.copy(target.clone().add(d.multiplyScalar(s * (name === 'hub' ? 1.0 : 1.75))));
+  controls.target.copy(target); controls.update();
+}
+
+function buildUI(){
+  const box = document.getElementById('clips');
+  ORDER.filter(n => actions[n]).forEach(n => {
+    const b = document.createElement('button'); b.className = 'clip'; b.dataset.clip = n;
+    b.innerHTML = `<span>${n.replace('_',' ')}</span><small>${CUES.clips[n].seconds.toFixed(1)} s</small><p>${CLIP_INFO[n]||''}</p>`;
+    b.onclick = () => { select(n); play(true); };
+    box.appendChild(b);
+  });
+  const st = document.getElementById('states');
+  Object.keys(COLORS).forEach(s => {
+    const b = document.createElement('button'); b.className = 'chip'; b.dataset.state = s;
+    b.innerHTML = `<i style="background:${COLORS[s]}"></i>${STATE_LABEL[s]}`;
+    b.onclick = () => { manual = manual === s ? null : s; renderChips(); };
+    st.appendChild(b);
+  });
+  document.querySelectorAll('[data-cam]').forEach(b => b.onclick = () => setCam(b.dataset.cam));
+}
+let manual = null;
+function renderChips(){ document.querySelectorAll('.chip').forEach(c => c.classList.toggle('on', c.dataset.state === manual)); }
+
+function select(name){
+  Object.values(actions).forEach(a => a.stop());
+  current = name;
+  const a = actions[name];
+  a.reset(); a.setLoop(THREE.LoopRepeat); a.clampWhenFinished = true; a.play(); a.paused = true;
+  document.querySelectorAll('.clip').forEach(c => c.classList.toggle('on', c.dataset.clip === name));
+  const cues = CUES.clips[name].cues, dur = a.getClip().duration || CUES.clips[name].seconds;
+  const bar = document.getElementById('cuebar'); bar.innerHTML = '';
+  cues.forEach((c, i) => {
+    const end = i + 1 < cues.length ? cues[i+1].t : dur;
+    const s = document.createElement('span'); s.style.width = (100 * (end - c.t) / dur) + '%'; s.style.background = COLORS[c.state];
+    s.title = STATE_LABEL[c.state]; bar.appendChild(s);
+  });
+}
+let playing = false;
+function play(on){ playing = on; if (current) actions[current].paused = !on;
+  document.getElementById('playIcon').setAttribute('d', on ? 'M4 2h3v12H4zM9 2h3v12H9z' : 'M4 2l10 6-10 6z');
+  document.getElementById('play').setAttribute('aria-label', on ? 'Pause' : 'Play'); }
+document.getElementById('play').onclick = () => play(!playing);
+const scrub = document.getElementById('scrub');
+scrub.oninput = () => { if (!current) return; const a = actions[current]; a.time = scrub.value / 1000 * a.getClip().duration; play(false); };
+document.getElementById('loop').onchange = e => { if (current) actions[current].setLoop(e.target.checked ? THREE.LoopRepeat : THREE.LoopOnce); };
+
+function stateAt(name, t){ let s = CUES.clips[name].cues[0].state; for (const c of CUES.clips[name].cues) if (t >= c.t) s = c.state; return s; }
+const badge = document.getElementById('state');
+function setHalo(s, now){
+  const col = new THREE.Color(COLORS[s]);
+  const pulse = s === 'transitioning' && !matchMedia('(prefers-reduced-motion: reduce)').matches ? 0.35 + 0.65 * (0.5 + 0.5 * Math.cos(now / 900 * 2 * Math.PI)) : 1;
+  haloMats.forEach(m => { m.emissive.copy(col); m.color.copy(col); m.emissiveIntensity = 2.2 * pulse; });
+  const fg = {autonomy:'#3CE6B4', operator:'#FFB020', transitioning:'#EEF0EE', stopped:'#FFFFFF'}[s];
+  const bg = {autonomy:'#123A30', operator:'#3A2A0C', transitioning:'#22262A', stopped:'#D02B21'}[s];
+  badge.style.color = fg; badge.style.background = bg; badge.style.opacity = s === 'transitioning' ? (0.55 + 0.45 * pulse) : 1;
+  badge.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="3"/></svg>${STATE_LABEL[s]}`;
+}
+
+function resize(){ const r = stage.getBoundingClientRect(); renderer.setSize(r.width, r.height, false); camera.aspect = r.width / Math.max(r.height,1); camera.updateProjectionMatrix(); }
+new ResizeObserver(resize).observe(stage);
+const clock = new THREE.Clock();
+renderer.setAnimationLoop(now => {
+  const dt = clock.getDelta();
+  if (mixer) mixer.update(dt);
+  controls.update();
+  if (current) {
+    const a = actions[current], dur = a.getClip().duration, t = a.time % dur;
+    if (playing) scrub.value = Math.round(1000 * t / dur);
+    document.getElementById('time').textContent = `${t.toFixed(2)} / ${dur.toFixed(2)} s`;
+    setHalo(manual || stateAt(current, t), now);
+  }
+  renderer.render(scene, camera);
+});
+</script>

@@ -1,0 +1,115 @@
+{
+  "fps": 30,
+  "halo_colors": {
+    "autonomy": "#3CE6B4",
+    "operator": "#FFB020",
+    "transitioning": "#EEF0EE",
+    "stopped": "#E8352B"
+  },
+  "halo_states": {
+    "autonomy": "steady",
+    "operator": "steady",
+    "transitioning": "pulse 900 ms (opacity 1 \u2192 0.35)",
+    "stopped": "steady"
+  },
+  "clips": {
+    "turntable": {
+      "frames": 240,
+      "cues": [
+        {
+          "t": 0.0,
+          "state": "autonomy"
+        }
+      ],
+      "seconds": 8.0
+    },
+    "steer": {
+      "frames": 135,
+      "cues": [
+        {
+          "t": 0.0,
+          "state": "operator"
+        }
+      ],
+      "seconds": 4.5
+    },
+    "tilt": {
+      "frames": 150,
+      "cues": [
+        {
+          "t": 0.0,
+          "state": "autonomy"
+        }
+      ],
+      "seconds": 5.0
+    },
+    "claim_handoff": {
+      "frames": 160,
+      "cues": [
+        {
+          "t": 0.0,
+          "state": "autonomy"
+        },
+        {
+          "t": 0.6,
+          "state": "transitioning"
+        },
+        {
+          "t": 1.5,
+          "state": "operator"
+        },
+        {
+          "t": 4.3,
+          "state": "transitioning"
+        },
+        {
+          "t": 5.0,
+          "state": "autonomy"
+        }
+      ],
+      "seconds": 5.33
+    },
+    "controls_tour": {
+      "frames": 202,
+      "cues": [
+        {
+          "t": 0.0,
+          "state": "operator"
+        }
+      ],
+      "seconds": 6.73
+    },
+    "paddles": {
+      "frames": 60,
+      "cues": [
+        {
+          "t": 0.0,
+          "state": "operator"
+        }
+      ],
+      "seconds": 2.0
+    },
+    "estop": {
+      "frames": 100,
+      "cues": [
+        {
+          "t": 0.0,
+          "state": "operator"
+        },
+        {
+          "t": 0.467,
+          "state": "stopped"
+        },
+        {
+          "t": 2.6,
+          "state": "transitioning"
+        },
+        {
+          "t": 3.2,
+          "state": "autonomy"
+        }
+      ],
+      "seconds": 3.33
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<!-- @dsCard group="Actions" height=80 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Button</title>
+<style>body{margin:0;padding:16px;background:var(--surface-0);color:var(--ink);font-family:var(--font-sans)}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.teleop, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'tp-row'},h(T.Button,{variant:'primary',glyph:'claim'},'Claim vehicle'),h(T.Button,{variant:'secondary',glyph:'dpad'},'Next camera'),h(T.Button,{variant:'ghost'},'Escalate to supervisor'),h(T.Button,{variant:'stop',glyph:'estop'},'Stop vehicle'),h(T.Button,{variant:'primary',size:'lg',glyph:'claim'},'Claim vehicle')));
+</script>
+</body>
+</html>

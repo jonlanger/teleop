@@ -1,0 +1,13 @@
+<!-- @dsCard group="Hardware" height=96 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>ControlGlyph</title>
+<style>body{margin:0;padding:16px;background:var(--surface-0);color:var(--ink);font-family:var(--font-sans)}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.teleop, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'tp-row'},['speaker','estop','hazard','horn','ptt','claim','release','log','dpad','stick','p1','p2','brake','throttle'].map(function(c){return h(T.ControlGlyph,{key:c,control:c,size:28})})));
+</script>
+</body>
+</html>

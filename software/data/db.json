@@ -1,0 +1,2228 @@
+{
+ "version": 1,
+ "users": [
+  {
+   "id": "u_dana",
+   "name": "Dana Ortiz",
+   "role": "manager",
+   "title": "Fleet manager"
+  },
+  {
+   "id": "u_sam",
+   "name": "Sam Rivera",
+   "role": "operator",
+   "title": "Senior operator",
+   "certifications": [
+    "Gen 2 shuttle",
+    "Remote driving",
+    "Trainer"
+   ]
+  },
+  {
+   "id": "u_priya",
+   "name": "Priya Nair",
+   "role": "operator",
+   "title": "Operator",
+   "certifications": [
+    "Gen 2 shuttle",
+    "Remote driving"
+   ]
+  },
+  {
+   "id": "u_leo",
+   "name": "Leo Park",
+   "role": "operator",
+   "title": "Operator",
+   "certifications": [
+    "Gen 2 shuttle",
+    "Remote driving"
+   ]
+  },
+  {
+   "id": "u_mara",
+   "name": "Mara Chen",
+   "role": "operator",
+   "title": "Operator",
+   "certifications": [
+    "Gen 2 shuttle",
+    "Remote assist"
+   ]
+  },
+  {
+   "id": "u_tomas",
+   "name": "Tomás Silva",
+   "role": "operator",
+   "title": "Operator",
+   "certifications": [
+    "Gen 2 shuttle",
+    "Remote driving"
+   ]
+  },
+  {
+   "id": "u_aisha",
+   "name": "Aisha Bello",
+   "role": "operator",
+   "title": "Operator",
+   "certifications": [
+    "Gen 2 shuttle",
+    "Remote driving"
+   ]
+  },
+  {
+   "id": "u_kenji",
+   "name": "Kenji Watanabe",
+   "role": "engineer",
+   "title": "Vehicle engineer"
+  },
+  {
+   "id": "u_ruth",
+   "name": "Ruth Adeyemi",
+   "role": "support",
+   "title": "Support lead"
+  },
+  {
+   "id": "u_jordan",
+   "name": "Jordan Lee",
+   "role": "support",
+   "title": "Support agent"
+  }
+ ],
+ "shifts": [
+  {
+   "id": "sh_1",
+   "userId": "u_sam",
+   "start": 1790589600000,
+   "end": 1790618400000,
+   "station": "ST-01",
+   "clockIn": 1790589780000,
+   "clockOut": 1790618700000
+  },
+  {
+   "id": "sh_2",
+   "userId": "u_priya",
+   "start": 1790589600000,
+   "end": 1790618400000,
+   "station": "ST-02",
+   "clockIn": 1790589840000,
+   "clockOut": 1790619000000
+  },
+  {
+   "id": "sh_3",
+   "userId": "u_leo",
+   "start": 1790618400000,
+   "end": 1790647200000,
+   "station": "ST-01",
+   "clockIn": 1790618640000,
+   "clockOut": 1790647680000
+  },
+  {
+   "id": "sh_4",
+   "userId": "u_mara",
+   "start": 1790618400000,
+   "end": 1790647200000,
+   "station": "ST-02",
+   "clockIn": 1790618520000,
+   "clockOut": 1790647380000
+  },
+  {
+   "id": "sh_5",
+   "userId": "u_dana",
+   "start": 1790596800000,
+   "end": 1790629200000,
+   "station": "Office",
+   "clockIn": 1790597160000,
+   "clockOut": 1790629800000
+  },
+  {
+   "id": "sh_6",
+   "userId": "u_tomas",
+   "start": 1790647200000,
+   "end": 1790676000000,
+   "station": "ST-03",
+   "clockIn": 1790647440000,
+   "clockOut": 1790676540000
+  },
+  {
+   "id": "sh_7",
+   "userId": "u_sam",
+   "start": 1790676000000,
+   "end": 1790704800000,
+   "station": "ST-01",
+   "clockIn": 1790676000000,
+   "clockOut": 1790705280000
+  },
+  {
+   "id": "sh_8",
+   "userId": "u_priya",
+   "start": 1790676000000,
+   "end": 1790704800000,
+   "station": "ST-02",
+   "clockIn": 1790676180000,
+   "clockOut": 1790705160000
+  },
+  {
+   "id": "sh_9",
+   "userId": "u_leo",
+   "start": 1790704800000,
+   "end": 1790733600000,
+   "station": "ST-01",
+   "clockIn": 1790705040000,
+   "clockOut": 1790734200000
+  },
+  {
+   "id": "sh_10",
+   "userId": "u_mara",
+   "start": 1790704800000,
+   "end": 1790733600000,
+   "station": "ST-02",
+   "clockIn": 1790704920000,
+   "clockOut": 1790734020000
+  },
+  {
+   "id": "sh_11",
+   "userId": "u_dana",
+   "start": 1790683200000,
+   "end": 1790715600000,
+   "station": "Office",
+   "clockIn": 1790683320000,
+   "clockOut": 1790715840000
+  },
+  {
+   "id": "sh_12",
+   "userId": "u_tomas",
+   "start": 1790733600000,
+   "end": 1790762400000,
+   "station": "ST-03",
+   "clockIn": 1790733840000,
+   "clockOut": 1790762760000
+  },
+  {
+   "id": "sh_13",
+   "userId": "u_sam",
+   "start": 1790762400000,
+   "end": 1790791200000,
+   "station": "ST-01",
+   "clockIn": 1790762580000,
+   "clockOut": 1790791260000
+  },
+  {
+   "id": "sh_14",
+   "userId": "u_priya",
+   "start": 1790762400000,
+   "end": 1790791200000,
+   "station": "ST-02",
+   "clockIn": 1790762580000,
+   "clockOut": 1790791380000
+  },
+  {
+   "id": "sh_15",
+   "userId": "u_leo",
+   "start": 1790791200000,
+   "end": 1790820000000,
+   "station": "ST-01",
+   "clockIn": 1790791500000,
+   "clockOut": 1790820360000
+  },
+  {
+   "id": "sh_16",
+   "userId": "u_mara",
+   "start": 1790791200000,
+   "end": 1790820000000,
+   "station": "ST-02",
+   "clockIn": 1790791320000,
+   "clockOut": 1790820540000
+  },
+  {
+   "id": "sh_17",
+   "userId": "u_dana",
+   "start": 1790769600000,
+   "end": 1790802000000,
+   "station": "Office",
+   "clockIn": 1790769720000,
+   "clockOut": 1790802600000
+  },
+  {
+   "id": "sh_18",
+   "userId": "u_tomas",
+   "start": 1790820000000,
+   "end": 1790848800000,
+   "station": "ST-03",
+   "clockIn": 1790820300000,
+   "clockOut": 1790849340000
+  },
+  {
+   "id": "sh_19",
+   "userId": "u_sam",
+   "start": 1790848800000,
+   "end": 1790877600000,
+   "station": "ST-01",
+   "clockIn": 1790848860000,
+   "clockOut": 1790877900000
+  },
+  {
+   "id": "sh_20",
+   "userId": "u_priya",
+   "start": 1790848800000,
+   "end": 1790877600000,
+   "station": "ST-02",
+   "clockIn": 1790848800000,
+   "clockOut": 1790877660000
+  },
+  {
+   "id": "sh_21",
+   "userId": "u_leo",
+   "start": 1790877600000,
+   "end": 1790906400000,
+   "station": "ST-01",
+   "clockIn": 1790877840000,
+   "clockOut": 1790906400000
+  },
+  {
+   "id": "sh_22",
+   "userId": "u_mara",
+   "start": 1790877600000,
+   "end": 1790906400000,
+   "station": "ST-02",
+   "clockIn": 1790877660000,
+   "clockOut": 1790906820000
+  },
+  {
+   "id": "sh_23",
+   "userId": "u_dana",
+   "start": 1790856000000,
+   "end": 1790888400000,
+   "station": "Office",
+   "clockIn": 1790856000000,
+   "clockOut": 1790889000000
+  },
+  {
+   "id": "sh_24",
+   "userId": "u_tomas",
+   "start": 1790906400000,
+   "end": 1790935200000,
+   "station": "ST-03",
+   "clockIn": 1790906460000,
+   "clockOut": 1790935320000
+  },
+  {
+   "id": "sh_25",
+   "userId": "u_sam",
+   "start": 1790935200000,
+   "end": 1790964000000,
+   "station": "ST-01",
+   "clockIn": 1790935320000,
+   "clockOut": 1790964300000
+  },
+  {
+   "id": "sh_26",
+   "userId": "u_priya",
+   "start": 1790935200000,
+   "end": 1790964000000,
+   "station": "ST-02",
+   "clockIn": 1790935560000,
+   "clockOut": 1790964060000
+  },
+  {
+   "id": "sh_27",
+   "userId": "u_leo",
+   "start": 1790964000000,
+   "end": 1790992800000,
+   "station": "ST-01",
+   "clockIn": 1790964000000,
+   "clockOut": 1790993040000
+  },
+  {
+   "id": "sh_28",
+   "userId": "u_mara",
+   "start": 1790964000000,
+   "end": 1790992800000,
+   "station": "ST-02",
+   "clockIn": 1790964120000,
+   "clockOut": 1790993100000
+  },
+  {
+   "id": "sh_29",
+   "userId": "u_dana",
+   "start": 1790942400000,
+   "end": 1790974800000,
+   "station": "Office",
+   "clockIn": 1790942520000,
+   "clockOut": 1790975340000
+  },
+  {
+   "id": "sh_30",
+   "userId": "u_tomas",
+   "start": 1790992800000,
+   "end": 1791021600000,
+   "station": "ST-03",
+   "clockIn": 1790993100000,
+   "clockOut": 1791021900000
+  },
+  {
+   "id": "sh_31",
+   "userId": "u_aisha",
+   "start": 1791021600000,
+   "end": 1791050400000,
+   "station": "ST-01",
+   "clockIn": 1791021660000,
+   "clockOut": 1791050820000
+  },
+  {
+   "id": "sh_32",
+   "userId": "u_leo",
+   "start": 1791050400000,
+   "end": 1791079200000,
+   "station": "ST-01",
+   "clockIn": 1791050520000,
+   "clockOut": 1791079500000
+  },
+  {
+   "id": "sh_33",
+   "userId": "u_sam",
+   "start": 1791036000000,
+   "end": 1791057600000,
+   "station": "ST-02",
+   "clockIn": 1791036240000,
+   "clockOut": 1791057900000
+  },
+  {
+   "id": "sh_34",
+   "userId": "u_priya",
+   "start": 1791079200000,
+   "end": 1791108000000,
+   "station": "ST-03",
+   "clockIn": 1791079440000,
+   "clockOut": 1791108480000
+  },
+  {
+   "id": "sh_35",
+   "userId": "u_aisha",
+   "start": 1791108000000,
+   "end": 1791136800000,
+   "station": "ST-01",
+   "clockIn": 1791108060000,
+   "clockOut": 1791137280000
+  },
+  {
+   "id": "sh_36",
+   "userId": "u_mara",
+   "start": 1791136800000,
+   "end": 1791165600000,
+   "station": "ST-01",
+   "clockIn": 1791136980000,
+   "clockOut": 1791165720000
+  },
+  {
+   "id": "sh_37",
+   "userId": "u_sam",
+   "start": 1791122400000,
+   "end": 1791144000000,
+   "station": "ST-02",
+   "clockIn": 1791122640000,
+   "clockOut": 1791144240000
+  },
+  {
+   "id": "sh_38",
+   "userId": "u_tomas",
+   "start": 1791165600000,
+   "end": 1791194400000,
+   "station": "ST-03",
+   "clockIn": 1791165840000
+  },
+  {
+   "id": "sh_39",
+   "userId": "u_tomas",
+   "start": 1790560800000,
+   "end": 1790589600000,
+   "station": "ST-03",
+   "clockIn": 1790560980000,
+   "clockOut": 1790589960000
+  },
+  {
+   "id": "sh_40",
+   "userId": "u_sam",
+   "start": 1791194400000,
+   "end": 1791223200000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_41",
+   "userId": "u_priya",
+   "start": 1791194400000,
+   "end": 1791223200000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_42",
+   "userId": "u_leo",
+   "start": 1791223200000,
+   "end": 1791252000000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_43",
+   "userId": "u_mara",
+   "start": 1791223200000,
+   "end": 1791252000000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_44",
+   "userId": "u_dana",
+   "start": 1791201600000,
+   "end": 1791234000000,
+   "station": "Office"
+  },
+  {
+   "id": "sh_45",
+   "userId": "u_tomas",
+   "start": 1791252000000,
+   "end": 1791280800000,
+   "station": "ST-03"
+  },
+  {
+   "id": "sh_46",
+   "userId": "u_sam",
+   "start": 1791280800000,
+   "end": 1791309600000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_47",
+   "userId": "u_priya",
+   "start": 1791280800000,
+   "end": 1791309600000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_48",
+   "userId": "u_leo",
+   "start": 1791309600000,
+   "end": 1791338400000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_49",
+   "userId": "u_mara",
+   "start": 1791309600000,
+   "end": 1791338400000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_50",
+   "userId": "u_dana",
+   "start": 1791288000000,
+   "end": 1791320400000,
+   "station": "Office"
+  },
+  {
+   "id": "sh_51",
+   "userId": "u_tomas",
+   "start": 1791338400000,
+   "end": 1791367200000,
+   "station": "ST-03"
+  },
+  {
+   "id": "sh_52",
+   "userId": "u_sam",
+   "start": 1791367200000,
+   "end": 1791396000000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_53",
+   "userId": "u_priya",
+   "start": 1791367200000,
+   "end": 1791396000000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_54",
+   "userId": "u_leo",
+   "start": 1791396000000,
+   "end": 1791424800000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_55",
+   "userId": "u_mara",
+   "start": 1791396000000,
+   "end": 1791424800000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_56",
+   "userId": "u_dana",
+   "start": 1791374400000,
+   "end": 1791406800000,
+   "station": "Office"
+  },
+  {
+   "id": "sh_57",
+   "userId": "u_tomas",
+   "start": 1791424800000,
+   "end": 1791453600000,
+   "station": "ST-03"
+  },
+  {
+   "id": "sh_58",
+   "userId": "u_sam",
+   "start": 1791453600000,
+   "end": 1791482400000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_59",
+   "userId": "u_priya",
+   "start": 1791453600000,
+   "end": 1791482400000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_60",
+   "userId": "u_leo",
+   "start": 1791482400000,
+   "end": 1791511200000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_61",
+   "userId": "u_mara",
+   "start": 1791482400000,
+   "end": 1791511200000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_62",
+   "userId": "u_dana",
+   "start": 1791460800000,
+   "end": 1791493200000,
+   "station": "Office"
+  },
+  {
+   "id": "sh_63",
+   "userId": "u_tomas",
+   "start": 1791511200000,
+   "end": 1791540000000,
+   "station": "ST-03"
+  },
+  {
+   "id": "sh_64",
+   "userId": "u_sam",
+   "start": 1791540000000,
+   "end": 1791568800000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_65",
+   "userId": "u_priya",
+   "start": 1791540000000,
+   "end": 1791568800000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_66",
+   "userId": "u_leo",
+   "start": 1791568800000,
+   "end": 1791597600000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_67",
+   "userId": "u_mara",
+   "start": 1791568800000,
+   "end": 1791597600000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_68",
+   "userId": "u_dana",
+   "start": 1791547200000,
+   "end": 1791579600000,
+   "station": "Office"
+  },
+  {
+   "id": "sh_69",
+   "userId": "u_tomas",
+   "start": 1791597600000,
+   "end": 1791626400000,
+   "station": "ST-03"
+  },
+  {
+   "id": "sh_70",
+   "userId": "u_aisha",
+   "start": 1791626400000,
+   "end": 1791655200000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_71",
+   "userId": "u_leo",
+   "start": 1791655200000,
+   "end": 1791684000000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_72",
+   "userId": "u_sam",
+   "start": 1791640800000,
+   "end": 1791662400000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_73",
+   "userId": "u_priya",
+   "start": 1791684000000,
+   "end": 1791712800000,
+   "station": "ST-03"
+  },
+  {
+   "id": "sh_74",
+   "userId": "u_aisha",
+   "start": 1791712800000,
+   "end": 1791741600000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_75",
+   "userId": "u_mara",
+   "start": 1791741600000,
+   "end": 1791770400000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_76",
+   "userId": "u_sam",
+   "start": 1791727200000,
+   "end": 1791748800000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_77",
+   "userId": "u_tomas",
+   "start": 1791770400000,
+   "end": 1791799200000,
+   "station": "ST-03"
+  },
+  {
+   "id": "sh_78",
+   "userId": "u_sam",
+   "start": 1791799200000,
+   "end": 1791828000000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_79",
+   "userId": "u_priya",
+   "start": 1791799200000,
+   "end": 1791828000000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_80",
+   "userId": "u_leo",
+   "start": 1791828000000,
+   "end": 1791856800000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_81",
+   "userId": "u_mara",
+   "start": 1791828000000,
+   "end": 1791856800000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_82",
+   "userId": "u_dana",
+   "start": 1791806400000,
+   "end": 1791838800000,
+   "station": "Office"
+  },
+  {
+   "id": "sh_83",
+   "userId": "u_tomas",
+   "start": 1791856800000,
+   "end": 1791885600000,
+   "station": "ST-03"
+  },
+  {
+   "id": "sh_84",
+   "userId": "u_sam",
+   "start": 1791885600000,
+   "end": 1791914400000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_85",
+   "userId": "u_priya",
+   "start": 1791885600000,
+   "end": 1791914400000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_86",
+   "userId": "u_leo",
+   "start": 1791914400000,
+   "end": 1791943200000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_87",
+   "userId": "u_mara",
+   "start": 1791914400000,
+   "end": 1791943200000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_88",
+   "userId": "u_dana",
+   "start": 1791892800000,
+   "end": 1791925200000,
+   "station": "Office"
+  },
+  {
+   "id": "sh_89",
+   "userId": "u_tomas",
+   "start": 1791943200000,
+   "end": 1791972000000,
+   "station": "ST-03"
+  },
+  {
+   "id": "sh_90",
+   "userId": "u_sam",
+   "start": 1791972000000,
+   "end": 1792000800000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_91",
+   "userId": "u_priya",
+   "start": 1791972000000,
+   "end": 1792000800000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_92",
+   "userId": "u_leo",
+   "start": 1792000800000,
+   "end": 1792029600000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_93",
+   "userId": "u_mara",
+   "start": 1792000800000,
+   "end": 1792029600000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_94",
+   "userId": "u_dana",
+   "start": 1791979200000,
+   "end": 1792011600000,
+   "station": "Office"
+  },
+  {
+   "id": "sh_95",
+   "userId": "u_tomas",
+   "start": 1792029600000,
+   "end": 1792058400000,
+   "station": "ST-03"
+  },
+  {
+   "id": "sh_96",
+   "userId": "u_sam",
+   "start": 1792058400000,
+   "end": 1792087200000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_97",
+   "userId": "u_priya",
+   "start": 1792058400000,
+   "end": 1792087200000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_98",
+   "userId": "u_leo",
+   "start": 1792087200000,
+   "end": 1792116000000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_99",
+   "userId": "u_mara",
+   "start": 1792087200000,
+   "end": 1792116000000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_100",
+   "userId": "u_dana",
+   "start": 1792065600000,
+   "end": 1792098000000,
+   "station": "Office"
+  },
+  {
+   "id": "sh_101",
+   "userId": "u_tomas",
+   "start": 1792116000000,
+   "end": 1792144800000,
+   "station": "ST-03"
+  },
+  {
+   "id": "sh_102",
+   "userId": "u_sam",
+   "start": 1792144800000,
+   "end": 1792173600000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_103",
+   "userId": "u_priya",
+   "start": 1792144800000,
+   "end": 1792173600000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_104",
+   "userId": "u_leo",
+   "start": 1792173600000,
+   "end": 1792202400000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_105",
+   "userId": "u_mara",
+   "start": 1792173600000,
+   "end": 1792202400000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_106",
+   "userId": "u_dana",
+   "start": 1792152000000,
+   "end": 1792184400000,
+   "station": "Office"
+  },
+  {
+   "id": "sh_107",
+   "userId": "u_tomas",
+   "start": 1792202400000,
+   "end": 1792231200000,
+   "station": "ST-03"
+  },
+  {
+   "id": "sh_108",
+   "userId": "u_aisha",
+   "start": 1792231200000,
+   "end": 1792260000000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_109",
+   "userId": "u_leo",
+   "start": 1792260000000,
+   "end": 1792288800000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_110",
+   "userId": "u_sam",
+   "start": 1792245600000,
+   "end": 1792267200000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_111",
+   "userId": "u_priya",
+   "start": 1792288800000,
+   "end": 1792317600000,
+   "station": "ST-03"
+  },
+  {
+   "id": "sh_112",
+   "userId": "u_aisha",
+   "start": 1792317600000,
+   "end": 1792346400000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_113",
+   "userId": "u_mara",
+   "start": 1792346400000,
+   "end": 1792375200000,
+   "station": "ST-01"
+  },
+  {
+   "id": "sh_114",
+   "userId": "u_sam",
+   "start": 1792332000000,
+   "end": 1792353600000,
+   "station": "ST-02"
+  },
+  {
+   "id": "sh_115",
+   "userId": "u_tomas",
+   "start": 1792375200000,
+   "end": 1792404000000,
+   "station": "ST-03"
+  }
+ ],
+ "tickets": [
+  {
+   "status": "open",
+   "createdAt": 1791212715272,
+   "updatedAt": 1791212715272,
+   "activity": [
+    {
+     "at": 1791212715272,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Rider app shows the wrong arrival time",
+   "body": "Arrival times for 5th & Dock jump around and are often wrong by several minutes.",
+   "type": "rider",
+   "priority": 4,
+   "category": "rider_app",
+   "channel": "email",
+   "source": "customer",
+   "requester": {
+    "name": "Rowan Ellis",
+    "kind": "rider",
+    "rides": 32,
+    "contact": "rowan.ellis@example.com"
+   },
+   "vehicleId": "UNIT-07",
+   "stop": "5th & Dock",
+   "reporter": "u_ruth",
+   "id": "TCK-1074"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791212339246,
+   "updatedAt": 1791212339246,
+   "activity": [
+    {
+     "at": 1791212339246,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Rider app shows the wrong arrival time",
+   "body": "Arrival times for Harbor Blvd jump around and are often wrong by several minutes.",
+   "type": "rider",
+   "priority": 4,
+   "category": "rider_app",
+   "channel": "email",
+   "source": "customer",
+   "requester": {
+    "name": "Rowan Ellis",
+    "kind": "rider",
+    "rides": 12,
+    "contact": "rowan.ellis@example.com"
+   },
+   "vehicleId": "UNIT-25",
+   "stop": "Harbor Blvd",
+   "reporter": "u_ruth",
+   "id": "TCK-1073"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791210904530,
+   "updatedAt": 1791210904530,
+   "activity": [
+    {
+     "at": 1791210904530,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Phone left on board",
+   "body": "Caller left a phone in a blue case on UNIT-25, got off at 6th & Dock.",
+   "type": "rider",
+   "priority": 3,
+   "category": "lost_item",
+   "channel": "phone",
+   "source": "customer",
+   "requester": {
+    "name": "Alex Morgan",
+    "kind": "rider",
+    "rides": 3,
+    "contact": "(555) 0180-8160"
+   },
+   "vehicleId": "UNIT-25",
+   "stop": "6th & Dock",
+   "reporter": "u_ruth",
+   "id": "TCK-1072"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791210565783,
+   "updatedAt": 1791210565783,
+   "activity": [
+    {
+     "at": 1791210565783,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Waited 20 minutes at 5th & Dock",
+   "body": "The app said 3 minutes. I waited 20 at 5th & Dock before one came.",
+   "type": "rider",
+   "priority": 4,
+   "category": "service",
+   "channel": "email",
+   "source": "customer",
+   "requester": {
+    "name": "Morgan Diaz",
+    "kind": "rider",
+    "rides": 27,
+    "contact": "(555) 0144-6328"
+   },
+   "vehicleId": "UNIT-14",
+   "stop": "5th & Dock",
+   "reporter": "u_ruth",
+   "id": "TCK-1071"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791210214283,
+   "updatedAt": 1791210214283,
+   "activity": [
+    {
+     "at": 1791210214283,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Left my backpack on the shuttle",
+   "body": "Got off at 5th & Dock and left a grey backpack on the rear bench. Laptop inside. Please help.",
+   "type": "rider",
+   "priority": 3,
+   "category": "lost_item",
+   "channel": "app",
+   "source": "customer",
+   "requester": {
+    "name": "Rowan Ellis",
+    "kind": "rider",
+    "rides": 42,
+    "contact": "rowan.ellis@example.com"
+   },
+   "vehicleId": "UNIT-14",
+   "stop": "5th & Dock",
+   "reporter": "u_ruth",
+   "id": "TCK-1070"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791209874624,
+   "updatedAt": 1791209874624,
+   "activity": [
+    {
+     "at": 1791209874624,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Shuttle didn't stop at Market Square",
+   "body": "I was waiting at Market Square and the shuttle went past without stopping.",
+   "type": "rider",
+   "priority": 3,
+   "category": "service",
+   "channel": "app",
+   "source": "customer",
+   "requester": {
+    "name": "Drew Kim",
+    "kind": "rider",
+    "rides": 19,
+    "contact": "(555) 0176-5912"
+   },
+   "vehicleId": "UNIT-14",
+   "stop": "Market Square",
+   "reporter": "u_ruth",
+   "id": "TCK-1069"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791209647420,
+   "updatedAt": 1791209647420,
+   "activity": [
+    {
+     "at": 1791209647420,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Ramp didn't deploy at Civic Park",
+   "body": "Caller uses a wheelchair. The door opened at Civic Park but the ramp did not come out. Had to wait for the next shuttle.",
+   "type": "rider",
+   "priority": 2,
+   "category": "accessibility",
+   "channel": "phone",
+   "source": "customer",
+   "requester": {
+    "name": "Riley Patel",
+    "kind": "rider",
+    "rides": 26,
+    "contact": "riley.patel@example.com"
+   },
+   "vehicleId": "UNIT-14",
+   "stop": "Civic Park",
+   "reporter": "u_ruth",
+   "id": "TCK-1068"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791209303418,
+   "updatedAt": 1791209303418,
+   "activity": [
+    {
+     "at": 1791209303418,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Shuttle didn't stop at City Hall",
+   "body": "I was waiting at City Hall and the shuttle went past without stopping.",
+   "type": "rider",
+   "priority": 3,
+   "category": "service",
+   "channel": "app",
+   "source": "customer",
+   "requester": {
+    "name": "Casey Wong",
+    "kind": "rider",
+    "rides": 15,
+    "contact": "(555) 0112-5644"
+   },
+   "vehicleId": "UNIT-07",
+   "stop": "City Hall",
+   "reporter": "u_ruth",
+   "id": "TCK-1067"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791208815346,
+   "updatedAt": 1791208815346,
+   "activity": [
+    {
+     "at": 1791208815346,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Ramp didn't deploy at Library",
+   "body": "Caller uses a wheelchair. The door opened at Library but the ramp did not come out. Had to wait for the next shuttle.",
+   "type": "rider",
+   "priority": 2,
+   "category": "accessibility",
+   "channel": "phone",
+   "source": "customer",
+   "requester": {
+    "name": "Drew Kim",
+    "kind": "rider",
+    "rides": 19,
+    "contact": "(555) 0116-1592"
+   },
+   "vehicleId": "UNIT-03",
+   "stop": "Library",
+   "reporter": "u_ruth",
+   "id": "TCK-1066"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791208297235,
+   "updatedAt": 1791208297235,
+   "activity": [
+    {
+     "at": 1791208297235,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Rider app shows the wrong arrival time",
+   "body": "Arrival times for Campus South jump around and are often wrong by several minutes.",
+   "type": "rider",
+   "priority": 4,
+   "category": "rider_app",
+   "channel": "email",
+   "source": "customer",
+   "requester": {
+    "name": "Taylor Brooks",
+    "kind": "rider",
+    "rides": 28,
+    "contact": "taylor.brooks@example.com"
+   },
+   "vehicleId": "UNIT-03",
+   "stop": "Campus South",
+   "reporter": "u_ruth",
+   "id": "TCK-1065"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791207840878,
+   "updatedAt": 1791207840878,
+   "activity": [
+    {
+     "at": 1791207840878,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Phone left on board",
+   "body": "Caller left a phone in a blue case on UNIT-14, got off at City Hall.",
+   "type": "rider",
+   "priority": 3,
+   "category": "lost_item",
+   "channel": "phone",
+   "source": "customer",
+   "requester": {
+    "name": "Jamie Ortiz",
+    "kind": "rider",
+    "rides": 14,
+    "contact": "jamie.ortiz@example.com"
+   },
+   "vehicleId": "UNIT-14",
+   "stop": "City Hall",
+   "reporter": "u_ruth",
+   "id": "TCK-1064"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791207378529,
+   "updatedAt": 1791207378529,
+   "activity": [
+    {
+     "at": 1791207378529,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Shuttle didn't stop at Library",
+   "body": "I was waiting at Library and the shuttle went past without stopping.",
+   "type": "rider",
+   "priority": 3,
+   "category": "service",
+   "channel": "app",
+   "source": "customer",
+   "requester": {
+    "name": "Jamie Ortiz",
+    "kind": "rider",
+    "rides": 34,
+    "contact": "jamie.ortiz@example.com"
+   },
+   "vehicleId": "UNIT-21",
+   "stop": "Library",
+   "reporter": "u_ruth",
+   "id": "TCK-1063"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791206597198,
+   "updatedAt": 1791206597198,
+   "activity": [
+    {
+     "at": 1791206597198,
+     "by": "u_tomas",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Emergency stop on UNIT-25",
+   "type": "incident",
+   "priority": 1,
+   "vehicleId": "UNIT-25",
+   "reporter": "u_tomas",
+   "body": "Tomás Silva used the emergency stop from the console. Stop latched at 0 km/h. Review the camera and log snapshot, then close.",
+   "links": {
+    "commandId": "c_muva5rr5frzw"
+   },
+   "id": "TCK-1056",
+   "source": "operator",
+   "channel": "auto",
+   "category": "safety"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791206595826,
+   "updatedAt": 1791206595826,
+   "activity": [
+    {
+     "at": 1791206595826,
+     "by": "u_tomas",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Emergency stop on UNIT-21",
+   "type": "incident",
+   "priority": 1,
+   "vehicleId": "UNIT-21",
+   "reporter": "u_tomas",
+   "body": "Tomás Silva used the emergency stop from the console. Stop latched at 9 km/h. Review the camera and log snapshot, then close.",
+   "links": {
+    "commandId": "c_muva5qqcavfs"
+   },
+   "id": "TCK-1055",
+   "source": "operator",
+   "channel": "auto",
+   "category": "safety"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791206594163,
+   "updatedAt": 1791206594163,
+   "activity": [
+    {
+     "at": 1791206594163,
+     "by": "u_tomas",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Emergency stop on UNIT-18",
+   "type": "incident",
+   "priority": 1,
+   "vehicleId": "UNIT-18",
+   "reporter": "u_tomas",
+   "body": "Tomás Silva used the emergency stop from the console. Stop latched at 0 km/h. Review the camera and log snapshot, then close.",
+   "links": {
+    "commandId": "c_muva5pg5mz11"
+   },
+   "id": "TCK-1054",
+   "source": "operator",
+   "channel": "auto",
+   "category": "safety"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791206592898,
+   "updatedAt": 1791206592898,
+   "activity": [
+    {
+     "at": 1791206592898,
+     "by": "u_tomas",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Emergency stop on UNIT-03",
+   "type": "incident",
+   "priority": 1,
+   "vehicleId": "UNIT-03",
+   "reporter": "u_tomas",
+   "body": "Tomás Silva used the emergency stop from the console. Stop latched at 0 km/h. Review the camera and log snapshot, then close.",
+   "links": {
+    "commandId": "c_muva5ohfgjws"
+   },
+   "id": "TCK-1053",
+   "source": "operator",
+   "channel": "auto",
+   "category": "safety"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791206591334,
+   "updatedAt": 1791206591334,
+   "activity": [
+    {
+     "at": 1791206591334,
+     "by": "u_tomas",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Emergency stop on UNIT-07",
+   "type": "incident",
+   "priority": 1,
+   "vehicleId": "UNIT-07",
+   "reporter": "u_tomas",
+   "body": "Tomás Silva used the emergency stop from the console. Stop latched at 0 km/h. Review the camera and log snapshot, then close.",
+   "links": {
+    "commandId": "c_muva5n9c8adz"
+   },
+   "id": "TCK-1052",
+   "source": "operator",
+   "channel": "auto",
+   "category": "safety"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791206589145,
+   "updatedAt": 1791206589145,
+   "activity": [
+    {
+     "at": 1791206589145,
+     "by": "u_tomas",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Emergency stop on UNIT-11",
+   "type": "incident",
+   "priority": 1,
+   "vehicleId": "UNIT-11",
+   "reporter": "u_tomas",
+   "body": "Tomás Silva used the emergency stop from the console. Stop latched at 0 km/h. Review the camera and log snapshot, then close.",
+   "links": {
+    "commandId": "c_muva5ljzaoyc"
+   },
+   "id": "TCK-1051",
+   "source": "operator",
+   "channel": "auto",
+   "category": "safety"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791206587034,
+   "updatedAt": 1791206587034,
+   "activity": [
+    {
+     "at": 1791206587034,
+     "by": "u_tomas",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Emergency stop on UNIT-14",
+   "type": "incident",
+   "priority": 1,
+   "vehicleId": "UNIT-14",
+   "reporter": "u_tomas",
+   "body": "Tomás Silva used the emergency stop from the console. Stop latched at 0 km/h. Review the camera and log snapshot, then close.",
+   "links": {
+    "commandId": "c_muva5jyfu4mg"
+   },
+   "id": "TCK-1050",
+   "source": "operator",
+   "channel": "auto",
+   "category": "safety"
+  },
+  {
+   "status": "open",
+   "createdAt": 1791185723011,
+   "updatedAt": 1791185723011,
+   "activity": [
+    {
+     "at": 1791185723011,
+     "by": "u_tomas",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "title": "Emergency stop on UNIT-03",
+   "type": "incident",
+   "priority": 1,
+   "vehicleId": "UNIT-03",
+   "reporter": "u_tomas",
+   "body": "Tomás Silva used the emergency stop from the keyboard. Stop latched at 6 km/h. Review the camera and log snapshot, then close.",
+   "links": {
+    "commandId": "c_muuxqd6fuw3e"
+   },
+   "id": "TCK-1049",
+   "source": "operator",
+   "channel": "auto",
+   "category": "safety"
+  },
+  {
+   "title": "Wiper motor fails on UNIT-07",
+   "type": "vehicle",
+   "priority": 2,
+   "status": "in_progress",
+   "vehicleId": "UNIT-07",
+   "assignee": "u_kenji",
+   "reporter": "u_priya",
+   "createdAt": 1791151766210,
+   "body": "Wipers rejected with overcurrent during light rain on Downtown loop. Vehicle reports B1A20. Kept in service; rain forecast tonight.",
+   "activity": [
+    {
+     "at": 1791151766210,
+     "by": "u_priya",
+     "kind": "created",
+     "text": "Opened"
+    },
+    {
+     "at": 1791155366210,
+     "by": "u_kenji",
+     "kind": "note",
+     "text": "Pulled the current log. Stall current 9.4 A against a 6 A limit. Ordering a motor; WO-2207."
+    }
+   ],
+   "id": "TCK-1041",
+   "updatedAt": 1791151766210,
+   "source": "operator",
+   "channel": "console",
+   "category": "vehicle_fault"
+  },
+  {
+   "title": "Left camera degraded on UNIT-21",
+   "type": "vehicle",
+   "priority": 2,
+   "status": "open",
+   "vehicleId": "UNIT-21",
+   "reporter": "u_sam",
+   "createdAt": 1791162566210,
+   "body": "Autonomy keeps capping at 10 km/h and asking for help on Campus circulator. Looks like a smudge or film on the lens.",
+   "id": "TCK-1042",
+   "updatedAt": 1791162566210,
+   "activity": [
+    {
+     "at": 1791162566210,
+     "by": "u_sam",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "source": "operator",
+   "channel": "console",
+   "category": "vehicle_fault"
+  },
+  {
+   "title": "Harbor underpass drops the link",
+   "type": "station",
+   "priority": 2,
+   "status": "waiting",
+   "reporter": "u_ruth",
+   "assignee": "u_ruth",
+   "createdAt": 1790910566210,
+   "body": "Both carriers fade near the underpass at the end of Harbor shuttle. Operators lose drive input for 2 to 6 s. Waiting on the carrier for a small-cell survey.",
+   "activity": [
+    {
+     "at": 1790910566210,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    },
+    {
+     "at": 1790996966210,
+     "by": "u_ruth",
+     "kind": "status",
+     "text": "Waiting on carrier survey, ref 88-1024"
+    }
+   ],
+   "id": "TCK-1043",
+   "updatedAt": 1790910566210,
+   "source": "support",
+   "channel": "phone",
+   "category": "station"
+  },
+  {
+   "title": "Rider left a bag on UNIT-14",
+   "type": "rider",
+   "priority": 3,
+   "status": "open",
+   "vehicleId": "UNIT-14",
+   "reporter": "u_leo",
+   "createdAt": 1791166766210,
+   "body": "Rider called support. Black backpack, rear bench. Hold at depot on next pass.",
+   "id": "TCK-1044",
+   "updatedAt": 1791166766210,
+   "activity": [
+    {
+     "at": 1791166766210,
+     "by": "u_leo",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "source": "operator",
+   "channel": "console",
+   "category": "lost_item"
+  },
+  {
+   "title": "Desk 3 wheel on old firmware",
+   "type": "station",
+   "priority": 3,
+   "status": "open",
+   "reporter": "u_kenji",
+   "createdAt": 1791076166210,
+   "body": "TW-2610-0019 is on 1.3.9. Halo pulse timing differs from the console's 900 ms on 1.3.x. Flash to 1.4.2 before the next night shift.",
+   "id": "TCK-1045",
+   "updatedAt": 1791076166210,
+   "activity": [
+    {
+     "at": 1791076166210,
+     "by": "u_kenji",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "source": "engineering",
+   "channel": "console",
+   "category": "station"
+  },
+  {
+   "title": "UNIT-29 front-right tire low",
+   "type": "vehicle",
+   "priority": 2,
+   "status": "open",
+   "vehicleId": "UNIT-29",
+   "reporter": "u_kenji",
+   "createdAt": 1791144566210,
+   "body": "Tire 3 at 212 kPa against a 240 spec, slow loss over two days.",
+   "id": "TCK-1046",
+   "updatedAt": 1791144566210,
+   "activity": [
+    {
+     "at": 1791144566210,
+     "by": "u_kenji",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "source": "engineering",
+   "channel": "console",
+   "category": "vehicle_fault"
+  },
+  {
+   "title": "Release rejected repeatedly off route",
+   "type": "software",
+   "priority": 4,
+   "status": "resolved",
+   "reporter": "u_mara",
+   "assignee": "u_kenji",
+   "createdAt": 1790824166210,
+   "body": "Release was refused three times after driving around a closure. Working as intended: vehicle must be within 15 m of route. Added the distance to the rejection message.",
+   "activity": [
+    {
+     "at": 1790824166210,
+     "by": "u_mara",
+     "kind": "created",
+     "text": "Opened"
+    },
+    {
+     "at": 1790910566210,
+     "by": "u_kenji",
+     "kind": "status",
+     "text": "Resolved: message now states the distance"
+    }
+   ],
+   "id": "TCK-1047",
+   "updatedAt": 1790824166210,
+   "source": "operator",
+   "channel": "console",
+   "category": "software"
+  },
+  {
+   "title": "Stop used for cyclist swerve, UNIT-11",
+   "type": "incident",
+   "priority": 1,
+   "status": "resolved",
+   "vehicleId": "UNIT-11",
+   "reporter": "u_tomas",
+   "assignee": "u_dana",
+   "createdAt": 1790996966210,
+   "body": "Emergency stop at 22 km/h when a cyclist cut across. No contact. Video saved to the incident folder.",
+   "activity": [
+    {
+     "at": 1790996966210,
+     "by": "u_tomas",
+     "kind": "created",
+     "text": "Opened"
+    },
+    {
+     "at": 1791004166210,
+     "by": "u_dana",
+     "kind": "note",
+     "text": "Reviewed footage. Correct use of the stop. Closing."
+    },
+    {
+     "at": 1791004166210,
+     "by": "u_dana",
+     "kind": "status",
+     "text": "Resolved"
+    }
+   ],
+   "id": "TCK-1048",
+   "updatedAt": 1790996966210,
+   "source": "operator",
+   "channel": "console",
+   "category": "safety"
+  },
+  {
+   "title": "Ramp didn't deploy at Market Square",
+   "type": "rider",
+   "category": "accessibility",
+   "channel": "phone",
+   "priority": 2,
+   "status": "resolved",
+   "vehicleId": "UNIT-14",
+   "stop": "Market Square",
+   "requester": {
+    "name": "Riley Patel",
+    "kind": "rider",
+    "rides": 6,
+    "contact": "riley.patel@example.com"
+   },
+   "reporter": "u_ruth",
+   "createdAt": 1791205721189,
+   "body": "Caller uses a wheelchair. The door opened at Market Square but the ramp did not come out. Had to wait for the next shuttle.",
+   "id": "TCK-1057",
+   "updatedAt": 1791207327462,
+   "activity": [
+    {
+     "at": 1791205721189,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    },
+    {
+     "at": 1791207311799,
+     "by": "u_ruth",
+     "kind": "reply",
+     "text": "Hi Riley, thank you for telling us about the ramp at Market Square. We've pulled UNIT-14 for a ramp check and will confirm once it's fixed."
+    },
+    {
+     "at": 1791207313729,
+     "by": "u_ruth",
+     "kind": "escalate",
+     "text": "Sent to engineering with WO-2209: Ramp did not deploy at Market Square. Check the ramp actuator and its door interlock."
+    },
+    {
+     "at": 1791207325945,
+     "by": "u_kenji",
+     "kind": "escalate",
+     "text": "Engineering finished WO-2209: Wheelchair ramp actuator"
+    },
+    {
+     "at": 1791207327462,
+     "by": "u_ruth",
+     "kind": "resolve",
+     "text": "Ramp actuator replaced on UNIT-14; rider told it is fixed."
+    }
+   ],
+   "source": "customer",
+   "firstResponseAt": 1791207311799,
+   "assignee": "u_ruth",
+   "escalation": {
+    "team": "engineering",
+    "at": 1791207313729,
+    "by": "u_ruth",
+    "note": "Ramp did not deploy at Market Square. Check the ramp actuator and its door interlock.",
+    "workOrderId": "WO-2209",
+    "done": 1791207325945
+   },
+   "resolution": {
+    "code": "escalated_fixed",
+    "summary": "Ramp actuator replaced on UNIT-14; rider told it is fixed.",
+    "at": 1791207327462,
+    "by": "u_ruth"
+   }
+  },
+  {
+   "title": "Shuttle braked very hard near Civic Park",
+   "type": "rider",
+   "category": "safety",
+   "channel": "app",
+   "priority": 2,
+   "status": "open",
+   "vehicleId": "UNIT-07",
+   "stop": "Civic Park",
+   "requester": {
+    "name": "Quinn Foster",
+    "kind": "rider",
+    "rides": 11,
+    "contact": "(555) 0108-1296"
+   },
+   "reporter": "u_jordan",
+   "createdAt": 1791201821189,
+   "body": "Hard stop near Civic Park, I nearly fell. Nobody was hurt but it was scary.",
+   "id": "TCK-1058",
+   "updatedAt": 1791201821189,
+   "activity": [
+    {
+     "at": 1791201821189,
+     "by": "u_jordan",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "source": "customer"
+  },
+  {
+   "title": "Shuttle didn't stop at Pier 3",
+   "type": "rider",
+   "category": "service",
+   "channel": "app",
+   "priority": 3,
+   "status": "open",
+   "vehicleId": "UNIT-25",
+   "stop": "Pier 3",
+   "requester": {
+    "name": "Taylor Brooks",
+    "kind": "rider",
+    "rides": 8,
+    "contact": "taylor.brooks@example.com"
+   },
+   "reporter": "u_jordan",
+   "createdAt": 1791196421189,
+   "body": "I was waiting at Pier 3 and the shuttle went past without stopping.",
+   "id": "TCK-1059",
+   "updatedAt": 1791196421189,
+   "activity": [
+    {
+     "at": 1791196421189,
+     "by": "u_jordan",
+     "kind": "created",
+     "text": "Opened"
+    }
+   ],
+   "source": "customer"
+  },
+  {
+   "title": "Waited 20 minutes at Terminal A",
+   "type": "rider",
+   "category": "service",
+   "channel": "email",
+   "priority": 4,
+   "status": "in_progress",
+   "vehicleId": "UNIT-18",
+   "stop": "Terminal A",
+   "requester": {
+    "name": "Casey Wong",
+    "kind": "rider",
+    "rides": 15,
+    "contact": "(555) 0112-1444"
+   },
+   "reporter": "u_jordan",
+   "assignee": "u_jordan",
+   "createdAt": 1791113621189,
+   "firstResponseAt": 1791128021189,
+   "body": "The app said 3 minutes. I waited 20 at Terminal A before one came.",
+   "activity": [
+    {
+     "at": 1791113621189,
+     "by": "u_jordan",
+     "kind": "created",
+     "text": "Opened"
+    },
+    {
+     "at": 1791128021189,
+     "by": "u_jordan",
+     "kind": "reply",
+     "text": "Hi Riley, thanks for letting us know. We're looking into it and will update you today."
+    }
+   ],
+   "id": "TCK-1060",
+   "updatedAt": 1791113621189,
+   "source": "customer"
+  },
+  {
+   "title": "Rider app shows the wrong arrival time",
+   "type": "software",
+   "category": "rider_app",
+   "channel": "email",
+   "priority": 4,
+   "status": "waiting",
+   "stop": "Elm Station",
+   "requester": {
+    "name": "Avery Shah",
+    "kind": "rider",
+    "rides": 10,
+    "contact": "avery.shah@example.com"
+   },
+   "reporter": "u_ruth",
+   "assignee": "u_ruth",
+   "createdAt": 1791034421189,
+   "firstResponseAt": 1791041621189,
+   "body": "Arrival times for Elm Station jump around and are often wrong by several minutes.",
+   "escalation": {
+    "team": "engineering",
+    "at": 1791045221189,
+    "by": "u_ruth",
+    "note": "ETA feed lags the vehicle position by about 40 s on Harbor shuttle."
+   },
+   "activity": [
+    {
+     "at": 1791034421189,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    },
+    {
+     "at": 1791041621189,
+     "by": "u_ruth",
+     "kind": "reply",
+     "text": "Hi Avery, thanks. We can see the times are off and have asked engineering to look at the arrival feed."
+    },
+    {
+     "at": 1791045221189,
+     "by": "u_ruth",
+     "kind": "escalate",
+     "text": "Sent to engineering: ETA feed lags the vehicle position by about 40 s on Harbor shuttle."
+    }
+   ],
+   "id": "TCK-1061",
+   "updatedAt": 1791034421189,
+   "source": "customer"
+  },
+  {
+   "title": "Phone left on board",
+   "type": "rider",
+   "category": "lost_item",
+   "channel": "phone",
+   "priority": 3,
+   "status": "resolved",
+   "vehicleId": "UNIT-36",
+   "stop": "6th & Dock",
+   "requester": {
+    "name": "Morgan Diaz",
+    "kind": "rider",
+    "rides": 7,
+    "contact": "(555) 0104-1148"
+   },
+   "reporter": "u_ruth",
+   "assignee": "u_ruth",
+   "createdAt": 1791099221189,
+   "firstResponseAt": 1791102821189,
+   "body": "Caller left a phone in a blue case on UNIT-36, got off at 6th & Dock.",
+   "playbook": {
+    "ride": 1791102821189,
+    "hold": 1791106421189,
+    "tell": 1791110021189,
+    "close": 1791135221189
+   },
+   "activity": [
+    {
+     "at": 1791099221189,
+     "by": "u_ruth",
+     "kind": "created",
+     "text": "Opened"
+    },
+    {
+     "at": 1791102821189,
+     "by": "u_ruth",
+     "kind": "reply",
+     "text": "Hi Morgan, we found it on UNIT-36. It's held at the Depot front desk."
+    }
+   ],
+   "resolution": {
+    "code": "returned",
+    "summary": "Collected from the Depot desk with ID.",
+    "at": 1791135221189,
+    "by": "u_ruth"
+   },
+   "id": "TCK-1062",
+   "updatedAt": 1791099221189,
+   "source": "customer"
+  }
+ ],
+ "workorders": [
+  {
+   "id": "WO-2209",
+   "vehicleId": "UNIT-14",
+   "component": "Wheelchair ramp actuator",
+   "kind": "corrective",
+   "status": "done",
+   "assignee": "u_kenji",
+   "notes": "Ramp did not deploy at Market Square. Check the ramp actuator and its door interlock.",
+   "createdAt": 1791207313729,
+   "ticketId": "TCK-1057",
+   "takesOutOfService": false
+  },
+  {
+   "vehicleId": "UNIT-29",
+   "component": "Brake pads, front axle",
+   "kind": "corrective",
+   "status": "scheduled",
+   "dueAt": 1791256166210,
+   "assignee": "u_kenji",
+   "notes": "Pads at 16%. Replace both front.",
+   "createdAt": 1791148166210,
+   "takesOutOfService": true,
+   "id": "WO-2201"
+  },
+  {
+   "vehicleId": "UNIT-29",
+   "component": "Tire 3 (front right)",
+   "kind": "inspection",
+   "status": "scheduled",
+   "dueAt": 1791191366210,
+   "notes": "Check for puncture; reseat valve.",
+   "createdAt": 1791148166210,
+   "ticketId": "TCK-1046",
+   "takesOutOfService": false,
+   "id": "WO-2202"
+  },
+  {
+   "vehicleId": "UNIT-07",
+   "component": "Wiper motor",
+   "kind": "corrective",
+   "status": "blocked",
+   "assignee": "u_kenji",
+   "notes": "Part on order, ETA 2 days.",
+   "createdAt": 1791155366210,
+   "ticketId": "TCK-1041",
+   "takesOutOfService": false,
+   "id": "WO-2203"
+  },
+  {
+   "vehicleId": "UNIT-32",
+   "component": "Autonomy software 4.12.1",
+   "kind": "software",
+   "status": "in_progress",
+   "assignee": "u_kenji",
+   "notes": "OTA staged; validation drive on the test loop after install.",
+   "createdAt": 1791158966210,
+   "takesOutOfService": true,
+   "id": "WO-2204"
+  },
+  {
+   "vehicleId": "UNIT-25",
+   "component": "Autonomy software 4.12.1",
+   "kind": "software",
+   "status": "scheduled",
+   "dueAt": 1791342566210,
+   "notes": "Install at depot overnight.",
+   "createdAt": 1791158966210,
+   "takesOutOfService": true,
+   "id": "WO-2205"
+  },
+  {
+   "vehicleId": "UNIT-11",
+   "component": "30,000 km service",
+   "kind": "preventive",
+   "status": "scheduled",
+   "dueKm": 30500,
+   "notes": "Coolant, cabin filter, alignment, sensor calibration.",
+   "createdAt": 1790996966210,
+   "takesOutOfService": true,
+   "id": "WO-2206"
+  },
+  {
+   "vehicleId": "UNIT-21",
+   "component": "Left camera lens",
+   "kind": "inspection",
+   "status": "scheduled",
+   "dueAt": 1791180566210,
+   "notes": "Clean and recheck contrast; replace cover glass if scratched.",
+   "createdAt": 1791164366210,
+   "ticketId": "TCK-1042",
+   "takesOutOfService": false,
+   "id": "WO-2207"
+  },
+  {
+   "vehicleId": "UNIT-18",
+   "component": "Annual safety inspection",
+   "kind": "inspection",
+   "status": "done",
+   "notes": "Passed.",
+   "createdAt": 1790651366210,
+   "takesOutOfService": true,
+   "id": "WO-2208"
+  }
+ ],
+ "stations": [
+  {
+   "id": "ST-01",
+   "name": "Ops room · desk 1",
+   "wheelSerial": "TW-2610-0007",
+   "wheelFw": "1.4.2",
+   "lastSeen": 1791169726210,
+   "userId": null,
+   "halo": "off"
+  },
+  {
+   "id": "ST-02",
+   "name": "Ops room · desk 2",
+   "wheelSerial": "TW-2610-0012",
+   "wheelFw": "1.4.2",
+   "lastSeen": 1791169646210,
+   "userId": null,
+   "halo": "off"
+  },
+  {
+   "id": "ST-03",
+   "name": "Ops room · desk 3",
+   "wheelSerial": "TW-2610-0019",
+   "wheelFw": "1.3.9",
+   "lastSeen": 1791137366210,
+   "userId": null,
+   "halo": "off"
+  },
+  {
+   "id": "ST-04",
+   "name": "Training bay",
+   "wheelSerial": "TW-2610-0002",
+   "wheelFw": "1.4.0",
+   "lastSeen": 1790910566210,
+   "userId": null,
+   "halo": "off"
+  }
+ ],
+ "assignments": [
+  {
+   "vehicleId": "UNIT-03",
+   "userId": "u_tomas"
+  },
+  {
+   "vehicleId": "UNIT-07",
+   "userId": "u_tomas"
+  },
+  {
+   "vehicleId": "UNIT-11",
+   "userId": "u_tomas"
+  },
+  {
+   "vehicleId": "UNIT-14",
+   "userId": "u_tomas"
+  },
+  {
+   "vehicleId": "UNIT-18",
+   "userId": "u_tomas"
+  },
+  {
+   "vehicleId": "UNIT-21",
+   "userId": "u_tomas"
+  },
+  {
+   "vehicleId": "UNIT-25",
+   "userId": "u_tomas"
+  },
+  {
+   "vehicleId": "UNIT-29",
+   "userId": "u_tomas"
+  },
+  {
+   "vehicleId": "UNIT-32",
+   "userId": null
+  },
+  {
+   "vehicleId": "UNIT-36",
+   "userId": "u_tomas"
+  }
+ ],
+ "service": {
+  "UNIT-03": "in_service",
+  "UNIT-07": "in_service",
+  "UNIT-11": "in_service",
+  "UNIT-14": "in_service",
+  "UNIT-18": "in_service",
+  "UNIT-21": "in_service",
+  "UNIT-25": "in_service",
+  "UNIT-29": "in_service",
+  "UNIT-32": "out_of_service",
+  "UNIT-36": "in_service"
+ },
+ "counters": {
+  "ticket": 1074,
+  "workorder": 2209,
+  "shift": 115
+ }
+}

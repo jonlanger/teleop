@@ -1,0 +1,13 @@
+<!-- @dsCard group="Fleet" height=190 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>VehicleTile</title>
+<style>body{margin:0;padding:16px;background:var(--surface-0);color:var(--ink);font-family:var(--font-sans)}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.teleop, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div',{style:{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(220px,1fr))',gap:'12px'}},h(T.VehicleTile,{id:'UNIT-14',route:'Downtown loop · Market St',state:'operator',speed:12,latencyMs:84,selected:true,alert:'Pedestrian in crosswalk'}),h(T.VehicleTile,{id:'UNIT-07',route:'Airport shuttle · Terminal 2',state:'autonomy',speed:38,latencyMs:191,alert:'Lost lead vehicle tracking',alertSeverity:'critical'}),h(T.VehicleTile,{id:'UNIT-03',route:'Depot return',state:'autonomy',speed:24,latencyMs:61})));
+</script>
+</body>
+</html>

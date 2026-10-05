@@ -1,0 +1,13 @@
+<!-- @dsCard group="Fleet" height=72 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>CameraSwitcher</title>
+<style>body{margin:0;padding:16px;background:var(--surface-0);color:var(--ink);font-family:var(--font-sans)}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.teleop, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'tp-row'},h(T.CameraSwitcher,{active:'front'})));
+</script>
+</body>
+</html>

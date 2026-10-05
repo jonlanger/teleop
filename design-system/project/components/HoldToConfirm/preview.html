@@ -1,0 +1,13 @@
+<!-- @dsCard group="Actions" height=80 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>HoldToConfirm</title>
+<style>body{margin:0;padding:16px;background:var(--surface-0);color:var(--ink);font-family:var(--font-sans)}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.teleop, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'tp-row'},h(T.HoldToConfirm,{label:'Hold to release UNIT-14'}),h(T.HoldToConfirm,{label:'Hold to claim',tone:'mint',glyph:'claim',doneLabel:'Claimed'})));
+</script>
+</body>
+</html>

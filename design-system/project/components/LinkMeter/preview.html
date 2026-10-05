@@ -1,0 +1,13 @@
+<!-- @dsCard group="Status" height=72 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>LinkMeter</title>
+<style>body{margin:0;padding:16px;background:var(--surface-0);color:var(--ink);font-family:var(--font-sans)}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.teleop, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'tp-row'},h(T.LinkMeter,{latencyMs:64}),h(T.LinkMeter,{latencyMs:181}),h(T.LinkMeter,{latencyMs:342}),h(T.LinkMeter,{latencyMs:null}),h(T.LinkMeter,{latencyMs:72,compact:true})));
+</script>
+</body>
+</html>

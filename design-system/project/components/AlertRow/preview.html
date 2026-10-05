@@ -1,0 +1,13 @@
+<!-- @dsCard group="Alerts" height=260 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>AlertRow</title>
+<style>body{margin:0;padding:16px;background:var(--surface-0);color:var(--ink);font-family:var(--font-sans)}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var T = window.teleop, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'tp-col'},h(T.AlertRow,{severity:'critical',title:'Lost lead vehicle tracking',detail:'Perception confidence dropped below threshold for 1.4 s. Vehicle is holding at 8 km/h.',vehicle:'UNIT-07',time:'14:02:11'}),h(T.AlertRow,{severity:'warning',title:'Pedestrian in crosswalk',detail:'Stopped 4 m before the line, waiting for the pedestrian to clear.',vehicle:'UNIT-14',time:'14:01:48'}),h(T.AlertRow,{severity:'info',title:'Route updated around closure',vehicle:'UNIT-03',time:'13:58:02',acknowledged:true})));
+</script>
+</body>
+</html>

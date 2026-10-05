@@ -1,0 +1,137 @@
+Blender 4.1.1 (hash e1743a0317bc built 2024-04-16 00:06:22)
+Read prefs: "/Users/jonlanger/Library/Application Support/Blender/4.1/config/userpref.blend"
+Info: Registering operator class: 'OBJECT_OT_AlignOperator', bl_idname 'object.align' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'OBJECT_OT_AlignOperator', bl_idname 'object.align' has been registered before, unregistering previous
+NONMANIFOLD Wheel_Front_Shell: 11 edges
+NONMANIFOLD Wheel_Rear_Shell: 17 edges
+NONMANIFOLD Column_Cover_Upper: 1 edges
+NONMANIFOLD Column_Cover_Lower: 69 edges
+NONMANIFOLD Base_Shell: 376 edges
+NONMANIFOLD Base_Bottom: 546 edges
+Info: Total files 0 | Changed 0 | Failed 0
+Info: Saved "model.blend"
+exporting
+23:31:02 | INFO: Draco mesh compression is available, use library at /Applications/Blender.app/Contents/Resources/4.1/python/lib/python3.11/site-packages/libextern_draco.dylib
+23:31:02 | INFO: Starting glTF 2.0 export
+23:31:02 | INFO: Extracting primitive: wheel_ext.003
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: wheel_ext.004
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: grip.003
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: grip.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: grip.006
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: grip.004
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Halo_Guide_Upper
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Halo_Guide_Lower
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Hub_Faceplate.002
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: EStop_Bezel.002
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: EStop_Cap.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Btn_Hazard.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Print_Hazard
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Btn_P1.002
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Btn_P2.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Key_Column_L.002
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Btn_Talk.002
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Btn_Log.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Btn_ExtSpeaker.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: DPad.002
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Key_Column_R.002
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Btn_Claim.002
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Btn_Release.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Btn_Horn.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Stick_Gimbal
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Stick_Cap.002
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Print_Faceplate_Wordmark.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Print_SpeakerDots
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Hub_Rear_Trim.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Paddle_Brake_L.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Paddle_Throttle_R.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Hub_PCB.002
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: EStop_ContactBlock
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Stick_Module
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Clock_Spring.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Haptic_LRA_L
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Haptic_LRA_R
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: col_ext.010
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: col_ext.015
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Steer_Motor.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Stalk_TurnSignal.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: base_ext.022
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: base_ext.023
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Hinge_Cap_L
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Hinge_Cap_R
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Tilt_Knuckle
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Print_TiltIndex
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Hinge_Axle
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Foot_1
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Foot_2
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Foot_3
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Foot_4
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: USB_C_Receptacle.002
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: USB_Board
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Ballast_Plate
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Main_PCB
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Wordmark_R.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Extracting primitive: Wordmark_L.001
+23:31:02 | INFO: Primitives created: 1
+23:31:02 | INFO: Finished glTF 2.0 export in 0.3413569927215576 s
+
+Info: Saved "model.blend"
+BUILD OK 58 parts
+EXIT 0
