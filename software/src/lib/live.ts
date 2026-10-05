@@ -1,5 +1,6 @@
-// The live connection: vehicle state, alerts, the command trail and logs, pushed from the server.
+// The live connection: vehicle state, alerts, the command trail and logs, pushed from the engine.
 import { useSyncExternalStore } from "react";
+import { connect } from "../engine";
 import type { Alert, ClientMsg, Command, CommandKind, LogEntry, ResourceName, ServerMsg, VehicleState } from "@shared/types";
 
 type Channel = "fleet" | "alerts" | "commands" | "logs" | "conn";
@@ -13,32 +14,20 @@ class Live {
   logs: LogEntry[] = [];
   connected = false;
   clockSkew = 0;
-  private ws: WebSocket | null = null;
+  private link: ReturnType<typeof connect> | null = null;
   private versions: Record<Channel, number> = { fleet: 0, alerts: 0, commands: 0, logs: 0, conn: 0 };
   private subs: Record<Channel, Set<() => void>> = { fleet: new Set(), alerts: new Set(), commands: new Set(), logs: new Set(), conn: new Set() };
   private invalidators = new Set<(r: ResourceName) => void>();
   private alertListeners = new Set<(a: Alert, isNew: boolean) => void>();
   private hello: ClientMsg | null = null;
-  private retry = 0;
 
   connect(userId: string, station?: string) {
     this.hello = { t: "hello", userId, station };
-    if (this.ws) { this.send(this.hello); return; }
-    this.open();
+    if (!this.link) { this.link = connect((m) => this.receive(m)); this.connected = true; this.bump("conn"); }
+    this.send(this.hello);
   }
 
-  private open() {
-    const ws = new WebSocket(`${location.protocol === "https:" ? "wss" : "ws"}://${location.host}/ws`);
-    this.ws = ws;
-    ws.onopen = () => { this.retry = 0; this.connected = true; this.bump("conn"); if (this.hello) this.send(this.hello); };
-    ws.onclose = () => {
-      this.connected = false; this.ws = null; this.bump("conn");
-      setTimeout(() => this.open(), Math.min(5000, 400 * 2 ** this.retry++));
-    };
-    ws.onmessage = (e) => this.receive(JSON.parse(e.data) as ServerMsg);
-  }
-
-  send(m: ClientMsg) { if (this.ws?.readyState === WebSocket.OPEN) this.ws.send(JSON.stringify(m)); }
+  send(m: ClientMsg) { this.link?.send(m); }
 
   /** Send a command and return its id; its lifecycle arrives as cmd updates. */
   cmd(vehicleId: string, kind: CommandKind, value?: unknown, source: Command["source"] = "console") {

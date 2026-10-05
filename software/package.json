@@ -4,26 +4,22 @@
   "type": "module",
   "scripts": {
     "tokens": "node scripts/gen-tokens.mjs",
-    "dev": "node scripts/gen-tokens.mjs && tsx server/index.ts",
+    "dev": "node scripts/gen-tokens.mjs && vite --port 5180",
     "build": "node scripts/gen-tokens.mjs && vite build",
-    "start": "NODE_ENV=production tsx server/index.ts",
-    "typecheck": "tsc --noEmit",
-    "reset-data": "rm -f data/db.json"
+    "preview": "vite preview --port 5180",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "three": "^0.169.0",
-    "ws": "^8.22.0"
+    "three": "^0.169.0"
   },
   "devDependencies": {
     "@types/node": "^20.19.43",
     "@types/react": "^18.3.31",
     "@types/react-dom": "^18.3.7",
     "@types/three": "^0.169.0",
-    "@types/ws": "^8.18.2",
     "@vitejs/plugin-react": "^4.7.0",
-    "tsx": "^4.23.15",
     "typescript": "^5.9.3",
     "vite": "^6.4.3"
   }

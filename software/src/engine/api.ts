@@ -1,12 +1,11 @@
-// REST API for operations data. Live state travels over the WebSocket; this is for records people edit.
-// Identity is the x-teleop-user header (prototype). Swap for SSO sessions before this leaves the ops network.
-import type { IncomingMessage, ServerResponse } from "node:http";
-import type { LogLevel, Metrics, Shift, Ticket, TicketActivity, WorkOrder } from "../shared/types.ts";
-import { sourceForRole } from "../shared/support.ts";
-import type { Fleet } from "./fleet.ts";
-import { save } from "./store.ts";
+// The operations API, in the page: records people edit (live state travels through the engine's connection).
+// Same routes and rules the prototype server had; the signed-in user is passed in with each request.
+import type { LogLevel, Metrics, Shift, Ticket, TicketActivity, WorkOrder } from "@shared/types";
+import { sourceForRole } from "@shared/support";
+import type { Fleet } from "./fleet";
+import { save } from "./store";
 
-type Handler = (ctx: { req: IncomingMessage; params: Record<string, string>; query: URLSearchParams; body: any; userId: string }) => unknown;
+type Handler = (ctx: { params: Record<string, string>; query: URLSearchParams; body: any; userId: string }) => unknown;
 const routes: { method: string; re: RegExp; keys: string[]; fn: Handler }[] = [];
 function route(method: string, path: string, fn: Handler) {
   const keys: string[] = [];
@@ -258,24 +257,19 @@ export function createApi(fleet: Fleet) {
     };
   });
 
-  return async function handle(req: IncomingMessage, res: ServerResponse): Promise<boolean> {
-    const url = new URL(req.url ?? "/", "http://x");
-    if (!url.pathname.startsWith("/api/")) return false;
-    const r = routes.find((x) => x.method === req.method && x.re.test(url.pathname));
-    const send = (code: number, data: unknown) => { res.writeHead(code, { "content-type": "application/json" }); res.end(JSON.stringify(data)); };
-    if (!r) { send(404, { error: "Not found" }); return true; }
+  return function handle(method: string, path: string, rawBody: unknown, userId: string): { status: number; data: unknown } {
+    const url = new URL(path, "http://x");
+    const r = routes.find((x) => x.method === method && x.re.test(url.pathname));
+    if (!r) return { status: 404, data: { error: "Not found" } };
     try {
       const m = url.pathname.match(r.re)!;
       const params = Object.fromEntries(r.keys.map((k, i) => [k, decodeURIComponent(m[i + 1])]));
-      let body: any = {};
-      if (req.method !== "GET") { const chunks: Buffer[] = []; for await (const c of req) chunks.push(c as Buffer); body = chunks.length ? JSON.parse(Buffer.concat(chunks).toString()) : {}; }
-      const userId = String(req.headers["x-teleop-user"] ?? "");
-      if (req.method !== "GET") need(db.users.some((u) => u.id === userId), 401, "Sign in first");
-      send(200, await r.fn({ req, params, query: url.searchParams, body, userId }));
+      const body: any = rawBody ?? {};
+      if (method !== "GET") need(db.users.some((u) => u.id === userId), 401, "Sign in first");
+      return { status: 200, data: r.fn({ params, query: url.searchParams, body, userId }) };
     } catch (e) {
-      send(e instanceof HttpError ? e.code : 500, { error: e instanceof Error ? e.message : String(e) });
+      return { status: e instanceof HttpError ? e.code : 500, data: { error: e instanceof Error ? e.message : String(e) } };
     }
-    return true;
   };
 }
 

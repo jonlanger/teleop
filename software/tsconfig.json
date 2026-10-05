@@ -11,9 +11,9 @@
     "esModuleInterop": true,
     "allowImportingTsExtensions": true,
     "noEmit": true,
-    "types": ["node", "vite/client"],
+    "types": ["vite/client"],
     "baseUrl": ".",
     "paths": { "@shared/*": ["shared/*"], "@ds/*": ["../design-system/project/*"], "@brand/*": ["../brand/*"] }
   },
-  "include": ["shared", "server", "src"]
+  "include": ["shared", "src"]
 }

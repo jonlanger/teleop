@@ -1,13 +1,15 @@
 # teleop software
 
-One server and one web app with three workspaces, built on the teleop design system (`../design-system/project`): the tokens are generated into CSS, and the eight components load from its bundle unchanged.
+A static web app with four workspaces, built on the teleop design system (`../design-system/project`): the tokens are generated into CSS, and the eight components load from its bundle unchanged.
 
 ```bash
 npm install
-npm run dev        # http://localhost:5180 — server, WebSocket and Vite on one port
-npm run build      # production bundle into dist/; `npm start` serves it
-npm run reset-data # delete data/db.json; the next start reseeds
+npm run dev        # http://localhost:5180
+npm run build      # static bundle into dist/ (what Vercel deploys)
+npm run preview    # serve the built bundle locally
 ```
+
+There is no server: the simulator and the operations API run in the browser (`src/engine/`), and records are saved to this browser's localStorage. Each browser has its own fleet. Open any page with `?reset` to start again from the seed data.
 
 Sign in by picking a person (no passwords in the prototype). The top bar always shows the four workspaces in order: **Operator · Fleet · Engineer · Support**. A tab your role can't use stays visible but disabled. Operators land on Operator, the fleet manager on Fleet, engineers on Engineer, and support on Support.
 
@@ -37,7 +39,7 @@ Resolving a ticket:
 - **Other teams:** send a ticket to engineering, optionally opening a linked work order, or ask fleet. The ticket waits until that team hands it back. Finishing the linked work order hands it back automatically, and Fleet's overview lists what Support has asked of fleet.
 - **Resolve:** every resolution records an outcome code and a one-line summary. Marking a duplicate requires the original ticket. **Insights** shows open work by source, category, outcome and owner, plus median first-reply and resolution times.
 
-Operators can see the queue, add internal notes, and follow their own reports. Replying, escalating and resolving are for support, fleet managers and engineers, and the server enforces this.
+Operators can see the queue, add internal notes, and follow their own reports. Replying, escalating and resolving are for support, fleet managers and engineers, and the in-page API enforces this.
 
 ## The city
 
@@ -95,8 +97,9 @@ sent ──▶ received (vehicle acked, ms) ──▶ confirmed (vehicle reports
 
 ```
 shared/      domain types, wire protocol, control names, wheel USB contract, site map and routes
-server/      index.ts (HTTP + WS + Vite), fleet.ts (command lifecycle, alerts, logs, telemetry),
-             api.ts (REST), store.ts (JSON persistence, rota roll-forward), seed.ts, sim/vehicle.ts
+src/engine/  runs in the page: index.ts (connection + request entry points), fleet.ts (command lifecycle,
+             alerts, logs, telemetry), api.ts (routes and rules), store.ts (localStorage, rota roll-forward),
+             seed.ts, sim/vehicle.ts
 src/         ds/ (design system loader, generated tokens), lib/ (live store, api, router, wheel),
              ui/ (panels, charts, map, dialogs), apps/{operator,fleet,eng}
 ```
@@ -105,11 +108,11 @@ src/         ds/ (design system loader, generated tokens), lib/ (live store, api
 
 | Simulated | Replace with |
 | --- | --- |
-| `server/sim/vehicle.ts`: physics, drive-by-wire, body, autonomy assist requests, sensors, a cellular link with a weak zone | The vehicle gateway. `Vehicle.validate()` and its readback are the interface to keep. |
+| `src/engine/sim/vehicle.ts`: physics, drive-by-wire, body, autonomy assist requests, sensors, a cellular link with a weak zone | The vehicle gateway. `Vehicle.validate()` and its readback are the interface to keep. |
 | `CameraView`: a three.js render of the simulated city | WebRTC tracks per camera (keep the perception overlay on top) |
 | `shared/city.ts`: a generated city | Real map data for the service area (for example OSM or HD maps) behind the same helpers |
-| Sign in by choosing a person; `x-teleop-user` header | SSO and sessions |
-| JSON file store; logs and telemetry in memory | A database, plus a time-series and log store |
+| Sign in by choosing a person | SSO and sessions |
+| The whole backend in `src/engine/`, running in the browser; data in localStorage, logs and telemetry in memory | A server running the same fleet and API code, a database, and a time-series and log store |
 | Wheel USB vendor ID | The issued VID/PID, and a firmware build that matches `wheel-hid.ts` |
 
 Not built yet: over-the-air software install (it is tracked as a software work order instead), audio for Talk and the external speaker (commands and readback only), and tests.

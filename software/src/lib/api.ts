@@ -1,16 +1,13 @@
-// REST helpers and a resource hook that refetches when the server says a record set changed.
+// API helpers and a resource hook that refetches when the engine says a record set changed.
 import { useCallback, useEffect, useState } from "react";
 import type { ResourceName } from "@shared/types";
+import { request } from "../engine";
 import { live } from "./live";
 import { session } from "./session";
 
 export async function api<T>(method: string, path: string, body?: unknown): Promise<T> {
-  const res = await fetch(path, {
-    method, headers: { "content-type": "application/json", "x-teleop-user": session.get().userId ?? "" },
-    body: body === undefined ? undefined : JSON.stringify(body),
-  });
-  const data = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error((data as { error?: string }).error ?? `Request failed (${res.status})`);
+  const { status, data } = await request(method, path, body, session.get().userId ?? "");
+  if (status >= 400) throw new Error((data as { error?: string }).error ?? `Request failed (${status})`);
   return data as T;
 }
 

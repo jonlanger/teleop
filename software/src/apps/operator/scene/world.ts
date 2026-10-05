@@ -118,7 +118,7 @@ export class World {
       side: THREE.BackSide, depthWrite: false, fog: false,
       uniforms: { top: { value: new THREE.Color("#161B20") }, horizon: { value: new THREE.Color("#3A4148") } },
       vertexShader: "varying float vy; void main(){ vy = normalize(position).y; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }",
-      fragmentShader: "uniform vec3 top; uniform vec3 horizon; varying float vy; void main(){ gl_FragColor = vec4(mix(horizon, top, smoothstep(0.0, 0.35, vy)), 1.0); #include <colorspace_fragment> }",
+      fragmentShader: "uniform vec3 top; uniform vec3 horizon; varying float vy; void main(){ gl_FragColor = vec4(mix(horizon, top, smoothstep(0.0, 0.35, vy)), 1.0);\n#include <colorspace_fragment>\n}",
     }));
     this.sky.renderOrder = -1; s.add(this.sky);
 

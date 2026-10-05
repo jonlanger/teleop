@@ -1,8 +1,8 @@
 // First-run data: a small operations team, this week's shifts, open tickets and work orders.
-import type { Shift, Station, Ticket, TicketCategory, TicketChannel, User, WorkOrder } from "../shared/types.ts";
-import { CATEGORY_FOR_TYPE, sourceForRole } from "../shared/support.ts";
-import type { Db } from "./store.ts";
-import type { VehicleSeed } from "./sim/vehicle.ts";
+import type { Shift, Station, Ticket, TicketCategory, TicketChannel, User, WorkOrder } from "@shared/types";
+import { CATEGORY_FOR_TYPE, sourceForRole } from "@shared/support";
+import type { Db } from "./store";
+import type { VehicleSeed } from "./sim/vehicle";
 
 export const VEHICLE_SEEDS: VehicleSeed[] = [
   { id: "UNIT-03", route: "campus", startS: 120, soc: 86, odometerKm: 18240, sw: "av 4.12.1", latencyBase: 52 },

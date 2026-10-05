@@ -1,11 +1,11 @@
 // The fleet service: runs the vehicles, carries commands to them over a simulated link,
 // and keeps alerts, the command audit trail, logs and telemetry history.
-import type { Alert, ClientMsg, Command, LogEntry, LogLevel, LogSource, ResourceName, ServerMsg, TelemetryPoint, Ticket, User } from "../shared/types.ts";
-import { COMMAND_LABEL, NEEDS_CONTROL, kmh } from "../shared/controls.ts";
-import { Vehicle } from "./sim/vehicle.ts";
-import { CUSTOMER_TEMPLATES, VEHICLE_SEEDS, normalizeTicket, rider } from "./seed.ts";
-import { routeById } from "../shared/site.ts";
-import { save, type Db } from "./store.ts";
+import type { Alert, ClientMsg, Command, LogEntry, LogLevel, LogSource, ResourceName, ServerMsg, TelemetryPoint, Ticket, User } from "@shared/types";
+import { COMMAND_LABEL, NEEDS_CONTROL, kmh } from "@shared/controls";
+import { Vehicle } from "./sim/vehicle";
+import { CUSTOMER_TEMPLATES, VEHICLE_SEEDS, normalizeTicket, rider } from "./seed";
+import { routeById } from "@shared/site";
+import { save, type Db } from "./store";
 
 const TICK_MS = 50, BROADCAST_MS = 100, HISTORY_S = 900, LOG_CAP = 6000, CMD_CAP = 2000, TIMEOUT_MS = 2500;
 

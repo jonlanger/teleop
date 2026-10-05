@@ -1,10 +1,10 @@
 // A simulated vehicle: drive-by-wire, body controls, autonomy, sensors and a cellular link.
 // The console never writes vehicle state directly. It sends commands; the vehicle decides whether to accept them,
 // takes real time to actuate, and reports back what it actually did. That readback is what the UI shows.
-import type { Alert, AssistRequest, Command, DiagResult, Fault, Gear, Headlights, Health, LogLevel, LogSource, SensorId, TurnSignal, VehicleState, Wipers } from "../../shared/types.ts";
-import { SPEAKER_PRESETS } from "../../shared/controls.ts";
-import { WEAK_ZONES, nextCorner, nextStop, pointAt, project, routeById, routeGeometry, type RouteGeom } from "../../shared/site.ts";
-import { BOUNDS, WATER, near } from "../../shared/city.ts";
+import type { Alert, AssistRequest, Command, DiagResult, Fault, Gear, Headlights, Health, LogLevel, LogSource, SensorId, TurnSignal, VehicleState, Wipers } from "@shared/types";
+import { SPEAKER_PRESETS } from "@shared/controls";
+import { WEAK_ZONES, nextCorner, nextStop, pointAt, project, routeById, routeGeometry, type RouteGeom } from "@shared/site";
+import { BOUNDS, WATER, near } from "@shared/city";
 
 export interface VehicleHooks {
   log(level: LogLevel, source: LogSource, msg: string, data?: Record<string, unknown>): void;

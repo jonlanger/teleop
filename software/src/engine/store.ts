@@ -1,8 +1,7 @@
-// Durable operations data (people, shifts, tickets, work orders, stations, assignments) in one JSON file.
-// Live vehicle state, telemetry and logs are in memory; they belong in a time-series store in production.
-import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
-import type { Assignment, ServiceStatus, Shift, Station, Ticket, User, WorkOrder } from "../shared/types.ts";
-import { SEED_USERS, normalizeTicket, rotaWeek, seedDb, weekStart } from "./seed.ts";
+// Durable operations data (people, shifts, tickets, work orders, stations, assignments), kept in this browser's localStorage.
+// Live vehicle state, telemetry and logs are in memory and start fresh on every load.
+import type { Assignment, ServiceStatus, Shift, Station, Ticket, User, WorkOrder } from "@shared/types";
+import { SEED_USERS, normalizeTicket, rotaWeek, seedDb, weekStart } from "./seed";
 
 export interface Db {
   version: 1;
@@ -16,13 +15,16 @@ export interface Db {
   counters: { ticket: number; workorder: number; shift: number };
 }
 
-const DIR = new URL("../data/", import.meta.url);
-const FILE = new URL("db.json", DIR);
+const KEY = "teleop.db.v1";
+
+function read(): Db | null {
+  try { const raw = localStorage.getItem(KEY); return raw ? JSON.parse(raw) : null; } catch { return null; }
+}
 
 export function loadDb(): Db {
   const now = Date.now();
-  if (!existsSync(FILE)) { const db = seedDb(now); saveNow(db); return db; }
-  const db: Db = JSON.parse(readFileSync(FILE, "utf8"));
+  const db = read();
+  if (!db) { const fresh = seedDb(now); saveNow(fresh); return fresh; }
   // Roll the standing rota forward: any week from this one to next with no shifts gets the standard pattern.
   const ws = weekStart(now), W = 7 * 86400e3;
   let added = 0;
@@ -31,19 +33,21 @@ export function loadDb(): Db {
     const fresh = rotaWeek(w, now, () => `sh_${++db.counters.shift}`);
     db.shifts.push(...fresh); added += fresh.length;
   }
-  if (added) { console.log(`Rota: added ${added} shifts`); saveNow(db); }
+  if (added) saveNow(db);
   if (migrateSupport(db, now)) saveNow(db);
   return db;
 }
 
 function saveNow(db: Db) {
-  mkdirSync(DIR, { recursive: true });
-  const tmp = new URL("db.json.tmp", DIR);
-  writeFileSync(tmp, JSON.stringify(db, null, 1));
-  renameSync(tmp, FILE);
+  try { localStorage.setItem(KEY, JSON.stringify(db)); } catch { /* private mode or full: the demo still runs, it just won't persist */ }
 }
 
-let timer: NodeJS.Timeout | null = null;
+/** Throw away saved data; the next load reseeds. */
+export function resetDb() {
+  try { localStorage.removeItem(KEY); } catch { /* nothing saved */ }
+}
+
+let timer: ReturnType<typeof setTimeout> | null = null;
 export function save(db: Db) {
   if (timer) return;
   timer = setTimeout(() => { timer = null; saveNow(db); }, 250);
