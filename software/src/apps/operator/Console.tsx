@@ -220,7 +220,7 @@ export function OperatorConsole({ me, users }: { me: User; users: User[] }) {
                         onConfirm={() => live.cmd(v.id, "control.claim", { force: true })} />
                     : <Button variant="primary" glyph="claim" disabled={!!v.pendingControl || v.service === "out_of_service"} onClick={() => live.cmd(v.id, "control.claim")}>Claim vehicle</Button>}
                 {held && v.estop.engaged ? <span className="rb muted">Reset the stop before releasing</span>
-                  : <Readback c={handoff} idle={held ? "Release returns it to autonomy" : "Mint key on the wheel, or C"} />}
+                  : <Readback c={handoff} idle={held ? "Release returns it to autonomy" : "Press C, or the mint key on the wheel"} />}
               </div>
             </StatusBar>
 

@@ -72,7 +72,9 @@
 
 /* Drive panel: wheel, pedals, speed, gear. Cells wrap instead of overlapping. */
 .drive .spread { flex-wrap: wrap; }
-.drive-src { font-size: 12px; color: var(--ink-muted); }
+/* The status line changes with every input, so it takes the column's width instead of setting it, and always reserves two lines. */
+.drive-src { font-size: 12px; line-height: 16px; color: var(--ink-muted); width: 0; min-width: 100%; min-height: 32px; font-variant-numeric: tabular-nums;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
 .drive-src b { color: var(--ink); font-weight: 600; }
 .drive-grid { display: flex; flex-wrap: wrap; gap: var(--space-6); align-items: flex-start; }
 .drive-cell { min-width: 0; }
@@ -187,7 +189,7 @@
 .sb-msg { flex: 1 1 160px; min-width: 0; font: 650 15px/20px var(--font-sans); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .sb-meta { display: flex; align-items: center; gap: var(--space-3); }
 .sb-action { display: flex; align-items: center; gap: var(--space-2); margin-left: auto; min-width: 0; flex: 0 1 auto; }
-.sb-action .rb { order: -1; flex: 0 1 220px; min-width: 0; text-align: right; }
+.sb-action .rb { order: -1; flex: 0 1 220px; min-width: 0; text-align: right; white-space: normal; line-height: 14px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
 @media (min-width: 861px) { .statusbar { flex-wrap: nowrap; } .sb-meta, .statusbar .sb-alerts, .statusbar .tp-state, .statusbar .tp-hold, .statusbar .tp-btn-primary { flex: none; } }
 .statusbar .tp-hold { height: 38px; min-width: 190px; font-size: 14px; }
 .statusbar .sb-alerts { height: 34px; }
