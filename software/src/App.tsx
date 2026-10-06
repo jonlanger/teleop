@@ -13,6 +13,7 @@ import { OperatorConsole } from "./apps/operator/Console";
 import { FleetApp } from "./apps/fleet/FleetApp";
 import { EngApp } from "./apps/eng/EngApp";
 import { SupportApp } from "./apps/support/SupportApp";
+import { Home } from "./apps/home/Home";
 
 const HOME: Record<Role, string> = { operator: "/operate", manager: "/fleet", engineer: "/eng", support: "/support" };
 
@@ -31,10 +32,12 @@ export function App() {
   const me = users.data?.find((u) => u.id === s.userId) ?? null;
 
   useEffect(() => { if (me) live.connect(me.id, s.station); }, [me, s.station]);
-  useEffect(() => { if (me && path === "/") navigate(HOME[me.role], true); }, [me, path]);
+  useEffect(() => { if (me && (path === "/" || path === "/signin" || path === "/signup")) navigate(HOME[me.role], true); }, [me, path]);
 
+  // The homepage is public; /about shows it to signed-in people too.
+  if (path === "/about" || (!me && path === "/")) return <Home />;
   if (!users.data) return <div className="empty">{users.error ? `Server unreachable: ${users.error}` : "Loading"}</div>;
-  if (!me) return <SignIn users={users.data} />;
+  if (!me) return <SignIn users={users.data} mode={path === "/signup" ? "signup" : "signin"} />;
 
   return (
     <div className="shell">
@@ -77,17 +80,25 @@ function TopBar({ me, path, theme }: { me: User; path: string; theme: "dark" | "
   );
 }
 
-function SignIn({ users }: { users: User[] }) {
+function SignIn({ users, mode }: { users: User[]; mode: "signin" | "signup" }) {
   const s = useSession();
   const stations = useResource<Station[]>("/api/stations", ["stations"]);
   const groups: [Role[], string][] = [[["operator"], "Operators"], [["manager"], "Fleet management"], [["engineer", "support"], "Engineering and support"]];
   return (
     <div className="signin">
       <div className="signin-card">
-        <img src={s.theme === "dark" ? wordWhite : wordCarbon} alt="teleop" style={{ height: 36, justifySelf: "start" }} />
+        <div className="signin-top">
+          <Link href="/" aria-label="teleop home"><img src={s.theme === "dark" ? wordWhite : wordCarbon} alt="teleop" style={{ height: 36, display: "block" }} /></Link>
+          <Link href="/" className="signin-switch">Back to the homepage</Link>
+        </div>
         <div>
-          <h1 className="title">Sign in</h1>
-          <p className="muted">Choose who you are. This prototype has no passwords; production uses the company SSO.</p>
+          <h1 className="title">{mode === "signup" ? "Get started" : "Sign in"}</h1>
+          <p className="muted">{mode === "signup"
+            ? "Pick the role you want to try. Each person opens their own workspace with the live fleet. This prototype has no passwords; production uses the company SSO."
+            : "Choose who you are. This prototype has no passwords; production uses the company SSO."}</p>
+          <p className="signin-switch" style={{ marginTop: 4 }}>{mode === "signup"
+            ? <>Already have an account? <Link href="/signin">Sign in</Link></>
+            : <>New to teleop? <Link href="/signup">Get started</Link></>}</p>
         </div>
         <label className="field" style={{ maxWidth: 320 }}>
           <span className="label">Station</span>

@@ -156,7 +156,7 @@ export function DriveStrip({ v, held, guide = false }: { v: VehicleState; held: 
 }
 
 /** Drag the rim to steer. It springs back to centre when you let go, like the hardware wheel. */
-function SteeringWheel({ enabled, cmd, actualDeg, halo }: { enabled: boolean; cmd: number; actualDeg: number; halo: VehicleState["control"] }) {
+export function SteeringWheel({ enabled, cmd, actualDeg, halo }: { enabled: boolean; cmd: number; actualDeg: number; halo: VehicleState["control"] }) {
   const ref = useRef<SVGSVGElement>(null);
   const drag = useRef<{ last: number; steer: number } | null>(null);
   const spring = useRef(0);
@@ -219,7 +219,7 @@ function SteeringWheel({ enabled, cmd, actualDeg, halo }: { enabled: boolean; cm
 }
 
 /** Press and hold; how far up you press is how hard. Springs back to zero on release. */
-function Pedal({ which, label, glyph, enabled, cmd, actual }: { which: "throttle" | "brake"; label: string; glyph: Control; enabled: boolean; cmd: number; actual: number }) {
+export function Pedal({ which, label, glyph, enabled, cmd, actual }: { which: "throttle" | "brake"; label: string; glyph: Control; enabled: boolean; cmd: number; actual: number }) {
   const ref = useRef<HTMLDivElement>(null);
   const [down, setDown] = useState(false);
   const valueAt = (e: React.PointerEvent) => { const r = ref.current!.getBoundingClientRect(); return Math.max(0.05, Math.min(1, (r.bottom - e.clientY) / r.height)); };

@@ -35,6 +35,15 @@
         "design-system/project"
       ],
       "port": 8766
+    },
+    {
+      "name": "teleop-alt",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "cd software && npx vite --port 5181 --strictPort"
+      ],
+      "port": 5181
     }
   ]
 }

@@ -23,8 +23,14 @@ class Live {
 
   connect(userId: string, station?: string) {
     this.hello = { t: "hello", userId, station };
-    if (!this.link) { this.link = connect((m) => this.receive(m)); this.connected = true; this.bump("conn"); }
+    if (!this.link) this.link = connect((m) => this.receive(m));
+    if (!this.connected) { this.connected = true; this.bump("conn"); }
     this.send(this.hello);
+  }
+
+  /** Watch the fleet without signing in (the public homepage). Nothing can be sent until connect(). */
+  watch() {
+    if (!this.link) this.link = connect((m) => this.receive(m));
   }
 
   send(m: ClientMsg) { this.link?.send(m); }
